@@ -1,0 +1,6 @@
+Source: https://github.com/andrewgioia/mana
+Revision: 6ca9e696d3bda2519dcf3eebd96598f84ad9ddd8
+Downloaded: 2026-09-20
+Font: fonts/mana.woff2 (unmodified)
+CSS: css/mana.css; font-face rules replaced with one local WOFF2 reference.
+Unused MPlantin font declaration omitted.
