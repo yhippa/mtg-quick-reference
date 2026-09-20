@@ -44,3 +44,49 @@ test('offline snapshot installs atomically, preserves previous cache on failure 
     assert.equal(fetched,false);
   } finally { rmSync(temp,{recursive:true,force:true}); }
 });
+
+test('fresh worker serves shell, data, font and rulings without any network', async () => {
+  const temp = mkdtempSync(`${tmpdir()}/mtg-cold-`);
+  try {
+    mkdirSync(`${temp}/dist/data`, {recursive:true});
+    mkdirSync(`${temp}/dist/fonts`, {recursive:true});
+    const source = JSON.parse(readFileSync('tests/fixtures/representative-atomic.json','utf8'));
+    writeFileSync(`${temp}/dist/index.html`, '<main>Reference</main>');
+    writeFileSync(`${temp}/dist/data/cards.json`, JSON.stringify(source));
+    writeFileSync(`${temp}/dist/fonts/mana.woff2`, 'font');
+    execFileSync(process.execPath, [resolve('scripts/build-sw.mjs')], {cwd:temp});
+    const script = readFileSync(`${temp}/dist/sw.js`, 'utf8');
+    const saved = new Map<string, string>();
+    let online = true;
+    const scope = 'https://example.com/mtg/';
+    const cache = {
+      addAll: async (requests: {url:string}[]) => {
+        if (!online) throw Error('offline');
+        for (const request of requests) saved.set(request.url, readFileSync(`${temp}/dist/${request.url.slice(scope.length)}`, 'utf8'));
+      },
+      match: async (request: string | {url:string}) => saved.get(typeof request === 'string' ? request : request.url),
+    };
+    const boot = () => {
+      const handlers: Record<string, Function> = {};
+      runInNewContext(script, {
+        URL, Request: class { url:string; constructor(url:string) {this.url = new URL(url,scope).href;} },
+        self:{registration:{scope},addEventListener:(type:string,fn:Function)=>handlers[type]=fn},
+        caches:{open:async()=>cache}, fetch:()=>{throw Error('network must not be needed');},
+      });
+      return handlers;
+    };
+    let pending: Promise<unknown> = Promise.resolve();
+    boot().install({waitUntil:(p:Promise<unknown>)=>pending=p}); await pending;
+    online = false;
+    const cold = boot(); // No state from the original worker survives except persistent cache storage.
+    const fetchCached = async (path:string, mode='same-origin') => {
+      cold.fetch({request:{url:scope+path,method:'GET',mode},respondWith:(p:Promise<unknown>)=>pending=p});
+      return await pending;
+    };
+    assert.equal(await fetchCached('', 'navigate'), '<main>Reference</main>');
+    const cards = JSON.parse(await fetchCached('data/cards.json') as string);
+    assert.ok(cards.data.Necropotence[0].text.includes('Skip your draw step.'));
+    assert.ok(cards.data.Necropotence[0].rulings.length >= 3);
+    assert.equal(await fetchCached('fonts/mana.woff2'), 'font');
+  } finally {rmSync(temp,{recursive:true,force:true});}
+});

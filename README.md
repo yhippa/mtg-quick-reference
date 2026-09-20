@@ -100,3 +100,14 @@ Before shipping changes, run `npm test`, `npm run build`, and `npm run bench`. I
 ## Deliberately deferred
 
 No deck building, collection, pricing or account features. Potential future work is limited to measured needs: smaller first-download shards, background indexing on slow phones, and optional language support.
+
+## V1.1 usability and hardening
+
+Details now expose rulings sooner, **New search** focuses a fresh query in one tap,
+and empty search shows the last **five** unique cards viewed on this device.
+**Back to search** restores the earlier query, selected result and scroll position.
+History can be cleared locally and needs no account or network.
+
+See [the V1.1 release notes](docs/V1.1.md) for baseline/final measurements,
+representative card regressions, offline cold-start evidence, the Android test
+checklist, and the report-only V1.2 architectural recommendation.

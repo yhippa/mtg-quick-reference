@@ -12,4 +12,4 @@ for (let n = 0; n < 30; n++) for (const query of queries) {
   const before = performance.now(); search(index, query); timings.push(performance.now() - before);
 }
 timings.sort((a,b) => a-b);
-console.log(JSON.stringify({cards:data.cards.length, readParseMs:parsed-start, indexMs:indexed-parsed, searchMedianMs:timings[Math.floor(timings.length*.5)], searchP95Ms:timings[Math.floor(timings.length*.95)], results: ['bolt','sheold'].map(q=>({query:q,names:search(index,q,5).map(i=>data.cards[i].name)}))}, null, 2));
+console.log(JSON.stringify({cards:data.cards.length, readParseMs:parsed-start, indexMs:indexed-parsed, searchMedianMs:timings[Math.floor(timings.length*.5)], searchP95Ms:timings[Math.floor(timings.length*.95)], results: ['sol','bolt','sheold'].map(q=>({query:q,names:search(index,q,5).map(i=>data.cards[i].name)}))}, null, 2));

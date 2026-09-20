@@ -1,4 +1,5 @@
 import './style.css';
+import { renderCard } from './detail.ts';
 import { readRecent, remember, saveRecent } from './recent.ts';
 import { escapeHtml as esc, renderSymbols as mana } from './symbols.ts';
 import { makeIndex, search, suggest, type Card, type Dataset } from './search.ts';
@@ -10,7 +11,7 @@ app.innerHTML = `
 <form id="search-form" role="search"><label class="sr-only" for="query">Search card names</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="query" type="search" placeholder="Search any card name…" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus enterkeyhint="search"><button id="clear" type="button" aria-label="Clear search" hidden>×</button></div></form>
 <div class="results-heading"><span id="result-status" role="status">Loading card reference…</span><button id="clear-recent" hidden>Clear recent</button><span class="key-hint">/ TO SEARCH</span></div><div id="results"></div>
 <div id="empty"><p>Search a name for Oracle text and rulings.</p><div class="suggestions"><button data-query="bolt">bolt <span>↗</span></button><button data-query="sheold">sheold <span>↗</span></button><button data-query="Sol Ring">Sol Ring <span>↗</span></button></div></div></section>
-<section id="detail-view" hidden><button id="back" class="back">← Back to search</button><article id="detail"></article></section></main>
+<section id="detail-view" hidden><nav class="detail-nav" aria-label="Card navigation"><button id="back" class="back">← Back to search</button><button id="new-search" class="new-search">New search</button></nav><article id="detail"></article></section></main>
 <footer><div><span id="offline" role="status">Preparing reference</span><button id="update" hidden>Update ready · Reload</button></div><div id="data-date">Card data loading</div><p>Card data by <a href="https://mtgjson.com/">MTGJSON</a> · Magic: The Gathering © Wizards of the Coast</p></footer>`;
 const el = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const input = el<HTMLInputElement>('query');
@@ -18,7 +19,7 @@ let dataset: Dataset;
 let index: ReturnType<typeof makeIndex> = [];
 let ready = false;
 let failed = false;
-let lastFocus: HTMLElement | null = null;
+
 let recent: string[] = [];
 try { recent = readRecent(localStorage); } catch {}
 function persistRecent() { try { saveRecent(localStorage, recent); } catch {} }
@@ -29,6 +30,7 @@ function renderSearch() {
   let ids = hasQuery ? search(index, input.value) : recent.map(name => dataset.cards.findIndex(c => c.name === name)).filter(id => id >= 0);
   let suggestions = false;
   if (hasQuery && !ids.length) { ids = suggest(index, input.value); suggestions = ids.length > 0; }
+  el('results').classList.toggle('recent-results', !hasQuery && ids.length > 0);
   el('empty').hidden = hasQuery || ids.length > 0;
   el('clear-recent').hidden = hasQuery || ids.length === 0;
   el('result-status').textContent = input.value.trim() ? `${ids.length === 20 ? 'Top 20' : ids.length} matching card${ids.length === 1 ? '' : 's'}` : `${dataset.cards.length.toLocaleString()} cards at your fingertips`;
@@ -44,7 +46,7 @@ function showCard(card: Card) {
   persistRecent();
   el('search-view').hidden = true;
   el('detail-view').hidden = false;
-  el('detail').innerHTML = `<div class="eyebrow">CARD REFERENCE</div><h1 tabindex="-1" id="card-title">${esc(card.name)}</h1>${card.faces.map((f, i) => `<section class="face">${card.faces.length > 1 ? `<div class="face-label">FACE ${i + 1}</div><h2>${esc(f.name)}</h2>` : ''}<div class="face-meta"><span>${esc(f.type)}</span><span class="cost">${mana(f.mana)}</span></div><div class="oracle">${(f.text || 'No Oracle text.').split('\n').map(p => `<p>${mana(p)}</p>`).join('')}</div><div class="stats">${f.power !== undefined ? `<span>${esc(f.power)} / ${esc(f.toughness ?? '')}</span>` : ''}${f.loyalty !== undefined ? `<span>Loyalty ${esc(f.loyalty)}</span>` : ''}${f.defense !== undefined ? `<span>Defense ${esc(f.defense)}</span>` : ''}</div></section>`).join('')}<section class="rulings"><div class="rulings-title"><h2>Official rulings</h2><span>${card.rulings.length}</span></div>${card.rulings.length ? card.rulings.map(([date,text]) => `<div class="ruling"><time datetime="${esc(date)}">${esc(date || 'Undated')}</time><p>${mana(text)}</p></div>`).join('') : '<p class="muted">No card-specific rulings in this dataset.</p>'}</section>`;
+  el('detail').innerHTML = renderCard(card);
   input.blur();
   el('card-title').focus();
   window.scrollTo(0, 0);
@@ -56,29 +58,42 @@ function route() {
   if (card) showCard(card);
   else {
     el('search-view').hidden = false; el('detail-view').hidden = true;
+    if (typeof history.state?.query === 'string') input.value = history.state.query;
     renderSearch();
-    (lastFocus?.isConnected ? lastFocus : input).focus({ preventScroll: true });
+    const selected = typeof history.state?.selected === 'number' ? el('results').querySelector<HTMLButtonElement>(`[data-card="${history.state.selected}"]`) : null;
+    (selected ?? input).focus({ preventScroll: true });
+    window.scrollTo(0, history.state?.scroll ?? 0);
   }
 }
+const searchUrl = () => location.pathname + location.search;
+function saveSearch(selected?: number) {
+  history.replaceState({ query: input.value, scroll: window.scrollY, selected }, '', searchUrl());
+}
+function newSearch() {
+  history.pushState({ query: '', scroll: 0 }, '', searchUrl());
+  route();
+  input.focus(); // Synchronous with the tap so mobile browsers can open the keyboard.
+}
+el('new-search').onclick = newSearch;
 input.addEventListener('input', renderSearch);
-el('clear-recent').onclick = () => { recent = []; persistRecent(); renderSearch(); input.focus(); };
-el('clear').onclick = () => { input.value = ''; renderSearch(); input.focus(); };
+el('clear-recent').onclick = () => { recent = []; persistRecent(); saveSearch(); renderSearch(); input.focus(); };
+el('clear').onclick = () => { input.value = ''; saveSearch(); renderSearch(); input.focus(); };
 el('search-form').onsubmit = event => { event.preventDefault(); el('results').querySelector<HTMLButtonElement>('button')?.click(); };
 el('results').onclick = event => {
   const button = (event.target as HTMLElement).closest<HTMLButtonElement>('[data-card]');
   if (!button) return;
-  lastFocus = button;
+  saveSearch(Number(button.dataset.card));
   history.pushState({ detail: true }, '', `#${new URLSearchParams({card: dataset.cards[Number(button.dataset.card)].name})}`); route();
 };
 el('empty').onclick = event => {
   const button = (event.target as HTMLElement).closest<HTMLElement>('[data-query]');
-  if (button) { input.value = button.dataset.query!; renderSearch(); input.focus(); }
+  if (button) { input.value = button.dataset.query!; saveSearch(); renderSearch(); input.focus(); }
 };
-el('back').onclick = () => { if (history.state?.detail) history.back(); else { history.replaceState(null, '', location.pathname + location.search); route(); } };
+el('back').onclick = () => { if (history.state?.detail) history.back(); else { history.replaceState({ query: input.value, scroll: 0 }, '', searchUrl()); route(); } };
 window.addEventListener('popstate', route);
 window.addEventListener('hashchange', route);
 window.addEventListener('keydown', event => {
-  if (event.key === '/' && document.activeElement !== input) { event.preventDefault(); history.replaceState(null, '', location.pathname + location.search); route(); input.focus(); }
+  if (event.key === '/' && document.activeElement !== input) { event.preventDefault(); if (!el('detail-view').hidden) newSearch(); else input.focus(); }
   if (event.key === 'Escape' && !el('detail-view').hidden) el('back').click();
 });
 let theme = 'system';
@@ -92,7 +107,11 @@ async function load() {
     if (!response.ok) throw new Error('Dataset unavailable');
     dataset = await response.json();
     if (dataset.schema !== 1 || !dataset.cards?.length) throw new Error('Invalid dataset');
-    index = makeIndex(dataset.cards); ready = true; failed = false;
+    index = makeIndex(dataset.cards);
+    const names = new Set(dataset.cards.map(c => c.name));
+    recent = recent.filter(name => names.has(name));
+    persistRecent();
+    ready = true; failed = false;
     el('data-date').textContent = `Card data · ${dataset.updated}`;
     route();
     await setupOffline();

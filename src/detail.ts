@@ -1,0 +1,6 @@
+import { escapeHtml as esc, renderSymbols as mana } from './symbols.ts';
+import type { Card } from './search.ts';
+
+export function renderCard(card: Card): string {
+  return `<h1 tabindex="-1" id="card-title">${esc(card.name)}</h1>${card.faces.map((f, i) => `<section class="face">${card.faces.length > 1 ? `<div class="face-label">FACE ${i + 1}</div><h2>${esc(f.name)}</h2>` : ''}<div class="face-meta"><span>${esc(f.type)}</span><span class="cost">${mana(f.mana)}</span></div><div class="oracle">${(f.text || 'No Oracle text.').split('\n').map(p => `<p>${mana(p)}</p>`).join('')}</div><div class="stats">${f.power !== undefined ? `<span>${esc(f.power)} / ${esc(f.toughness ?? '')}</span>` : ''}${f.loyalty !== undefined ? `<span>Loyalty ${esc(f.loyalty)}</span>` : ''}${f.defense !== undefined ? `<span>Defense ${esc(f.defense)}</span>` : ''}</div></section>`).join('')}<section class="rulings"><div class="rulings-title"><h2>Official rulings</h2><span>${card.rulings.length}</span></div>${card.rulings.length ? card.rulings.map(([date,text]) => `<div class="ruling"><time datetime="${esc(date)}">${esc(date || 'Undated')}</time><p>${mana(text)}</p></div>`).join('') : '<p class="muted">No card-specific rulings in this dataset.</p>'}</section>`;
+}

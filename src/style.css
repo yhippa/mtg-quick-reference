@@ -8,3 +8,9 @@
 .card-symbol{flex-shrink:0;font-size:15px}
 .oracle .card-symbol,.ruling .card-symbol{font-size:.8em;vertical-align:.02em;margin:0 .08em}
 #clear-recent{border:0;background:none;color:var(--accent);font-size:11px;min-height:44px;padding:0 8px;margin:-16px 0 -16px auto;text-decoration:underline}.results-heading:has(#clear-recent:not([hidden])) .key-hint{display:none}
+/* V1.1: make room for rules while retaining readable type and 44px controls. */
+.detail-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.detail-nav .back{margin:0}.new-search{min-height:44px;padding:10px 12px;border:0;border-radius:7px;background:transparent;color:var(--accent);font-size:13px;text-decoration:underline;text-underline-offset:3px}
+#detail h1{margin-bottom:18px}.face{padding:18px;margin-bottom:14px}.face-meta{padding-bottom:12px}.oracle p{margin:12px 0}.oracle p:last-child{margin-bottom:0}.stats:not(:empty){margin-top:12px}.rulings{margin-top:22px}.rulings-title{padding-bottom:8px}.rulings-title h2{margin:8px 0}.ruling{padding:16px 0}.face h2{margin:6px 0 12px}
+.recent-results .result{min-height:64px;padding-top:12px;padding-bottom:12px}
+@media(max-width:600px){main:has(#detail-view:not([hidden])){padding-top:16px}.detail-nav{margin-bottom:12px}#detail h1{margin-bottom:14px}.face{padding:16px}.oracle{line-height:1.55}.rulings{margin-top:18px}}

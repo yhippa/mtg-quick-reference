@@ -1,0 +1,533 @@
+{
+  "meta": {
+    "date": "2026-09-19",
+    "version": "5.3.0+20260919"
+  },
+  "data": {
+    "Sol Ring": [
+      {
+        "layout": "normal",
+        "manaCost": "{1}",
+        "name": "Sol Ring",
+        "text": "{T}: Add {C}{C}.",
+        "type": "Artifact"
+      }
+    ],
+    "Necropotence": [
+      {
+        "layout": "normal",
+        "manaCost": "{B}{B}{B}",
+        "name": "Necropotence",
+        "rulings": [
+          {
+            "date": "2017-11-17",
+            "text": "If a discarded card isn't put into your graveyard (due to an effect such as that of Obstinate Baloth) or leaves your graveyard (perhaps because another effect returned it to your hand), it won't be exiled."
+          },
+          {
+            "date": "2017-11-17",
+            "text": "If you discard a card with madness and wish to cast it, Necropotence's ability won't exile that card. If you don't wish to cast it, you choose whether it ends up exiled or in your graveyard."
+          },
+          {
+            "date": "2017-11-17",
+            "text": "Necropotence's last ability creates a delayed triggered ability that will put the exiled card into your hand. That ability still triggers even if Necropotence is removed from the battlefield before your end step."
+          },
+          {
+            "date": "2023-09-01",
+            "text": "You can't look at the cards exiled by the last ability while they're face down."
+          }
+        ],
+        "text": "Skip your draw step.\nWhenever you discard a card, exile that card from your graveyard.\nPay 1 life: Exile the top card of your library face down. Put that card into your hand at the beginning of your next end step.",
+        "type": "Enchantment"
+      }
+    ],
+    "Sheoldred // The True Scriptures": [
+      {
+        "faceName": "Sheoldred",
+        "layout": "transform",
+        "manaCost": "{3}{B}{B}",
+        "name": "Sheoldred // The True Scriptures",
+        "power": "4",
+        "rulings": [
+          {
+            "date": "2023-04-14",
+            "text": "Once you’ve activated Sheoldred’s last ability, it doesn’t matter what happens to the number of cards in opponents’ graveyards. The ability will resolve even if no opponent has eight or more cards in their graveyard by that time."
+          },
+          {
+            "date": "2023-04-14",
+            "text": "To resolve Sheoldred’s enters-the-battlefield ability in a multiplayer game, the next opponent in turn order (or, if it’s an opponent’s turn, the opponent whose turn it is) chooses a creature they control to sacrifice. Then each other opponent in turn order does the same. Then those creatures are sacrificed at the same time."
+          },
+          {
+            "date": "2023-04-14",
+            "text": "To resolve chapter II of The True Scriptures in a multiplayer game, the next opponent in turn order (or, if it’s an opponent’s turn, the opponent whose turn it is) chooses three cards in hand. Any opponent who has fewer than three cards in hand chooses all cards they have in hand. They set the chosen cards aside without revealing them. Then each other opponent in turn order does the same. Next, all chosen cards are revealed and discarded at the same time. Then, each opponent mills three cards."
+          },
+          {
+            "date": "2023-04-14",
+            "text": "You can activate Sheoldred’s last ability if any opponent has eight or more cards in their graveyard, not necessarily all of them."
+          }
+        ],
+        "side": "a",
+        "text": "Menace\nWhen Sheoldred enters, each opponent sacrifices a nontoken creature or planeswalker of their choice.\n{4}{B}: Exile Sheoldred, then return it to the battlefield transformed under its owner's control. Activate only as a sorcery and only if an opponent has eight or more cards in their graveyard.",
+        "toughness": "5",
+        "type": "Legendary Creature — Phyrexian Praetor"
+      },
+      {
+        "faceName": "The True Scriptures",
+        "layout": "transform",
+        "name": "Sheoldred // The True Scriptures",
+        "rulings": [
+          {
+            "date": "2023-04-14",
+            "text": "Once you’ve activated Sheoldred’s last ability, it doesn’t matter what happens to the number of cards in opponents’ graveyards. The ability will resolve even if no opponent has eight or more cards in their graveyard by that time."
+          },
+          {
+            "date": "2023-04-14",
+            "text": "To resolve Sheoldred’s enters-the-battlefield ability in a multiplayer game, the next opponent in turn order (or, if it’s an opponent’s turn, the opponent whose turn it is) chooses a creature they control to sacrifice. Then each other opponent in turn order does the same. Then those creatures are sacrificed at the same time."
+          },
+          {
+            "date": "2023-04-14",
+            "text": "To resolve chapter II of The True Scriptures in a multiplayer game, the next opponent in turn order (or, if it’s an opponent’s turn, the opponent whose turn it is) chooses three cards in hand. Any opponent who has fewer than three cards in hand chooses all cards they have in hand. They set the chosen cards aside without revealing them. Then each other opponent in turn order does the same. Next, all chosen cards are revealed and discarded at the same time. Then, each opponent mills three cards."
+          },
+          {
+            "date": "2023-04-14",
+            "text": "You can activate Sheoldred’s last ability if any opponent has eight or more cards in their graveyard, not necessarily all of them."
+          }
+        ],
+        "side": "b",
+        "text": "(As this Saga enters and after your draw step, add a lore counter.)\nI — For each opponent, destroy up to one target creature or planeswalker that player controls.\nII — Each opponent discards three cards, then mills three cards.\nIII — Put all creature cards from all graveyards onto the battlefield under your control. Exile this Saga, then return it to the battlefield (front face up).",
+        "type": "Enchantment — Saga"
+      }
+    ],
+    "Bala Ged Recovery // Bala Ged Sanctuary": [
+      {
+        "faceName": "Bala Ged Recovery",
+        "layout": "modal_dfc",
+        "manaCost": "{2}{G}",
+        "name": "Bala Ged Recovery // Bala Ged Sanctuary",
+        "rulings": [
+          {
+            "date": "2020-09-25",
+            "text": "A modal double-faced card can’t be transformed or be put onto the battlefield transformed. Ignore any instruction to transform a modal double-faced card or to put one onto the battlefield transformed."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "If an effect allows you to play a land or cast a spell from among a group of cards, you may play or cast a modal double-faced card with any face that fits the criteria of that effect."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "If an effect allows you to play a specific modal double-faced card, you may cast it as a spell or play it as a land, as determined by which face you choose to play. If an effect allows you to cast (rather than “play”) a specific modal double-faced card, you can’t play it as a land."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "If an effect instructs a player to choose a card name, the name of either face may be chosen. If that effect or a linked ability refers to a spell with the chosen name being cast and/or a land with the chosen name being played, it considers only the chosen name, not the other face’s name."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "If an effect puts a double-faced card onto the battlefield, it enters with its front face up. If that front face can’t be put onto the battlefield, it doesn’t enter the battlefield."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "In the Commander variant, a double-faced card’s color identity is determined by the mana costs and mana symbols in the rules text of both faces combined. If either face has a color indicator or basic land type, those are also considered."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "The mana value of a modal double-faced card is based on the characteristics of the face that’s being considered. On the stack and battlefield, consider whichever face is up. In all other zones, consider only the front face. This is different than how the mana value of a transforming double-faced card is determined."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "There is a single triangle icon in the top left corner of the front face. There is a double triangle icon in the top left corner of the back face."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "To determine whether it is legal to play a modal double-faced card, consider only the characteristics of the face you’re playing and ignore the other face’s characteristics."
+          }
+        ],
+        "side": "a",
+        "text": "Return target card from your graveyard to your hand.",
+        "type": "Sorcery"
+      },
+      {
+        "faceName": "Bala Ged Sanctuary",
+        "layout": "modal_dfc",
+        "name": "Bala Ged Recovery // Bala Ged Sanctuary",
+        "rulings": [
+          {
+            "date": "2020-09-25",
+            "text": "A modal double-faced card can’t be transformed or be put onto the battlefield transformed. Ignore any instruction to transform a modal double-faced card or to put one onto the battlefield transformed."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "If an effect allows you to play a land or cast a spell from among a group of cards, you may play or cast a modal double-faced card with any face that fits the criteria of that effect."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "If an effect allows you to play a specific modal double-faced card, you may cast it as a spell or play it as a land, as determined by which face you choose to play. If an effect allows you to cast (rather than “play”) a specific modal double-faced card, you can’t play it as a land."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "If an effect instructs a player to choose a card name, the name of either face may be chosen. If that effect or a linked ability refers to a spell with the chosen name being cast and/or a land with the chosen name being played, it considers only the chosen name, not the other face’s name."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "If an effect puts a double-faced card onto the battlefield, it enters with its front face up. If that front face can’t be put onto the battlefield, it doesn’t enter the battlefield."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "In the Commander variant, a double-faced card’s color identity is determined by the mana costs and mana symbols in the rules text of both faces combined. If either face has a color indicator or basic land type, those are also considered."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "The mana value of a modal double-faced card is based on the characteristics of the face that’s being considered. On the stack and battlefield, consider whichever face is up. In all other zones, consider only the front face. This is different than how the mana value of a transforming double-faced card is determined."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "There is a single triangle icon in the top left corner of the front face. There is a double triangle icon in the top left corner of the back face."
+          },
+          {
+            "date": "2020-09-25",
+            "text": "To determine whether it is legal to play a modal double-faced card, consider only the characteristics of the face you’re playing and ignore the other face’s characteristics."
+          }
+        ],
+        "side": "b",
+        "text": "This land enters tapped.\n{T}: Add {G}.",
+        "type": "Land"
+      }
+    ],
+    "Fire // Ice": [
+      {
+        "faceName": "Fire",
+        "layout": "split",
+        "manaCost": "{1}{R}",
+        "name": "Fire // Ice",
+        "rulings": [
+          {
+            "date": "2022-12-08",
+            "text": "A split card's characteristics are a combination of its two halves while it is not on the stack. For example, Assault // Battery has a mana value of 5 while it is in your library. If an effect allows you to search your library for a card with mana value 4 or less, you can't find Assault // Battery."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "Each split card has two names. If an effect instructs you to choose a card name, you may choose one of those names, but not both."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "Each split card is a single card. For example, if you discard a split card, you've discarded one card, not two. If an effect counts the number of sorcery cards in your graveyard, Assault // Battery counts once, not twice."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "If an effect allows you to cast a spell with certain characteristics, consider only the characteristics of the half you're casting. For example, if an effect allows you to cast a sorcery spell with mana value 2 or less from among cards in your graveyard, you could cast Assault this way, but not Battery."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "If you copy a spell that's half of a split card, the copy copies that same half. For example, if you copy Assault, the copy is also Assault, not Battery."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "Split cards have two card faces on a single card. The characteristics of the half you didn't cast are ignored while the spell is on the stack."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "To cast a split card, choose one of its halves to cast. There's no way to cast both halves of this split card."
+          }
+        ],
+        "side": "a",
+        "text": "Fire deals 2 damage divided as you choose among one or two targets.",
+        "type": "Instant"
+      },
+      {
+        "faceName": "Ice",
+        "layout": "split",
+        "manaCost": "{1}{U}",
+        "name": "Fire // Ice",
+        "rulings": [
+          {
+            "date": "2022-12-08",
+            "text": "A split card's characteristics are a combination of its two halves while it is not on the stack. For example, Assault // Battery has a mana value of 5 while it is in your library. If an effect allows you to search your library for a card with mana value 4 or less, you can't find Assault // Battery."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "Each split card has two names. If an effect instructs you to choose a card name, you may choose one of those names, but not both."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "Each split card is a single card. For example, if you discard a split card, you've discarded one card, not two. If an effect counts the number of sorcery cards in your graveyard, Assault // Battery counts once, not twice."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "If an effect allows you to cast a spell with certain characteristics, consider only the characteristics of the half you're casting. For example, if an effect allows you to cast a sorcery spell with mana value 2 or less from among cards in your graveyard, you could cast Assault this way, but not Battery."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "If you copy a spell that's half of a split card, the copy copies that same half. For example, if you copy Assault, the copy is also Assault, not Battery."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "Split cards have two card faces on a single card. The characteristics of the half you didn't cast are ignored while the spell is on the stack."
+          },
+          {
+            "date": "2022-12-08",
+            "text": "To cast a split card, choose one of its halves to cast. There's no way to cast both halves of this split card."
+          }
+        ],
+        "side": "b",
+        "text": "Tap target permanent.\nDraw a card.",
+        "type": "Instant"
+      }
+    ],
+    "Bonecrusher Giant // Stomp": [
+      {
+        "faceName": "Bonecrusher Giant",
+        "layout": "adventure",
+        "manaCost": "{2}{R}",
+        "name": "Bonecrusher Giant // Stomp",
+        "power": "4",
+        "rulings": [
+          {
+            "date": "2019-10-04",
+            "text": "An adventurer card is a permanent card in every zone except the stack, as well as while on the stack if not cast as an Adventure. Ignore its alternative characteristics in those cases. For example, while it's in your graveyard, Giant Killer is a white creature card whose mana value is 1. It can't be the target of the triggered ability of Mystic Sanctuary."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "Bonecrusher Giant's ability resolves before the spell that caused it to trigger. It resolves even if that spell is countered."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "Casting a card as an Adventure isn't casting it for an alternative cost. Effects that allow you to cast a spell for an alternative cost or without paying its mana cost may allow you to apply those to the Adventure."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If a spell is cast as an Adventure, its controller exiles it instead of putting it into its owner's graveyard as it resolves. For as long as it remains exiled, that player may cast it as a permanent spell. If an Adventure spell leaves the stack in any way other than resolving (most likely by being countered or by failing to resolve because its targets have all become illegal), that card won't be exiled and the spell's controller won't be able to cast it as a permanent later."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If a spell targets Bonecrusher Giant more than once, its ability triggers only once."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If an adventurer card ends up in exile for any other reason than by exiling itself while resolving, it won't give you permission to cast it as a permanent spell."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If an effect copies an Adventure spell, that copy is exiled as it resolves. It ceases to exist as a state-based action; it's not possible to cast the copy as a permanent."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If an effect instructs you to choose a card name, you may choose the alternative Adventure name. Consider only the alternative characteristics to determine whether that is an appropriate name to choose."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If an object becomes a copy of an object that has an Adventure, the copy also has an Adventure. If it changes zones, it will either cease to exist (if it's a token) or cease to be a copy (if it's a nontoken permanent), and so you won't be able to cast it as an Adventure."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If the chosen target is an illegal target by the time Stomp tries to resolve, the spell won't resolve. Damage can be prevented as usual."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If you cast an adventurer card as an Adventure, use only its alternative characteristics to determine whether it's legal to cast that spell. For example, if Giant Killer is exiled with the last ability of Vivien, Champion of the Wilds, you can't cast it as Chop Down."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "Protection prevents damage, so protection will be unable to prevent damage after Stomp has resolved. However, this won't allow a spell or ability to target illegally, even if that spell or ability would cause damage to be dealt."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "Stomp only stops damage from being prevented by effects that specifically use the word \"prevent.\""
+          },
+          {
+            "date": "2019-10-04",
+            "text": "When casting a spell as an Adventure, use the alternative characteristics and ignore all of the card's normal characteristics. The spell's color, mana cost, mana value, and so on are determined by only those alternative characteristics. If the spell leaves the stack, it immediately resumes using its normal characteristics."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "You must still follow any timing restrictions and permissions for the permanent spell you cast from exile. Normally, you'll be able to cast it only during your main phase while the stack is empty."
+          }
+        ],
+        "side": "a",
+        "text": "Whenever this creature becomes the target of a spell, this creature deals 2 damage to that spell's controller.",
+        "toughness": "3",
+        "type": "Creature — Giant"
+      },
+      {
+        "faceName": "Stomp",
+        "layout": "adventure",
+        "manaCost": "{1}{R}",
+        "name": "Bonecrusher Giant // Stomp",
+        "rulings": [
+          {
+            "date": "2019-10-04",
+            "text": "An adventurer card is a permanent card in every zone except the stack, as well as while on the stack if not cast as an Adventure. Ignore its alternative characteristics in those cases. For example, while it's in your graveyard, Giant Killer is a white creature card whose mana value is 1. It can't be the target of the triggered ability of Mystic Sanctuary."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "Bonecrusher Giant's ability resolves before the spell that caused it to trigger. It resolves even if that spell is countered."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "Casting a card as an Adventure isn't casting it for an alternative cost. Effects that allow you to cast a spell for an alternative cost or without paying its mana cost may allow you to apply those to the Adventure."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If a spell is cast as an Adventure, its controller exiles it instead of putting it into its owner's graveyard as it resolves. For as long as it remains exiled, that player may cast it as a permanent spell. If an Adventure spell leaves the stack in any way other than resolving (most likely by being countered or by failing to resolve because its targets have all become illegal), that card won't be exiled and the spell's controller won't be able to cast it as a permanent later."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If a spell targets Bonecrusher Giant more than once, its ability triggers only once."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If an adventurer card ends up in exile for any other reason than by exiling itself while resolving, it won't give you permission to cast it as a permanent spell."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If an effect copies an Adventure spell, that copy is exiled as it resolves. It ceases to exist as a state-based action; it's not possible to cast the copy as a permanent."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If an effect instructs you to choose a card name, you may choose the alternative Adventure name. Consider only the alternative characteristics to determine whether that is an appropriate name to choose."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If an object becomes a copy of an object that has an Adventure, the copy also has an Adventure. If it changes zones, it will either cease to exist (if it's a token) or cease to be a copy (if it's a nontoken permanent), and so you won't be able to cast it as an Adventure."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If the chosen target is an illegal target by the time Stomp tries to resolve, the spell won't resolve. Damage can be prevented as usual."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "If you cast an adventurer card as an Adventure, use only its alternative characteristics to determine whether it's legal to cast that spell. For example, if Giant Killer is exiled with the last ability of Vivien, Champion of the Wilds, you can't cast it as Chop Down."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "Protection prevents damage, so protection will be unable to prevent damage after Stomp has resolved. However, this won't allow a spell or ability to target illegally, even if that spell or ability would cause damage to be dealt."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "Stomp only stops damage from being prevented by effects that specifically use the word \"prevent.\""
+          },
+          {
+            "date": "2019-10-04",
+            "text": "When casting a spell as an Adventure, use the alternative characteristics and ignore all of the card's normal characteristics. The spell's color, mana cost, mana value, and so on are determined by only those alternative characteristics. If the spell leaves the stack, it immediately resumes using its normal characteristics."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "You must still follow any timing restrictions and permissions for the permanent spell you cast from exile. Normally, you'll be able to cast it only during your main phase while the stack is empty."
+          }
+        ],
+        "side": "b",
+        "text": "Damage can't be prevented this turn. Stomp deals 2 damage to any target.",
+        "type": "Instant — Adventure"
+      }
+    ],
+    "Jace, the Mind Sculptor": [
+      {
+        "layout": "normal",
+        "loyalty": "3",
+        "manaCost": "{2}{U}{U}",
+        "name": "Jace, the Mind Sculptor",
+        "rulings": [
+          {
+            "date": "2020-08-07",
+            "text": "If the target player for Jace's last ability has no cards in hand, that player shuffles nothing into their library, and that player's library will remain empty. That player won't lose the game until they try to draw from the empty library."
+          },
+          {
+            "date": "2020-08-07",
+            "text": "You draw three cards and put two cards back all while Jace's second ability is resolving. Nothing can happen between the two, and no player may choose to take actions."
+          }
+        ],
+        "text": "[+2]: Look at the top card of target player's library. You may put that card on the bottom of that player's library.\n[0]: Draw three cards, then put two cards from your hand on top of your library in any order.\n[−1]: Return target creature to its owner's hand.\n[−12]: Exile all cards from target player's library, then that player shuffles their hand into their library.",
+        "type": "Legendary Planeswalker — Jace"
+      }
+    ],
+    "The Eldest Reborn": [
+      {
+        "layout": "saga",
+        "manaCost": "{4}{B}",
+        "name": "The Eldest Reborn",
+        "rulings": [
+          {
+            "date": "2018-04-27",
+            "text": "A chapter ability doesn't trigger if a lore counter is put on a Saga that already had a number of lore counters greater than or equal to that chapter's number. For example, the third lore counter put on a Saga causes the III chapter ability to trigger, but I and II won't trigger again."
+          },
+          {
+            "date": "2018-04-27",
+            "text": "As a Saga enters the battlefield, its controller puts a lore counter on it. As your precombat main phase begins (immediately after your draw step), you put another lore counter on each Saga you control. Putting a lore counter on a Saga in either of these ways doesn't use the stack."
+          },
+          {
+            "date": "2018-04-27",
+            "text": "Each symbol on the left of a Saga's text box represents a chapter ability. A chapter ability is a triggered ability that triggers when a lore counter that is put on the Saga causes the number of lore counters on the Saga to become equal to or greater than the ability's chapter number. Chapter abilities are put onto the stack and may be responded to."
+          },
+          {
+            "date": "2018-04-27",
+            "text": "If counters are removed from a Saga, the appropriate chapter abilities will trigger again when the Saga receives lore counters. Removing lore counters won't cause a previous chapter ability to trigger."
+          },
+          {
+            "date": "2018-04-27",
+            "text": "If multiple chapter abilities trigger at the same time, their controller puts them on the stack in any order. If any of them require targets, those targets are chosen as you put the abilities on the stack, before any of those abilities resolve."
+          },
+          {
+            "date": "2018-04-27",
+            "text": "In a multiplayer game, if a player leaves the game, all cards that player owns leave as well. If you leave the game, the permanent you control from The Eldest Reborn's final chapter ability is exiled."
+          },
+          {
+            "date": "2018-04-27",
+            "text": "Once a chapter ability has triggered, the ability on the stack won't be affected if the Saga gains or loses counters, or if it leaves the battlefield."
+          },
+          {
+            "date": "2018-04-27",
+            "text": "Once the number of lore counters on a Saga is greater than or equal to the greatest number among its chapter abilities—in the Dominaria set, this is always three—the Saga's controller sacrifices it as soon as its chapter ability has left the stack, most likely by resolving or being countered. This state-based action doesn't use the stack."
+          },
+          {
+            "date": "2018-04-27",
+            "text": "When the first chapter ability of The Eldest Reborn resolves, the next opponent in turn order (or, if it's an opponent's turn, that opponent) chooses a creature or planeswalker they control, then each other opponent in turn order (if any) does the same. All chosen permanents are then sacrificed at the same time. Players will know the choices made by earlier players when making their choices."
+          },
+          {
+            "date": "2018-04-27",
+            "text": "When the second chapter ability of The Eldest Reborn resolves, the next opponent in turn order (or, if it's an opponent's turn, that opponent) chooses a card in hand without revealing it, then each other opponent in turn order (if any) does the same. All chosen cards are then discarded at the same time."
+          }
+        ],
+        "text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — Each opponent sacrifices a creature or planeswalker of their choice.\nII — Each opponent discards a card.\nIII — Put target creature or planeswalker card from a graveyard onto the battlefield under your control.",
+        "type": "Enchantment — Saga"
+      }
+    ],
+    "Questing Beast": [
+      {
+        "layout": "normal",
+        "manaCost": "{2}{G}{G}",
+        "name": "Questing Beast",
+        "power": "4",
+        "rulings": [
+          {
+            "date": "2019-10-04",
+            "text": "If the opponent dealt damage controls no planeswalkers, Questing Beast's last ability simply does nothing."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "Once a creature with power 3 or greater has blocked this creature, changing the power of the blocking creature won't cause this creature to become unblocked."
+          },
+          {
+            "date": "2019-10-04",
+            "text": "Questing Beast only stops combat damage from being prevented by effects that specifically use the word “prevent.”"
+          },
+          {
+            "date": "2019-10-04",
+            "text": "The damage Questing Beast deals to the target planeswalker as its last ability resolves isn't combat damage."
+          }
+        ],
+        "text": "Vigilance, deathtouch, haste\nQuesting Beast can't be blocked by creatures with power 2 or less.\nCombat damage that would be dealt by creatures you control can't be prevented.\nWhenever Questing Beast deals combat damage to an opponent, it deals that much damage to target planeswalker that player controls.",
+        "toughness": "4",
+        "type": "Legendary Creature — Beast"
+      }
+    ],
+    "Greater Morphling": [
+      {
+        "layout": "normal",
+        "manaCost": "{6}{U}{U}",
+        "name": "Greater Morphling",
+        "power": "5",
+        "text": "{2}: This creature gains your choice of banding, bushido 1, double strike, fear, flying, first strike, haste, landwalk of your choice, protection from a color of your choice, provoke, rampage 1, shadow, or trample until end of turn.\n{2}: This creature becomes the colors of your choice until end of turn.\n{2}: This creature becomes the creature type of your choice until end of turn.\n{2}: This creature's expansion symbol becomes the symbol of your choice until end of turn.\n{2}: This creature's art becomes by the artist of your choice until end of turn.\n{2}: This creature gets +2/-2 or -2/+2 until end of turn.\n{2}: Untap this creature.",
+        "toughness": "5",
+        "type": "Creature — Shapeshifter"
+      }
+    ]
+  }
+}
