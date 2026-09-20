@@ -1,13 +1,14 @@
 import './style.css';
+import { readRecent, remember, saveRecent } from './recent.ts';
 import { escapeHtml as esc, renderSymbols as mana } from './symbols.ts';
-import { makeIndex, search, type Card, type Dataset } from './search.ts';
+import { makeIndex, search, suggest, type Card, type Dataset } from './search.ts';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML = `
 <header><div class="brand"><span class="brand-mark" aria-hidden="true">ϟ</span><div>MTG <span>QUICK REFERENCE</span></div></div><button id="theme" class="icon-button" aria-label="Change color theme" title="Change color theme">◐</button></header>
 <main><section id="search-view"><h1 class="search-title">Find a card.</h1>
 <form id="search-form" role="search"><label class="sr-only" for="query">Search card names</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="query" type="search" placeholder="Search any card name…" autocomplete="off" autocapitalize="off" spellcheck="false" autofocus enterkeyhint="search"><button id="clear" type="button" aria-label="Clear search" hidden>×</button></div></form>
-<div class="results-heading"><span id="result-status" role="status">Loading card reference…</span><span class="key-hint">/ TO SEARCH</span></div><div id="results"></div>
+<div class="results-heading"><span id="result-status" role="status">Loading card reference…</span><button id="clear-recent" hidden>Clear recent</button><span class="key-hint">/ TO SEARCH</span></div><div id="results"></div>
 <div id="empty"><p>Search a name for Oracle text and rulings.</p><div class="suggestions"><button data-query="bolt">bolt <span>↗</span></button><button data-query="sheold">sheold <span>↗</span></button><button data-query="Sol Ring">Sol Ring <span>↗</span></button></div></div></section>
 <section id="detail-view" hidden><button id="back" class="back">← Back to search</button><article id="detail"></article></section></main>
 <footer><div><span id="offline" role="status">Preparing reference</span><button id="update" hidden>Update ready · Reload</button></div><div id="data-date">Card data loading</div><p>Card data by <a href="https://mtgjson.com/">MTGJSON</a> · Magic: The Gathering © Wizards of the Coast</p></footer>`;
@@ -18,18 +19,29 @@ let index: ReturnType<typeof makeIndex> = [];
 let ready = false;
 let failed = false;
 let lastFocus: HTMLElement | null = null;
+let recent: string[] = [];
+try { recent = readRecent(localStorage); } catch {}
+function persistRecent() { try { saveRecent(localStorage, recent); } catch {} }
 function renderSearch() {
   el('clear').hidden = !input.value;
   if (!ready) return;
-  const ids = search(index, input.value);
-  el('empty').hidden = !!input.value.trim();
+  const hasQuery = !!input.value.trim();
+  let ids = hasQuery ? search(index, input.value) : recent.map(name => dataset.cards.findIndex(c => c.name === name)).filter(id => id >= 0);
+  let suggestions = false;
+  if (hasQuery && !ids.length) { ids = suggest(index, input.value); suggestions = ids.length > 0; }
+  el('empty').hidden = hasQuery || ids.length > 0;
+  el('clear-recent').hidden = hasQuery || ids.length === 0;
   el('result-status').textContent = input.value.trim() ? `${ids.length === 20 ? 'Top 20' : ids.length} matching card${ids.length === 1 ? '' : 's'}` : `${dataset.cards.length.toLocaleString()} cards at your fingertips`;
+  if (!hasQuery && ids.length) el('result-status').textContent = 'Recently viewed';
+  if (suggestions) el('result-status').textContent = 'No exact results · Did you mean?';
   el('results').innerHTML = ids.map(id => {
     const card = dataset.cards[id];
     return `<button class="result" data-card="${id}"><span class="result-copy"><strong>${esc(card.name)}</strong><small>${esc(card.faces.map(f => f.type).join(' // '))}</small></span><span class="result-end"><span class="cost">${mana(card.faces[0].mana)}</span><span class="chevron">›</span></span></button>`;
   }).join('') || (input.value.trim() ? '<div class="no-results"><h2>No cards found</h2><p>Try a shorter name or a different word in the name.</p></div>' : '');
 }
 function showCard(card: Card) {
+  recent = remember(recent, card.name);
+  persistRecent();
   el('search-view').hidden = true;
   el('detail-view').hidden = false;
   el('detail').innerHTML = `<div class="eyebrow">CARD REFERENCE</div><h1 tabindex="-1" id="card-title">${esc(card.name)}</h1>${card.faces.map((f, i) => `<section class="face">${card.faces.length > 1 ? `<div class="face-label">FACE ${i + 1}</div><h2>${esc(f.name)}</h2>` : ''}<div class="face-meta"><span>${esc(f.type)}</span><span class="cost">${mana(f.mana)}</span></div><div class="oracle">${(f.text || 'No Oracle text.').split('\n').map(p => `<p>${mana(p)}</p>`).join('')}</div><div class="stats">${f.power !== undefined ? `<span>${esc(f.power)} / ${esc(f.toughness ?? '')}</span>` : ''}${f.loyalty !== undefined ? `<span>Loyalty ${esc(f.loyalty)}</span>` : ''}${f.defense !== undefined ? `<span>Defense ${esc(f.defense)}</span>` : ''}</div></section>`).join('')}<section class="rulings"><div class="rulings-title"><h2>Official rulings</h2><span>${card.rulings.length}</span></div>${card.rulings.length ? card.rulings.map(([date,text]) => `<div class="ruling"><time datetime="${esc(date)}">${esc(date || 'Undated')}</time><p>${mana(text)}</p></div>`).join('') : '<p class="muted">No card-specific rulings in this dataset.</p>'}</section>`;
@@ -49,6 +61,7 @@ function route() {
   }
 }
 input.addEventListener('input', renderSearch);
+el('clear-recent').onclick = () => { recent = []; persistRecent(); renderSearch(); input.focus(); };
 el('clear').onclick = () => { input.value = ''; renderSearch(); input.focus(); };
 el('search-form').onsubmit = event => { event.preventDefault(); el('results').querySelector<HTMLButtonElement>('button')?.click(); };
 el('results').onclick = event => {

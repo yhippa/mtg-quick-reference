@@ -35,3 +35,13 @@ test('complete snapshot keeps Lightning Bolt and Sheoldred easy to find', async 
   assert.ok(matches('sheold').includes('Sheoldred, the Apocalypse'));
   assert.ok(matches('true scriptures').includes('Sheoldred // The True Scriptures'));
 });
+test('typo fallback supports missing, extra, replaced and transposed letters', async () => {
+  const { suggest } = await import('../src/search.ts');
+  for (const q of ['lightnng bolt','lightningg bolt','lightnimg bolt','lightnign bolt']) {
+    assert.equal(cards[suggest(index, q)[0]].name, 'Lightning Bolt');
+  }
+  assert.equal(cards[suggest(index, 'sheolred')[0]].name, 'Sheoldred, the Apocalypse');
+  assert.deepEqual(suggest(index, 'bolt'), []);
+  assert.deepEqual(suggest(index, 'bol'), []);
+  assert.deepEqual(suggest(index, 'zzzzzzzzzz'), []);
+});

@@ -7,3 +7,4 @@
 /* The locally bundled Mana font provides the actual card symbol shapes. */
 .card-symbol{flex-shrink:0;font-size:15px}
 .oracle .card-symbol,.ruling .card-symbol{font-size:.8em;vertical-align:.02em;margin:0 .08em}
+#clear-recent{border:0;background:none;color:var(--accent);font-size:11px;min-height:44px;padding:0 8px;margin:-16px 0 -16px auto;text-decoration:underline}.results-heading:has(#clear-recent:not([hidden])) .key-hint{display:none}
