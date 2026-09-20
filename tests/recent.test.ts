@@ -1,9 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readRecent, remember, saveRecent } from '../src/recent.ts';
-test('recent cards are unique, newest first and capped at eight', () => {
+test('recent cards are unique, newest first and capped at five', () => {
   assert.deepEqual(remember(['A','B'], 'B'), ['B','A']);
-  assert.equal(remember(Array.from({length:8}, (_,i)=>String(i)), 'new').length, 8);
+  assert.equal(remember(Array.from({length:5}, (_,i)=>String(i)), 'new').length, 5);
 });
 test('recent storage survives reload, clearing, corrupt data and blocked storage', () => {
   let value = '';

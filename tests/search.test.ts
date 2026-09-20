@@ -31,6 +31,7 @@ test('complete snapshot keeps Lightning Bolt and Sheoldred easy to find', async 
   const dataset = JSON.parse(readFileSync(new URL('../public/data/cards.json', import.meta.url), 'utf8'));
   const realIndex = makeIndex(dataset.cards);
   const matches = (q: string) => search(realIndex, q, 5).map(i => dataset.cards[i].name);
+  assert.ok(matches('sol').includes('Sol Ring'));
   assert.ok(matches('bolt').includes('Lightning Bolt'));
   assert.ok(matches('sheold').includes('Sheoldred, the Apocalypse'));
   assert.ok(matches('true scriptures').includes('Sheoldred // The True Scriptures'));
