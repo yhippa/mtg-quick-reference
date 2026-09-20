@@ -1,4 +1,5 @@
 import './style.css';
+import { escapeHtml as esc, renderSymbols as mana } from './symbols.ts';
 import { makeIndex, search, type Card, type Dataset } from './search.ts';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
@@ -17,10 +18,6 @@ let index: ReturnType<typeof makeIndex> = [];
 let ready = false;
 let failed = false;
 let lastFocus: HTMLElement | null = null;
-const esc = (s: string) => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
-function mana(value = '') {
-  return value.replace(/\{([^}]+)\}/g, (_, token: string) => `<span class="mana m-${/^[WUBRG]$/.test(token) ? token : 'generic'}">${esc(token)}</span>`);
-}
 function renderSearch() {
   el('clear').hidden = !input.value;
   if (!ready) return;
@@ -35,7 +32,7 @@ function renderSearch() {
 function showCard(card: Card) {
   el('search-view').hidden = true;
   el('detail-view').hidden = false;
-  el('detail').innerHTML = `<div class="eyebrow">CARD REFERENCE</div><h1 tabindex="-1" id="card-title">${esc(card.name)}</h1>${card.faces.map((f, i) => `<section class="face">${card.faces.length > 1 ? `<div class="face-label">FACE ${i + 1}</div><h2>${esc(f.name)}</h2>` : ''}<div class="face-meta"><span>${esc(f.type)}</span><span class="cost">${mana(f.mana)}</span></div><div class="oracle">${esc(f.text || 'No Oracle text.').split('\n').map(p => `<p>${p}</p>`).join('')}</div><div class="stats">${f.power !== undefined ? `<span>${esc(f.power)} / ${esc(f.toughness ?? '')}</span>` : ''}${f.loyalty !== undefined ? `<span>Loyalty ${esc(f.loyalty)}</span>` : ''}${f.defense !== undefined ? `<span>Defense ${esc(f.defense)}</span>` : ''}</div></section>`).join('')}<section class="rulings"><div class="rulings-title"><h2>Official rulings</h2><span>${card.rulings.length}</span></div>${card.rulings.length ? card.rulings.map(([date,text]) => `<div class="ruling"><time datetime="${esc(date)}">${esc(date || 'Undated')}</time><p>${esc(text)}</p></div>`).join('') : '<p class="muted">No card-specific rulings in this dataset.</p>'}</section>`;
+  el('detail').innerHTML = `<div class="eyebrow">CARD REFERENCE</div><h1 tabindex="-1" id="card-title">${esc(card.name)}</h1>${card.faces.map((f, i) => `<section class="face">${card.faces.length > 1 ? `<div class="face-label">FACE ${i + 1}</div><h2>${esc(f.name)}</h2>` : ''}<div class="face-meta"><span>${esc(f.type)}</span><span class="cost">${mana(f.mana)}</span></div><div class="oracle">${(f.text || 'No Oracle text.').split('\n').map(p => `<p>${mana(p)}</p>`).join('')}</div><div class="stats">${f.power !== undefined ? `<span>${esc(f.power)} / ${esc(f.toughness ?? '')}</span>` : ''}${f.loyalty !== undefined ? `<span>Loyalty ${esc(f.loyalty)}</span>` : ''}${f.defense !== undefined ? `<span>Defense ${esc(f.defense)}</span>` : ''}</div></section>`).join('')}<section class="rulings"><div class="rulings-title"><h2>Official rulings</h2><span>${card.rulings.length}</span></div>${card.rulings.length ? card.rulings.map(([date,text]) => `<div class="ruling"><time datetime="${esc(date)}">${esc(date || 'Undated')}</time><p>${mana(text)}</p></div>`).join('') : '<p class="muted">No card-specific rulings in this dataset.</p>'}</section>`;
   input.blur();
   el('card-title').focus();
   window.scrollTo(0, 0);

@@ -4,3 +4,7 @@
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#171d1b;--panel:#202825;--ink:#eef0e8;--muted:#a1ada4;--line:#35413a;--accent:#c6dda0;--soft:#2d3a2e;color:var(--ink);background:var(--bg);color-scheme:dark}}
 @media(max-width:600px){header{padding:18px 20px}main{padding:26px 18px;min-height:calc(100dvh - 240px)}h1{font-size:31px;margin-bottom:23px}.eyebrow{font-size:9px;margin-bottom:12px}.key-hint{display:none}footer{margin:0 20px}.result{padding:16px 12px}.result strong{font-size:15px}.result-end{gap:5px}.cost{max-width:115px}.face{padding:18px}#detail h1{font-size:30px}#empty{padding:32px 0}.oracle{font-size:18px}}
 .search-title{font-size:28px;letter-spacing:-1px;margin-bottom:20px}main{padding-top:30px}
+/* Inline rules symbols share the cost palette and scale with surrounding text. */
+.oracle .mana,.ruling .mana{font-family:ui-sans-serif,system-ui,sans-serif;font-size:.68em;min-width:1.5em;height:1.5em;line-height:1;vertical-align:.08em;margin:0 .08em;padding:0 .22em;white-space:nowrap}
+.mana-action{font-size:15px}.oracle .mana-action,.ruling .mana-action{font-size:.86em;min-width:1.2em;height:1.2em;vertical-align:0}
+.mana-hybrid{min-width:26px;font-size:10px}.oracle .mana-hybrid,.ruling .mana-hybrid{font-size:.62em;min-width:2.1em;height:1.65em}
