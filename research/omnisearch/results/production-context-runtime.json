@@ -1,0 +1,23 @@
+{
+  "mode": "runtime",
+  "environment": {
+    "node": "v24.16.0",
+    "cpu": "Apple M1 Pro"
+  },
+  "baseline": {
+    "cardReadyMs": 219.846,
+    "heapBytes": 66563392
+  },
+  "incremental": {
+    "corpusReadParseMs": 7.137332999999984,
+    "indexMs": 72.80612500000001,
+    "readyMs": 79.94345799999999,
+    "heapBytes": 6321248,
+    "rssBytes": 38207488
+  },
+  "totalHeapBytes": 72884640,
+  "sanity": {
+    "card": "Sol Ring",
+    "rule": "cr:702.124d"
+  }
+}

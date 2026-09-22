@@ -1,0 +1,39 @@
+{
+  "productionTests": {
+    "node": 33,
+    "python": 5,
+    "status": "pass"
+  },
+  "researchTests": {
+    "node": 2,
+    "python": 3,
+    "status": "pass"
+  },
+  "build": "pass",
+  "rankingChangedTop10Queries": 0,
+  "browserChecks": {
+    "mobileWidth": 375,
+    "desktop": "Safari native window ~1055px; card and long-rule views",
+    "darkMode": "Chromium",
+    "offlineSafari": "Preview server stopped; cold reload, Ward glossary, rule 702.21, subrule, Necropotence and four rulings",
+    "offlineChromium": "Preview server stopped; cold reload, saved ward query, glossary to rule 702.21, New search, Sol Ring details",
+    "backAndRecents": "Reference Back restores query; New search focuses input; recents contain cards only"
+  },
+  "offlineFix": "Vary: Origin matching for verified static cache entries",
+  "manualRemaining": [
+    "Android installed-PWA cold launch and upgrade",
+    "Production build query timings on target Android"
+  ],
+  "deployment": "Local only; no push or deployment performed",
+  "uiReview": {
+    "change": "Visual de-emphasis of non-exact rules matches only when an exact card/face matches; no result removal or routing changes",
+    "effectiveMode": "Result/status/detail labels and warning covered; Source metadata retained",
+    "checkedQueries": [
+      "blood moon",
+      "flash"
+    ],
+    "mobileWidth": 375,
+    "darkMode": true,
+    "rankingChangedTop10Queries": 0
+  }
+}

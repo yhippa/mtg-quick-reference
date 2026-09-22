@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>Research benchmark frame</title><p>Measuring isolated research engine…</p><script type="module">
+import {run} from './browser-runner.mjs';
+try {parent.postMessage({result:await run(new URLSearchParams(location.search).get('mode'))},location.origin);}
+catch(error){parent.postMessage({error:String(error)},location.origin);}
+</script>

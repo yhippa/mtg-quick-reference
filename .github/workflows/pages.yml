@@ -30,7 +30,10 @@ jobs:
       - run: npm ci
       - name: Download and reduce current bulk card data
         run: npm run data
+      - name: Build the explicitly selected rules snapshot
+        run: npm run rules
       - run: npm test
+      - run: npm run test:research
       - run: npm run build
       - run: npm run bench
       - uses: actions/configure-pages@v5

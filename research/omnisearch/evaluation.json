@@ -1,0 +1,710 @@
+{
+  "version": 1,
+  "judging": "Author-created relevance judgments, not judge-reviewed or user-log-derived. Fixed before rankings; no post-score tuning. Context graded separately from direct relevance.",
+  "cases": [
+    {
+      "id": "q01",
+      "category": "card-exact",
+      "query": "Sol Ring",
+      "split": "development",
+      "relevance": {
+        "card:Sol%20Ring": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q02",
+      "category": "card-exact",
+      "query": "Lightning Bolt",
+      "split": "evaluation",
+      "relevance": {
+        "card:Lightning%20Bolt": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q03",
+      "category": "card-exact",
+      "query": "Sheoldred, the Apocalypse",
+      "split": "evaluation",
+      "relevance": {
+        "card:Sheoldred%2C%20the%20Apocalypse": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q04",
+      "category": "card-exact",
+      "query": "Necropotence",
+      "split": "development",
+      "relevance": {
+        "card:Necropotence": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q05",
+      "category": "card-exact",
+      "query": "Fire // Ice",
+      "split": "evaluation",
+      "relevance": {
+        "card:Fire%20%2F%2F%20Ice": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q06",
+      "category": "card-exact",
+      "query": "Bonecrusher Giant",
+      "split": "evaluation",
+      "relevance": {
+        "card:Bonecrusher%20Giant%20%2F%2F%20Stomp": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q07",
+      "category": "card-exact",
+      "query": "Counterspell",
+      "split": "development",
+      "relevance": {
+        "card:Counterspell": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q08",
+      "category": "card-exact",
+      "query": "Jace, the Mind Sculptor",
+      "split": "evaluation",
+      "relevance": {
+        "card:Jace%2C%20the%20Mind%20Sculptor": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q09",
+      "category": "card-prefix",
+      "query": "sol",
+      "split": "evaluation",
+      "relevance": {
+        "card:Sol%20Ring": 3
+      },
+      "note": "Named target is a representative desired card, not the only valid card result."
+    },
+    {
+      "id": "q10",
+      "category": "card-prefix",
+      "query": "bolt",
+      "split": "development",
+      "relevance": {
+        "card:Lightning%20Bolt": 3
+      },
+      "note": "Named target is a representative desired card, not the only valid card result."
+    },
+    {
+      "id": "q11",
+      "category": "card-prefix",
+      "query": "sheold",
+      "split": "evaluation",
+      "relevance": {
+        "card:Sheoldred%2C%20the%20Apocalypse": 3
+      },
+      "note": "Named target is a representative desired card, not the only valid card result."
+    },
+    {
+      "id": "q12",
+      "category": "card-prefix",
+      "query": "necro",
+      "split": "evaluation",
+      "relevance": {
+        "card:Necropotence": 3
+      },
+      "note": "Named target is a representative desired card, not the only valid card result."
+    },
+    {
+      "id": "q13",
+      "category": "card-prefix",
+      "query": "true scriptures",
+      "split": "development",
+      "relevance": {
+        "card:Sheoldred%20%2F%2F%20The%20True%20Scriptures": 3
+      },
+      "note": "Named target is a representative desired card, not the only valid card result."
+    },
+    {
+      "id": "q14",
+      "category": "card-prefix",
+      "query": "urzas saga",
+      "split": "evaluation",
+      "relevance": {
+        "card:Urza's%20Saga": 3
+      },
+      "note": "Named target is a representative desired card, not the only valid card result."
+    },
+    {
+      "id": "q15",
+      "category": "rule-id",
+      "query": "117.3b",
+      "split": "evaluation",
+      "relevance": {
+        "cr:117.3b": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q16",
+      "category": "rule-id",
+      "query": "704.5j",
+      "split": "development",
+      "relevance": {
+        "cr:704.5j": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q17",
+      "category": "rule-id",
+      "query": "rule 702.19b",
+      "split": "evaluation",
+      "relevance": {
+        "cr:702.19b": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q18",
+      "category": "rule-id",
+      "query": "CR 903.8",
+      "split": "evaluation",
+      "relevance": {
+        "cr:903.8": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q19",
+      "category": "rule-id",
+      "query": "605",
+      "split": "development",
+      "relevance": {
+        "cr:605": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q20",
+      "category": "rule-id",
+      "query": "rule 608.2b",
+      "split": "evaluation",
+      "relevance": {
+        "cr:608.2b": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q21",
+      "category": "rule-id",
+      "query": "702.16",
+      "split": "evaluation",
+      "relevance": {
+        "cr:702.16": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q22",
+      "category": "rule-id",
+      "query": "rule 302.6",
+      "split": "development",
+      "relevance": {
+        "cr:302.6": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q23",
+      "category": "glossary",
+      "query": "Deathtouch",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:deathtouch": 3,
+        "cr:702": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q24",
+      "category": "glossary",
+      "query": "Ward",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:ward": 3,
+        "cr:702": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q25",
+      "category": "glossary",
+      "query": "First Strike",
+      "split": "development",
+      "relevance": {
+        "glossary:first-strike": 3,
+        "cr:702": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q26",
+      "category": "glossary",
+      "query": "Menace",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:menace": 3,
+        "cr:702": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q27",
+      "category": "glossary",
+      "query": "Affinity",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:affinity": 3,
+        "cr:702": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q28",
+      "category": "glossary",
+      "query": "Indestructible",
+      "split": "development",
+      "relevance": {
+        "glossary:indestructible": 3,
+        "cr:702.12": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q29",
+      "category": "glossary",
+      "query": "Hexproof",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:hexproof": 3,
+        "cr:702": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q30",
+      "category": "glossary",
+      "query": "Proliferate",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:proliferate": 3,
+        "cr:701": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q31",
+      "category": "glossary",
+      "query": "Commander Tax",
+      "split": "development",
+      "relevance": {
+        "glossary:commander-tax": 3,
+        "cr:903.8": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q32",
+      "category": "glossary",
+      "query": "State-Based Actions",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:state-based-actions": 3
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q33",
+      "category": "glossary",
+      "query": "Summoning Sickness Rule",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:summoning-sickness-rule": 3,
+        "cr:302.6": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q34",
+      "category": "glossary",
+      "query": "APNAP Order",
+      "split": "development",
+      "relevance": {
+        "glossary:apnap-order": 3,
+        "glossary:active-player-nonactive-player-order": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q35",
+      "category": "ambiguous",
+      "query": "fear",
+      "split": "evaluation",
+      "relevance": {
+        "card:Fear": 3,
+        "glossary:fear": 3
+      },
+      "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear."
+    },
+    {
+      "id": "q36",
+      "category": "ambiguous",
+      "query": "flash",
+      "split": "evaluation",
+      "relevance": {
+        "card:Flash": 3,
+        "glossary:flash": 3
+      },
+      "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear."
+    },
+    {
+      "id": "q37",
+      "category": "ambiguous",
+      "query": "shock",
+      "split": "development",
+      "relevance": {
+        "card:Shock": 3
+      },
+      "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear."
+    },
+    {
+      "id": "q38",
+      "category": "ambiguous",
+      "query": "counter",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:counter": 3
+      },
+      "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear."
+    },
+    {
+      "id": "q39",
+      "category": "ambiguous",
+      "query": "stack",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:stack": 3
+      },
+      "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear."
+    },
+    {
+      "id": "q40",
+      "category": "ambiguous",
+      "query": "copy",
+      "split": "development",
+      "relevance": {
+        "glossary:copy": 3
+      },
+      "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear."
+    },
+    {
+      "id": "q41",
+      "category": "ambiguous",
+      "query": "mill",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:mill": 3
+      },
+      "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear."
+    },
+    {
+      "id": "q42",
+      "category": "ambiguous",
+      "query": "protection",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:protection": 3
+      },
+      "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear."
+    },
+    {
+      "id": "q43",
+      "category": "rules-prose",
+      "query": "who gets priority after a spell resolves",
+      "split": "development",
+      "relevance": {
+        "cr:117.3b": 3,
+        "cr:117": 1,
+        "glossary:priority": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q44",
+      "category": "rules-prose",
+      "query": "when can I cast a sorcery",
+      "split": "evaluation",
+      "relevance": {
+        "cr:307.1": 3,
+        "cr:307": 1,
+        "cr:117": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q45",
+      "category": "rules-prose",
+      "query": "all targets illegal",
+      "split": "evaluation",
+      "relevance": {
+        "cr:608.2b": 3,
+        "glossary:illegal-target": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q46",
+      "category": "rules-prose",
+      "query": "commander costs two more",
+      "split": "development",
+      "relevance": {
+        "cr:903.8": 3,
+        "glossary:commander-tax": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q47",
+      "category": "rules-prose",
+      "query": "two legendary permanents same name",
+      "split": "evaluation",
+      "relevance": {
+        "cr:704.5j": 3,
+        "glossary:legend-rule": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q48",
+      "category": "rules-prose",
+      "query": "creature zero toughness indestructible",
+      "split": "evaluation",
+      "relevance": {
+        "cr:704.5f": 3,
+        "glossary:indestructible": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q49",
+      "category": "rules-prose",
+      "query": "mana ability uses stack",
+      "split": "development",
+      "relevance": {
+        "cr:605.3b": 3,
+        "cr:605": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q50",
+      "category": "rules-prose",
+      "query": "tokens leave battlefield",
+      "split": "evaluation",
+      "relevance": {
+        "cr:111.7": 3,
+        "cr:111.8": 3,
+        "cr:111": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q51",
+      "category": "rules-prose",
+      "query": "copy enters battlefield",
+      "split": "evaluation",
+      "relevance": {
+        "cr:707.5": 3,
+        "cr:707": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q52",
+      "category": "rules-prose",
+      "query": "creature tap summoning sickness",
+      "split": "development",
+      "relevance": {
+        "cr:302.6": 3,
+        "glossary:summoning-sickness-rule": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q53",
+      "category": "rules-prose",
+      "query": "discard maximum hand size cleanup",
+      "split": "evaluation",
+      "relevance": {
+        "cr:514.1": 3,
+        "cr:514": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q54",
+      "category": "rules-prose",
+      "query": "active nonactive player choices order",
+      "split": "evaluation",
+      "relevance": {
+        "cr:101.4": 3,
+        "glossary:active-player-nonactive-player-order": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q55",
+      "category": "rules-prose",
+      "query": "how to mulligan",
+      "split": "development",
+      "relevance": {
+        "cr:103.5": 3,
+        "glossary:mulligan": 1,
+        "glossary:london-mulligan": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q56",
+      "category": "rules-prose",
+      "query": "trample deathtouch",
+      "split": "evaluation",
+      "relevance": {
+        "cr:702.19b": 3,
+        "cr:702.2c": 3,
+        "glossary:trample": 1,
+        "glossary:deathtouch": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q57",
+      "category": "rules-prose",
+      "query": "sacrifice indestructible",
+      "split": "evaluation",
+      "relevance": {
+        "cr:701.21a": 3,
+        "glossary:sacrifice": 1,
+        "glossary:indestructible": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q58",
+      "category": "rules-prose",
+      "query": "combat damage assignment order",
+      "split": "development",
+      "relevance": {
+        "cr:510.1c": 3,
+        "cr:510.1d": 3,
+        "glossary:damage-assignment-order-obsolete": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q59",
+      "category": "rules-prose",
+      "query": "continuous effects layers",
+      "split": "evaluation",
+      "relevance": {
+        "cr:613.1": 3,
+        "cr:613": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q60",
+      "category": "rules-prose",
+      "query": "dies creature graveyard",
+      "split": "evaluation",
+      "relevance": {
+        "cr:700.4": 3,
+        "glossary:dies": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q61",
+      "category": "rules-prose",
+      "query": "replacement effects choose order",
+      "split": "development",
+      "relevance": {
+        "cr:616.1": 3,
+        "cr:616": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q62",
+      "category": "rules-prose",
+      "query": "protection target damage enchant block",
+      "split": "evaluation",
+      "relevance": {
+        "cr:702.16b": 3,
+        "cr:702.16c": 3,
+        "cr:702.16e": 3,
+        "cr:702.16f": 3,
+        "glossary:protection": 1
+      },
+      "note": "3 = direct destination; 1 = useful context, not a complete answer."
+    },
+    {
+      "id": "q63",
+      "category": "colloquial",
+      "query": "fizzle",
+      "split": "evaluation",
+      "relevance": {
+        "glossary:illegal-target": 3
+      },
+      "note": "Known difficult language; retrieval only, not a generated ruling or complete multi-rule answer."
+    },
+    {
+      "id": "q64",
+      "category": "colloquial",
+      "query": "shroud vs hexproof",
+      "split": "development",
+      "relevance": {
+        "glossary:hexproof": 3
+      },
+      "note": "Known difficult language; retrieval only, not a generated ruling or complete multi-rule answer."
+    },
+    {
+      "id": "q65",
+      "category": "colloquial",
+      "query": "when does damage wear off",
+      "split": "evaluation",
+      "relevance": {
+        "cr:514.2": 3
+      },
+      "note": "Known difficult language; retrieval only, not a generated ruling or complete multi-rule answer."
+    },
+    {
+      "id": "q66",
+      "category": "colloquial",
+      "query": "can I respond to paying costs",
+      "split": "evaluation",
+      "relevance": {
+        "cr:601.2h": 3
+      },
+      "note": "Known difficult language; retrieval only, not a generated ruling or complete multi-rule answer."
+    }
+  ]
+}

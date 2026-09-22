@@ -1,0 +1,3862 @@
+[
+  {
+    "id": "q01",
+    "category": "card-exact",
+    "query": "Sol Ring",
+    "split": "development",
+    "relevance": {
+      "card:Sol%20Ring": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "card:Sol%20Ring",
+        "title": "Sol Ring",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sol%20Ring%20%2F%2F%20Sol%20Ring",
+        "title": "Sol Ring // Sol Ring",
+        "kind": "card"
+      },
+      {
+        "id": "glossary:the-ring",
+        "title": "The Ring",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:ring-bearer",
+        "title": "Ring-bearer",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:701.54",
+        "title": "701.54 — The Ring Tempts You",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.54b",
+        "title": "701.54b — The Ring Tempts You",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:the-ring-tempts-you",
+        "title": "The Ring Tempts You",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:701.54a",
+        "title": "701.54a — The Ring Tempts You",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.54c",
+        "title": "701.54c — The Ring Tempts You",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.54d",
+        "title": "701.54d — The Ring Tempts You",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "category": "card-exact",
+    "query": "Lightning Bolt",
+    "split": "evaluation",
+    "relevance": {
+      "card:Lightning%20Bolt": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "card:Lightning%20Bolt",
+        "title": "Lightning Bolt",
+        "kind": "card"
+      },
+      {
+        "id": "card:Emeritus%20of%20Conflict%20%2F%2F%20Lightning%20Bolt",
+        "title": "Emeritus of Conflict // Lightning Bolt",
+        "kind": "card"
+      },
+      {
+        "id": "cr:120.5",
+        "title": "120.5 — Damage",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:107.10",
+        "title": "107.10 — Numbers and Symbols",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:801.13b",
+        "title": "801.13b — Limited Range of Influence Option",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "category": "card-exact",
+    "query": "Sheoldred, the Apocalypse",
+    "split": "evaluation",
+    "relevance": {
+      "card:Sheoldred%2C%20the%20Apocalypse": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "card:Sheoldred%2C%20the%20Apocalypse",
+        "title": "Sheoldred, the Apocalypse",
+        "kind": "card"
+      },
+      {
+        "id": "cr:206.3c",
+        "title": "206.3c — Expansion Symbol",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q04",
+    "category": "card-exact",
+    "query": "Necropotence",
+    "split": "development",
+    "relevance": {
+      "card:Necropotence": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "card:Necropotence",
+        "title": "Necropotence",
+        "kind": "card"
+      },
+      {
+        "id": "card:Necropotence%20Avatar",
+        "title": "Necropotence Avatar",
+        "kind": "card"
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "category": "card-exact",
+    "query": "Fire // Ice",
+    "split": "evaluation",
+    "relevance": {
+      "card:Fire%20%2F%2F%20Ice": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "card:Fire%20%2F%2F%20Ice",
+        "title": "Fire // Ice",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sword%20of%20Fire%20and%20Ice",
+        "title": "Sword of Fire and Ice",
+        "kind": "card"
+      },
+      {
+        "id": "card:Iceman%20and%20Firestar",
+        "title": "Iceman and Firestar",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sword%20of%20Fire%20and%20Ice%20and%20War%20and%20Peace",
+        "title": "Sword of Fire and Ice and War and Peace",
+        "kind": "card"
+      },
+      {
+        "id": "cr:702.1b",
+        "title": "702.1b — Keyword Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:709.4b",
+        "title": "709.4b — Split Cards",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "category": "card-exact",
+    "query": "Bonecrusher Giant",
+    "split": "evaluation",
+    "relevance": {
+      "card:Bonecrusher%20Giant%20%2F%2F%20Stomp": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "card:Bonecrusher%20Giant%20%2F%2F%20Stomp",
+        "title": "Bonecrusher Giant // Stomp",
+        "kind": "card"
+      },
+      {
+        "id": "cr:810",
+        "title": "Two-Headed Giant Variant",
+        "kind": "section"
+      },
+      {
+        "id": "cr:810.1",
+        "title": "810.1 — Two-Headed Giant Variant",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:810.8",
+        "title": "810.8 — Two-Headed Giant Variant",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:two-headed-giant-variant",
+        "title": "Two-Headed Giant Variant",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:810.7",
+        "title": "810.7 — Two-Headed Giant Variant",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:810.6",
+        "title": "810.6 — Two-Headed Giant Variant",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:810.4",
+        "title": "810.4 — Two-Headed Giant Variant",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:810.11",
+        "title": "810.11 — Two-Headed Giant Variant",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:810.8b",
+        "title": "810.8b — Two-Headed Giant Variant",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "category": "card-exact",
+    "query": "Counterspell",
+    "split": "development",
+    "relevance": {
+      "card:Counterspell": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "card:Counterspell",
+        "title": "Counterspell",
+        "kind": "card"
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "category": "card-exact",
+    "query": "Jace, the Mind Sculptor",
+    "split": "evaluation",
+    "relevance": {
+      "card:Jace%2C%20the%20Mind%20Sculptor": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "card:Jace%2C%20the%20Mind%20Sculptor",
+        "title": "Jace, the Mind Sculptor",
+        "kind": "card"
+      },
+      {
+        "id": "cr:701.71",
+        "title": "701.71 — Empower Jace",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.158",
+        "title": "702.158 — Space Sculptor",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:empower-jace",
+        "title": "Empower Jace",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:space-sculptor",
+        "title": "Space Sculptor",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:701.71a",
+        "title": "701.71a — Empower Jace",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.158a",
+        "title": "702.158a — Space Sculptor",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.158e",
+        "title": "702.158e — Space Sculptor",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.158b",
+        "title": "702.158b — Space Sculptor",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.158c",
+        "title": "702.158c — Space Sculptor",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q09",
+    "category": "card-prefix",
+    "query": "sol",
+    "split": "evaluation",
+    "relevance": {
+      "card:Sol%20Ring": 3
+    },
+    "note": "Named target is a representative desired card, not the only valid card result.",
+    "results": [
+      {
+        "id": "card:Sol%20Ring",
+        "title": "Sol Ring",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sol%20Ring%20%2F%2F%20Sol%20Ring",
+        "title": "Sol Ring // Sol Ring",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sol%20Talisman",
+        "title": "Sol Talisman",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sol%20Grail",
+        "title": "Sol Grail",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sol%2C%20Advocate%20Eternal",
+        "title": "Sol, Advocate Eternal",
+        "kind": "card"
+      },
+      {
+        "id": "card:Solemn%20Simulacrum",
+        "title": "Solemn Simulacrum",
+        "kind": "card"
+      },
+      {
+        "id": "card:Solphim%2C%20Mayhem%20Dominus",
+        "title": "Solphim, Mayhem Dominus",
+        "kind": "card"
+      },
+      {
+        "id": "card:Solve%20the%20Equation",
+        "title": "Solve the Equation",
+        "kind": "card"
+      },
+      {
+        "id": "card:Solitude",
+        "title": "Solitude",
+        "kind": "card"
+      },
+      {
+        "id": "card:Solar%20Transformer",
+        "title": "Solar Transformer",
+        "kind": "card"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "category": "card-prefix",
+    "query": "bolt",
+    "split": "development",
+    "relevance": {
+      "card:Lightning%20Bolt": 3
+    },
+    "note": "Named target is a representative desired card, not the only valid card result.",
+    "results": [
+      {
+        "id": "card:Bolt%20Bend",
+        "title": "Bolt Bend",
+        "kind": "card"
+      },
+      {
+        "id": "card:Bolt%20Hound",
+        "title": "Bolt Hound",
+        "kind": "card"
+      },
+      {
+        "id": "card:Bolt%20of%20Keranos",
+        "title": "Bolt of Keranos",
+        "kind": "card"
+      },
+      {
+        "id": "card:Lightning%20Bolt",
+        "title": "Lightning Bolt",
+        "kind": "card"
+      },
+      {
+        "id": "cr:120.5",
+        "title": "120.5 — Damage",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:107.10",
+        "title": "107.10 — Numbers and Symbols",
+        "kind": "rule"
+      },
+      {
+        "id": "card:Emeritus%20of%20Conflict%20%2F%2F%20Lightning%20Bolt",
+        "title": "Emeritus of Conflict // Lightning Bolt",
+        "kind": "card"
+      },
+      {
+        "id": "card:Demon%20Bolt",
+        "title": "Demon Bolt",
+        "kind": "card"
+      },
+      {
+        "id": "card:Stonesplitter%20Bolt",
+        "title": "Stonesplitter Bolt",
+        "kind": "card"
+      },
+      {
+        "id": "card:Forked%20Bolt",
+        "title": "Forked Bolt",
+        "kind": "card"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "category": "card-prefix",
+    "query": "sheold",
+    "split": "evaluation",
+    "relevance": {
+      "card:Sheoldred%2C%20the%20Apocalypse": 3
+    },
+    "note": "Named target is a representative desired card, not the only valid card result.",
+    "results": [
+      {
+        "id": "card:Sheoldred%2C%20the%20Apocalypse",
+        "title": "Sheoldred, the Apocalypse",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sheoldred%2C%20Whispering%20One",
+        "title": "Sheoldred, Whispering One",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sheoldred's%20Edict",
+        "title": "Sheoldred's Edict",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sheoldred%20%2F%2F%20The%20True%20Scriptures",
+        "title": "Sheoldred // The True Scriptures",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sheoldred's%20Headcleaver",
+        "title": "Sheoldred's Headcleaver",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sheoldred's%20Restoration",
+        "title": "Sheoldred's Restoration",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sheoldred's%20Terror",
+        "title": "Sheoldred's Terror",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sheoldred's%20Assimilator",
+        "title": "Sheoldred's Assimilator",
+        "kind": "card"
+      },
+      {
+        "id": "card:Reaper%20of%20Sheoldred",
+        "title": "Reaper of Sheoldred",
+        "kind": "card"
+      },
+      {
+        "id": "card:Rona%2C%20Sheoldred's%20Faithful",
+        "title": "Rona, Sheoldred's Faithful",
+        "kind": "card"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "category": "card-prefix",
+    "query": "necro",
+    "split": "evaluation",
+    "relevance": {
+      "card:Necropotence": 3
+    },
+    "note": "Named target is a representative desired card, not the only valid card result.",
+    "results": [
+      {
+        "id": "card:Necro-Impotence",
+        "title": "Necro-Impotence",
+        "kind": "card"
+      },
+      {
+        "id": "card:Ludevic%2C%20Necro-Alchemist",
+        "title": "Ludevic, Necro-Alchemist",
+        "kind": "card"
+      },
+      {
+        "id": "card:Necropotence",
+        "title": "Necropotence",
+        "kind": "card"
+      },
+      {
+        "id": "card:Necroblossom%20Snarl",
+        "title": "Necroblossom Snarl",
+        "kind": "card"
+      },
+      {
+        "id": "card:Necromancy",
+        "title": "Necromancy",
+        "kind": "card"
+      },
+      {
+        "id": "card:Necroskitter",
+        "title": "Necroskitter",
+        "kind": "card"
+      },
+      {
+        "id": "card:Necroduality",
+        "title": "Necroduality",
+        "kind": "card"
+      },
+      {
+        "id": "card:Necrogoyf",
+        "title": "Necrogoyf",
+        "kind": "card"
+      },
+      {
+        "id": "card:Necromantic%20Selection",
+        "title": "Necromantic Selection",
+        "kind": "card"
+      },
+      {
+        "id": "card:Necropolis%20Regent",
+        "title": "Necropolis Regent",
+        "kind": "card"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "category": "card-prefix",
+    "query": "true scriptures",
+    "split": "development",
+    "relevance": {
+      "card:Sheoldred%20%2F%2F%20The%20True%20Scriptures": 3
+    },
+    "note": "Named target is a representative desired card, not the only valid card result.",
+    "results": [
+      {
+        "id": "card:Sheoldred%20%2F%2F%20The%20True%20Scriptures",
+        "title": "Sheoldred // The True Scriptures",
+        "kind": "card"
+      },
+      {
+        "id": "cr:609.4",
+        "title": "609.4 — Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:as-though",
+        "title": "As Though",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:state-trigger",
+        "title": "State Trigger",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:208.5",
+        "title": "208.5 — Power/Toughness",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:205.2c",
+        "title": "205.2c — Card Types",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:604.1",
+        "title": "604.1 — Handling Static Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.54e",
+        "title": "701.54e — The Ring Tempts You",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.31d",
+        "title": "701.31d — Planeswalk",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:118.5a",
+        "title": "118.5a — Costs",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "category": "card-prefix",
+    "query": "urzas saga",
+    "split": "evaluation",
+    "relevance": {
+      "card:Urza's%20Saga": 3
+    },
+    "note": "Named target is a representative desired card, not the only valid card result.",
+    "results": [
+      {
+        "id": "card:Urza's%20Saga",
+        "title": "Urza's Saga",
+        "kind": "card"
+      },
+      {
+        "id": "cr:714",
+        "title": "Saga Cards",
+        "kind": "section"
+      },
+      {
+        "id": "glossary:saga",
+        "title": "Saga",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:714.3a",
+        "title": "714.3a — Saga Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:714.3",
+        "title": "714.3 — Saga Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:714.3b",
+        "title": "714.3b — Saga Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:714.2",
+        "title": "714.2 — Saga Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:714.2b",
+        "title": "714.2b — Saga Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:714.2d",
+        "title": "714.2d — Saga Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:714.2e",
+        "title": "714.2e — Saga Cards",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "category": "rule-id",
+    "query": "117.3b",
+    "split": "evaluation",
+    "relevance": {
+      "cr:117.3b": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:117.3b",
+        "title": "117.3b — Which player has priority is determined by the following rules:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.117",
+        "title": "702.117 — Surge",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.3b",
+        "title": "702.3b — Defender",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:700.3b",
+        "title": "700.3b — General",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:201.3b",
+        "title": "201.3b — Name",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:715.3b",
+        "title": "715.3b — Adventurer Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:720.3b",
+        "title": "720.3b — Omen Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:809.3b",
+        "title": "809.3b — Emperor Variant",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:117.1b",
+        "title": "117.1b — Timing and Priority",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:120.3b",
+        "title": "120.3b — Damage",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "category": "rule-id",
+    "query": "704.5j",
+    "split": "development",
+    "relevance": {
+      "cr:704.5j": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:704.5j",
+        "title": "704.5j — The state-based actions are as follows:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:205.4d",
+        "title": "205.4d — Supertypes",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:legend-rule",
+        "title": "Legend Rule",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:306.4",
+        "title": "306.4 — Planeswalkers",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:709.5j",
+        "title": "709.5j — Split Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.5",
+        "title": "704.5 — The state-based actions are as follows:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.2",
+        "title": "704.2 — State-Based Actions",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.5d",
+        "title": "704.5d — The state-based actions are as follows:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.6",
+        "title": "704.6 — State-Based Actions",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.5a",
+        "title": "704.5a — The state-based actions are as follows:",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "category": "rule-id",
+    "query": "rule 702.19b",
+    "split": "evaluation",
+    "relevance": {
+      "cr:702.19b": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:702.19b",
+        "title": "702.19b — Trample",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.19c",
+        "title": "702.19c — Trample",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.19b",
+        "title": "701.19b — Regenerate",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2",
+        "title": "702.2 — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.3",
+        "title": "702.3 — Defender",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.5",
+        "title": "702.5 — Enchant",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.6",
+        "title": "702.6 — Equip",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.8",
+        "title": "702.8 — Flash",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.9",
+        "title": "702.9 — Flying",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.10",
+        "title": "702.10 — Haste",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "category": "rule-id",
+    "query": "CR 903.8",
+    "split": "evaluation",
+    "relevance": {
+      "cr:903.8": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:903.8",
+        "title": "903.8 — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:commander-tax",
+        "title": "Commander Tax",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.124d",
+        "title": "702.124d — Partner",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:lose-the-game",
+        "title": "Lose the Game",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:903.4",
+        "title": "903.4 — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.8",
+        "title": "701.8 — Destroy",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.8",
+        "title": "702.8 — Flash",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.13g",
+        "title": "903.13g — Commander Draft",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.5e",
+        "title": "903.5e — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.12",
+        "title": "903.12 — Brawl Option",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "category": "rule-id",
+    "query": "605",
+    "split": "development",
+    "relevance": {
+      "cr:605": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:605",
+        "title": "Mana Abilities",
+        "kind": "section"
+      },
+      {
+        "id": "cr:605.5",
+        "title": "605.5 — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.3c",
+        "title": "605.3c — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.3",
+        "title": "605.3 — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.4",
+        "title": "605.4 — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.3b",
+        "title": "605.3b — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.1b",
+        "title": "605.1b — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.3a",
+        "title": "605.3a — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.1",
+        "title": "605.1 — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.2",
+        "title": "605.2 — Mana Abilities",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "category": "rule-id",
+    "query": "rule 608.2b",
+    "split": "evaluation",
+    "relevance": {
+      "cr:608.2b": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:608.2b",
+        "title": "608.2b — Resolving Spells and Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:608.2",
+        "title": "608.2 — Resolving Spells and Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:608.3b",
+        "title": "608.3b — Resolving Spells and Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:illegal-target",
+        "title": "Illegal Target",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:last-known-information",
+        "title": "Last Known Information",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:608.2p",
+        "title": "608.2p — Resolving Spells and Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:608.3",
+        "title": "608.3 — Resolving Spells and Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:105.2b",
+        "title": "105.2b — Colors",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:904.2b",
+        "title": "904.2b — Archenemy",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:608.1",
+        "title": "608.1 — Resolving Spells and Abilities",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "category": "rule-id",
+    "query": "702.16",
+    "split": "evaluation",
+    "relevance": {
+      "cr:702.16": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:702.16",
+        "title": "702.16 — Protection",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:protection",
+        "title": "Protection",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:701.16",
+        "title": "701.16 — Investigate",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:700.16",
+        "title": "700.16 — General",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:712.16",
+        "title": "712.16 — Double-Faced Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:investigate",
+        "title": "Investigate",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:801.16",
+        "title": "801.16 — Limited Range of Influence Option",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:107.16",
+        "title": "107.16 — Numbers and Symbols",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:614.16",
+        "title": "614.16 — Replacement Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:worthy",
+        "title": "Worthy",
+        "kind": "glossary"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "category": "rule-id",
+    "query": "rule 302.6",
+    "split": "development",
+    "relevance": {
+      "cr:302.6": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:302.6",
+        "title": "302.6 — Creatures",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:haste",
+        "title": "Haste",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:107.6",
+        "title": "107.6 — Numbers and Symbols",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.10b",
+        "title": "702.10b — Haste",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.10c",
+        "title": "702.10c — Haste",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:summoning-sickness-rule",
+        "title": "Summoning Sickness Rule",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:107.5",
+        "title": "107.5 — Numbers and Symbols",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:302.4",
+        "title": "302.4 — Creatures",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:302.4a",
+        "title": "302.4a — Creatures",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:302.4b",
+        "title": "302.4b — Creatures",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "category": "glossary",
+    "query": "Deathtouch",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:deathtouch": 3,
+      "cr:702": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:deathtouch",
+        "title": "Deathtouch",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.2",
+        "title": "702.2 — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2a",
+        "title": "702.2a — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2d",
+        "title": "702.2d — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2f",
+        "title": "702.2f — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2c",
+        "title": "702.2c — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2e",
+        "title": "702.2e — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2b",
+        "title": "702.2b — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.5h",
+        "title": "704.5h — The state-based actions are as follows:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.8b",
+        "title": "701.8b — Destroy",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "category": "glossary",
+    "query": "Ward",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:ward": 3,
+      "cr:702": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:ward",
+        "title": "Ward",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Ward%20Sliver",
+        "title": "Ward Sliver",
+        "kind": "card"
+      },
+      {
+        "id": "card:Ward%20of%20Bones",
+        "title": "Ward of Bones",
+        "kind": "card"
+      },
+      {
+        "id": "card:Ward%20of%20Lights",
+        "title": "Ward of Lights",
+        "kind": "card"
+      },
+      {
+        "id": "card:Ward%20of%20Piety",
+        "title": "Ward of Piety",
+        "kind": "card"
+      },
+      {
+        "id": "cr:702.21",
+        "title": "702.21 — Ward",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.21a",
+        "title": "702.21a — Ward",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.21b",
+        "title": "702.21b — Ward",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:disguise",
+        "title": "Disguise",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:cloak",
+        "title": "Cloak",
+        "kind": "glossary"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "category": "glossary",
+    "query": "First Strike",
+    "split": "development",
+    "relevance": {
+      "glossary:first-strike": 3,
+      "cr:702": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:first-strike",
+        "title": "First Strike",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.7",
+        "title": "702.7 — First Strike",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.7d",
+        "title": "702.7d — First Strike",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.7a",
+        "title": "702.7a — First Strike",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.7c",
+        "title": "702.7c — First Strike",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.7b",
+        "title": "702.7b — First Strike",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.4d",
+        "title": "702.4d — Double Strike",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.4b",
+        "title": "702.4b — Double Strike",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.4c",
+        "title": "702.4c — Double Strike",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:510.4",
+        "title": "510.4 — Combat Damage Step",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "category": "glossary",
+    "query": "Menace",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:menace": 3,
+      "cr:702": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:menace",
+        "title": "Menace",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Corpsejack%20Menace",
+        "title": "Corpsejack Menace",
+        "kind": "card"
+      },
+      {
+        "id": "card:Bestial%20Menace",
+        "title": "Bestial Menace",
+        "kind": "card"
+      },
+      {
+        "id": "cr:702.111",
+        "title": "702.111 — Menace",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.111a",
+        "title": "702.111a — Menace",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.111c",
+        "title": "702.111c — Menace",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.111b",
+        "title": "702.111b — Menace",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.60c",
+        "title": "701.60c — Suspect",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:122.1b",
+        "title": "122.1b — Counters",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:509.1c",
+        "title": "509.1c — Declare Blockers Step",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "category": "glossary",
+    "query": "Affinity",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:affinity": 3,
+      "cr:702": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:affinity",
+        "title": "Affinity",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Natural%20Affinity",
+        "title": "Natural Affinity",
+        "kind": "card"
+      },
+      {
+        "id": "cr:702.41",
+        "title": "702.41 — Affinity",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.41a",
+        "title": "702.41a — Affinity",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.41b",
+        "title": "702.41b — Affinity",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "category": "glossary",
+    "query": "Indestructible",
+    "split": "development",
+    "relevance": {
+      "glossary:indestructible": 3,
+      "cr:702.12": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:indestructible",
+        "title": "Indestructible",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Indestructible%20Aura",
+        "title": "Indestructible Aura",
+        "kind": "card"
+      },
+      {
+        "id": "cr:702.12",
+        "title": "702.12 — Indestructible",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.12a",
+        "title": "702.12a — Indestructible",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.12c",
+        "title": "702.12c — Indestructible",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.12b",
+        "title": "702.12b — Indestructible",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:111.10w",
+        "title": "111.10w — Tokens",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:vibranium-token",
+        "title": "Vibranium Token",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:122.1b",
+        "title": "122.1b — Counters",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:700.14",
+        "title": "700.14 — General",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "category": "glossary",
+    "query": "Hexproof",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:hexproof": 3,
+      "cr:702": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:hexproof",
+        "title": "Hexproof",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.11",
+        "title": "702.11 — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11f",
+        "title": "702.11f — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11a",
+        "title": "702.11a — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11d",
+        "title": "702.11d — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11g",
+        "title": "702.11g — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11c",
+        "title": "702.11c — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11h",
+        "title": "702.11h — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11e",
+        "title": "702.11e — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11b",
+        "title": "702.11b — Hexproof",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "category": "glossary",
+    "query": "Proliferate",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:proliferate": 3,
+      "cr:701": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:proliferate",
+        "title": "Proliferate",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:701.34",
+        "title": "701.34 — Proliferate",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.34a",
+        "title": "701.34a — Proliferate",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.34b",
+        "title": "701.34b — Proliferate",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "category": "glossary",
+    "query": "Commander Tax",
+    "split": "development",
+    "relevance": {
+      "glossary:commander-tax": 3,
+      "cr:903.8": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:commander-tax",
+        "title": "Commander Tax",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:903.8",
+        "title": "903.8 — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903",
+        "title": "Commander",
+        "kind": "section"
+      },
+      {
+        "id": "cr:903.9",
+        "title": "903.9 — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.3d",
+        "title": "903.3d — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.5e",
+        "title": "903.5e — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.13",
+        "title": "903.13 — Commander Draft",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.3c",
+        "title": "903.3c — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:archenemy-commander",
+        "title": "Archenemy Commander",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:903.5",
+        "title": "903.5 — Commander",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "category": "glossary",
+    "query": "State-Based Actions",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:state-based-actions": 3
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:704",
+        "title": "State-Based Actions",
+        "kind": "section"
+      },
+      {
+        "id": "glossary:state-based-actions",
+        "title": "State-Based Actions",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:704.5",
+        "title": "704.5 — The state-based actions are as follows:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.1",
+        "title": "704.1 — State-Based Actions",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.2",
+        "title": "704.2 — State-Based Actions",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.6",
+        "title": "704.6 — State-Based Actions",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.1a",
+        "title": "704.1a — State-Based Actions",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.5b",
+        "title": "704.5b — The state-based actions are as follows:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.5d",
+        "title": "704.5d — The state-based actions are as follows:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:704.5a",
+        "title": "704.5a — The state-based actions are as follows:",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "category": "glossary",
+    "query": "Summoning Sickness Rule",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:summoning-sickness-rule": 3,
+      "cr:302.6": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:summoning-sickness-rule",
+        "title": "Summoning Sickness Rule",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:haste",
+        "title": "Haste",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:302.6",
+        "title": "302.6 — Creatures",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.51b",
+        "title": "702.51b — Convoke",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:legend-rule",
+        "title": "Legend Rule",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:colorless",
+        "title": "Colorless",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:113.6p",
+        "title": "113.6p — Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:lose-the-game",
+        "title": "Lose the Game",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:planeswalker-uniqueness-rule-obsolete",
+        "title": "Planeswalker Uniqueness Rule (Obsolete)",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:world-rule",
+        "title": "World Rule",
+        "kind": "glossary"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "category": "glossary",
+    "query": "APNAP Order",
+    "split": "development",
+    "relevance": {
+      "glossary:apnap-order": 3,
+      "glossary:active-player-nonactive-player-order": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:apnap-order",
+        "title": "APNAP Order",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:608.2e",
+        "title": "608.2e — Resolving Spells and Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:101.4d",
+        "title": "101.4d — The Magic Golden Rules",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.23i",
+        "title": "701.23i — Search",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:405.3",
+        "title": "405.3 — Stack",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:613.7m",
+        "title": "613.7m — Interaction of Continuous Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.30c",
+        "title": "701.30c — Clash",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:603.3b",
+        "title": "603.3b — Handling Triggered Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.22c",
+        "title": "701.22c — Scry",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:802.5",
+        "title": "802.5 — Attack Multiple Players Option",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q35",
+    "category": "ambiguous",
+    "query": "fear",
+    "split": "evaluation",
+    "relevance": {
+      "card:Fear": 3,
+      "glossary:fear": 3
+    },
+    "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear.",
+    "results": [
+      {
+        "id": "card:Fear",
+        "title": "Fear",
+        "kind": "card"
+      },
+      {
+        "id": "glossary:fear",
+        "title": "Fear",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Fear%20of%20Missing%20Out",
+        "title": "Fear of Missing Out",
+        "kind": "card"
+      },
+      {
+        "id": "card:Fear%20of%20Sleep%20Paralysis",
+        "title": "Fear of Sleep Paralysis",
+        "kind": "card"
+      },
+      {
+        "id": "card:Fear%20of%20Impostors",
+        "title": "Fear of Impostors",
+        "kind": "card"
+      },
+      {
+        "id": "cr:702.36",
+        "title": "702.36 — Fear",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.36a",
+        "title": "702.36a — Fear",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.36c",
+        "title": "702.36c — Fear",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.36b",
+        "title": "702.36b — Fear",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.1c",
+        "title": "702.1c — Keyword Abilities",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q36",
+    "category": "ambiguous",
+    "query": "flash",
+    "split": "evaluation",
+    "relevance": {
+      "card:Flash": 3,
+      "glossary:flash": 3
+    },
+    "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear.",
+    "results": [
+      {
+        "id": "card:Flash",
+        "title": "Flash",
+        "kind": "card"
+      },
+      {
+        "id": "glossary:flash",
+        "title": "Flash",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Flash%20Photography",
+        "title": "Flash Photography",
+        "kind": "card"
+      },
+      {
+        "id": "card:Flash%20Thompson%2C%20Spider-Fan",
+        "title": "Flash Thompson, Spider-Fan",
+        "kind": "card"
+      },
+      {
+        "id": "card:Flash%20Counter",
+        "title": "Flash Counter",
+        "kind": "card"
+      },
+      {
+        "id": "cr:702.8",
+        "title": "702.8 — Flash",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.8b",
+        "title": "702.8b — Flash",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.8a",
+        "title": "702.8a — Flash",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:601.6a",
+        "title": "601.6a — Casting Spells",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:601.3d",
+        "title": "601.3d — Casting Spells",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q37",
+    "category": "ambiguous",
+    "query": "shock",
+    "split": "development",
+    "relevance": {
+      "card:Shock": 3
+    },
+    "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear.",
+    "results": [
+      {
+        "id": "card:Shock",
+        "title": "Shock",
+        "kind": "card"
+      },
+      {
+        "id": "card:Shock%20Brigade",
+        "title": "Shock Brigade",
+        "kind": "card"
+      },
+      {
+        "id": "card:Shock%20Troops",
+        "title": "Shock Troops",
+        "kind": "card"
+      },
+      {
+        "id": "card:Sudden%20Shock",
+        "title": "Sudden Shock",
+        "kind": "card"
+      },
+      {
+        "id": "card:Shocking%20Sharpshooter",
+        "title": "Shocking Sharpshooter",
+        "kind": "card"
+      },
+      {
+        "id": "card:Shocker%2C%20Unshakable",
+        "title": "Shocker, Unshakable",
+        "kind": "card"
+      },
+      {
+        "id": "card:Shockmaw%20Dragon",
+        "title": "Shockmaw Dragon",
+        "kind": "card"
+      },
+      {
+        "id": "card:Shocking%20Grasp",
+        "title": "Shocking Grasp",
+        "kind": "card"
+      },
+      {
+        "id": "card:Shocker",
+        "title": "Shocker",
+        "kind": "card"
+      },
+      {
+        "id": "card:Aether%20Shockwave",
+        "title": "Aether Shockwave",
+        "kind": "card"
+      }
+    ]
+  },
+  {
+    "id": "q38",
+    "category": "ambiguous",
+    "query": "counter",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:counter": 3
+    },
+    "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear.",
+    "results": [
+      {
+        "id": "glossary:counter",
+        "title": "Counter",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Gimli%2C%20Counter%20of%20Kills",
+        "title": "Gimli, Counter of Kills",
+        "kind": "card"
+      },
+      {
+        "id": "card:Legolas%2C%20Counter%20of%20Kills",
+        "title": "Legolas, Counter of Kills",
+        "kind": "card"
+      },
+      {
+        "id": "card:Flash%20Counter",
+        "title": "Flash Counter",
+        "kind": "card"
+      },
+      {
+        "id": "card:Spell%20Counter",
+        "title": "Spell Counter",
+        "kind": "card"
+      },
+      {
+        "id": "cr:701.6",
+        "title": "701.6 — Counter",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:stun-counter",
+        "title": "Stun Counter",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:shield-counter",
+        "title": "Shield Counter",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:hone-counter",
+        "title": "Hone Counter",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:poison-counter",
+        "title": "Poison Counter",
+        "kind": "glossary"
+      }
+    ]
+  },
+  {
+    "id": "q39",
+    "category": "ambiguous",
+    "query": "stack",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:stack": 3
+    },
+    "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear.",
+    "results": [
+      {
+        "id": "cr:405",
+        "title": "Stack",
+        "kind": "section"
+      },
+      {
+        "id": "glossary:stack",
+        "title": "Stack",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Stack%20of%20Paperwork",
+        "title": "Stack of Paperwork",
+        "kind": "card"
+      },
+      {
+        "id": "card:Squirrel%20Stack",
+        "title": "Squirrel Stack",
+        "kind": "card"
+      },
+      {
+        "id": "card:Ori%2C%20Plate%20Stacker",
+        "title": "Ori, Plate Stacker",
+        "kind": "card"
+      },
+      {
+        "id": "card:Haystack",
+        "title": "Haystack",
+        "kind": "card"
+      },
+      {
+        "id": "cr:405.6",
+        "title": "405.6 — Stack",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:405.2",
+        "title": "405.2 — Stack",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:405.6d",
+        "title": "405.6d — Stack",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:405.5",
+        "title": "405.5 — Stack",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q40",
+    "category": "ambiguous",
+    "query": "copy",
+    "split": "development",
+    "relevance": {
+      "glossary:copy": 3
+    },
+    "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear.",
+    "results": [
+      {
+        "id": "glossary:copy",
+        "title": "Copy",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Copy%20Enchantment",
+        "title": "Copy Enchantment",
+        "kind": "card"
+      },
+      {
+        "id": "card:Copy%20Artifact",
+        "title": "Copy Artifact",
+        "kind": "card"
+      },
+      {
+        "id": "card:Copy%20Land",
+        "title": "Copy Land",
+        "kind": "card"
+      },
+      {
+        "id": "card:Copy%20Catchers",
+        "title": "Copy Catchers",
+        "kind": "card"
+      },
+      {
+        "id": "cr:702.144a",
+        "title": "702.144a — Demonstrate",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.10f",
+        "title": "707.10f — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.9b",
+        "title": "707.9b — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.12",
+        "title": "707.12 — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.10g",
+        "title": "707.10g — Copying Objects",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q41",
+    "category": "ambiguous",
+    "query": "mill",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:mill": 3
+    },
+    "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear.",
+    "results": [
+      {
+        "id": "glossary:mill",
+        "title": "Mill",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Tread%20Mill",
+        "title": "Tread Mill",
+        "kind": "card"
+      },
+      {
+        "id": "card:Millikin",
+        "title": "Millikin",
+        "kind": "card"
+      },
+      {
+        "id": "card:Millicent%2C%20Restless%20Revenant",
+        "title": "Millicent, Restless Revenant",
+        "kind": "card"
+      },
+      {
+        "id": "card:Millstone",
+        "title": "Millstone",
+        "kind": "card"
+      },
+      {
+        "id": "cr:701.17",
+        "title": "701.17 — Mill",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.17a",
+        "title": "701.17a — Mill",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.17c",
+        "title": "701.17c — Mill",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.17b",
+        "title": "701.17b — Mill",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.17d",
+        "title": "701.17d — Mill",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q42",
+    "category": "ambiguous",
+    "query": "protection",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:protection": 3
+    },
+    "note": "Either exact card or exact glossary is relevant; ambiguity coverage also measures whether both appear.",
+    "results": [
+      {
+        "id": "glossary:protection",
+        "title": "Protection",
+        "kind": "glossary"
+      },
+      {
+        "id": "card:Protection%20Magic",
+        "title": "Protection Magic",
+        "kind": "card"
+      },
+      {
+        "id": "card:Protection%20Racket",
+        "title": "Protection Racket",
+        "kind": "card"
+      },
+      {
+        "id": "card:Protection%20of%20the%20Hekma",
+        "title": "Protection of the Hekma",
+        "kind": "card"
+      },
+      {
+        "id": "card:Teferi's%20Protection",
+        "title": "Teferi's Protection",
+        "kind": "card"
+      },
+      {
+        "id": "cr:702.16",
+        "title": "702.16 — Protection",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.16g",
+        "title": "702.16g — Protection",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.16h",
+        "title": "702.16h — Protection",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.16i",
+        "title": "702.16i — Protection",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.16f",
+        "title": "702.16f — Protection",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q43",
+    "category": "rules-prose",
+    "query": "who gets priority after a spell resolves",
+    "split": "development",
+    "relevance": {
+      "cr:117.3b": 3,
+      "cr:117": 1,
+      "glossary:priority": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:117.3b",
+        "title": "117.3b — Which player has priority is determined by the following rules:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:117.4",
+        "title": "117.4 — Timing and Priority",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:505.6b",
+        "title": "505.6b — Fourth, the active player gets priority. (See rule 117, “Timing and Priority.”)",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:405.6c",
+        "title": "405.6c — Stack",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.10b",
+        "title": "701.10b — Double",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.11b",
+        "title": "701.11b — Triple",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.4a",
+        "title": "605.4a — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:504.2",
+        "title": "504.2 — Second, the active player gets priority. (See rule 117, “Timing and Priority.”)",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:505.6",
+        "title": "505.6 — Fourth, the active player gets priority. (See rule 117, “Timing and Priority.”)",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:507.2",
+        "title": "507.2 — Second, the active player gets priority. (See rule 117, “Timing and Priority.”)",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q44",
+    "category": "rules-prose",
+    "query": "when can I cast a sorcery",
+    "split": "evaluation",
+    "relevance": {
+      "cr:307.1": 3,
+      "cr:307": 1,
+      "cr:117": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:307.5",
+        "title": "307.5 — Sorceries",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:602.5d",
+        "title": "602.5d — Activating Activated Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:rebound",
+        "title": "Rebound",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:205.4e",
+        "title": "205.4e — Supertypes",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:307.1",
+        "title": "307.1 — Sorceries",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:307.5a",
+        "title": "307.5a — Sorceries",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:115.1a",
+        "title": "115.1a — Targets",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:505.6a",
+        "title": "505.6a — Fourth, the active player gets priority. (See rule 117, “Timing and Priority.”)",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:601.3e",
+        "title": "601.3e — Casting Spells",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:609.4a",
+        "title": "609.4a — Effects",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q45",
+    "category": "rules-prose",
+    "query": "all targets illegal",
+    "split": "evaluation",
+    "relevance": {
+      "cr:608.2b": 3,
+      "glossary:illegal-target": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:115.7d",
+        "title": "115.7d — Targets",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.47d",
+        "title": "702.47d — Splice",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.10c",
+        "title": "707.10c — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:115.7a",
+        "title": "115.7a — Targets",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:608.2b",
+        "title": "608.2b — Resolving Spells and Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:115.5",
+        "title": "115.5 — Targets",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:115.7c",
+        "title": "115.7c — Targets",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:115.7b",
+        "title": "115.7b — Targets",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:700.2a",
+        "title": "700.2a — General",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.14b",
+        "title": "701.14b — Fight",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q46",
+    "category": "rules-prose",
+    "query": "commander costs two more",
+    "split": "development",
+    "relevance": {
+      "cr:903.8": 3,
+      "glossary:commander-tax": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:702.124d",
+        "title": "702.124d — Partner",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.124g",
+        "title": "702.124g — Partner",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:202.2d",
+        "title": "202.2d — Mana Cost and Color",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.8",
+        "title": "903.8 — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.10a",
+        "title": "903.10a — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.4f",
+        "title": "903.4f — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:118.7g",
+        "title": "118.7g — Costs",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:partner-partner-text-partner-with-name",
+        "title": "Partner, “Partner—[text],” “Partner with [name]”",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:903.9b",
+        "title": "903.9b — Commander",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.13e",
+        "title": "903.13e — Commander Draft",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q47",
+    "category": "rules-prose",
+    "query": "two legendary permanents same name",
+    "split": "evaluation",
+    "relevance": {
+      "cr:704.5j": 3,
+      "glossary:legend-rule": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:legend-rule",
+        "title": "Legend Rule",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:704.5j",
+        "title": "704.5j — The state-based actions are as follows:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:306.4",
+        "title": "306.4 — Planeswalkers",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:201.2a",
+        "title": "201.2a — Name",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:111.4",
+        "title": "111.4 — Tokens",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.124j",
+        "title": "702.124j — Partner",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.158e",
+        "title": "702.158e — Space Sculptor",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:partner-partner-text-partner-with-name",
+        "title": "Partner, “Partner—[text],” “Partner with [name]”",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:111.9",
+        "title": "111.9 — Tokens",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.12b",
+        "title": "701.12b — Exchange",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q48",
+    "category": "rules-prose",
+    "query": "creature zero toughness indestructible",
+    "split": "evaluation",
+    "relevance": {
+      "cr:704.5f": 3,
+      "glossary:indestructible": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:107.1b",
+        "title": "107.1b — Numbers and Symbols",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:toughness",
+        "title": "Toughness",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:208.2",
+        "title": "208.2 — Power/Toughness",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:208.5",
+        "title": "208.5 — Power/Toughness",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:123.8",
+        "title": "123.8 — Stickers",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:base-power-base-toughness",
+        "title": "Base Power, Base Toughness",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:613.4d",
+        "title": "613.4d — Interaction of Continuous Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.39a",
+        "title": "701.39a — Bolster",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:208.3a",
+        "title": "208.3a — Power/Toughness",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:208.1",
+        "title": "208.1 — Power/Toughness",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q49",
+    "category": "rules-prose",
+    "query": "mana ability uses stack",
+    "split": "development",
+    "relevance": {
+      "cr:605.3b": 3,
+      "cr:605": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:mana-ability",
+        "title": "Mana Ability",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:405.6c",
+        "title": "405.6c — Stack",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:109.4a",
+        "title": "109.4a — Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.10",
+        "title": "707.10 — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.3b",
+        "title": "605.3b — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:109.2b",
+        "title": "109.2b — Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:605.4a",
+        "title": "605.4a — Mana Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:109.2c",
+        "title": "109.2c — Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.66a",
+        "title": "702.66a — Delve",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.126a",
+        "title": "702.126a — Improvise",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q50",
+    "category": "rules-prose",
+    "query": "tokens leave battlefield",
+    "split": "evaluation",
+    "relevance": {
+      "cr:111.7": 3,
+      "cr:111.8": 3,
+      "cr:111": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:702.26d",
+        "title": "702.26d — Phasing",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:111.2",
+        "title": "111.2 — Tokens",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:111.1",
+        "title": "111.1 — Tokens",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:800.4a",
+        "title": "800.4a — General",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:111.8",
+        "title": "111.8 — Tokens",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:111.10u",
+        "title": "111.10u — Tokens",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.7a",
+        "title": "701.7a — Create",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.7c",
+        "title": "701.7c — Create",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:111.5",
+        "title": "111.5 — Tokens",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:111.7",
+        "title": "111.7 — Tokens",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q51",
+    "category": "rules-prose",
+    "query": "copy enters battlefield",
+    "split": "evaluation",
+    "relevance": {
+      "cr:707.5": 3,
+      "cr:707": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:707.5",
+        "title": "707.5 — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.6",
+        "title": "707.6 — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.165b",
+        "title": "702.165b — Backup",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.9a",
+        "title": "707.9a — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.8a",
+        "title": "707.8a — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.9b",
+        "title": "707.9b — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.4",
+        "title": "707.4 — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:707.9e",
+        "title": "707.9e — Copying Objects",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:offspring",
+        "title": "Offspring",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:712.12",
+        "title": "712.12 — Double-Faced Cards",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q52",
+    "category": "rules-prose",
+    "query": "creature tap summoning sickness",
+    "split": "development",
+    "relevance": {
+      "cr:302.6": 3,
+      "glossary:summoning-sickness-rule": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:summoning-sickness-rule",
+        "title": "Summoning Sickness Rule",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:302.6",
+        "title": "302.6 — Creatures",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:haste",
+        "title": "Haste",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.51b",
+        "title": "702.51b — Convoke",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.180b",
+        "title": "702.180b — Harmonize",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:107.5",
+        "title": "107.5 — Numbers and Symbols",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:saddle",
+        "title": "Saddle",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:crew",
+        "title": "Crew",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.51a",
+        "title": "702.51a — Convoke",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:harmonize",
+        "title": "Harmonize",
+        "kind": "glossary"
+      }
+    ]
+  },
+  {
+    "id": "q53",
+    "category": "rules-prose",
+    "query": "discard maximum hand size cleanup",
+    "split": "evaluation",
+    "relevance": {
+      "cr:514.1": 3,
+      "cr:514": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:maximum-hand-size",
+        "title": "Maximum Hand Size",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:402.2",
+        "title": "402.2 — Hand",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:514.1",
+        "title": "514.1 — Cleanup Step",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:902.5b",
+        "title": "902.5b — Vanguard",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:703.4n",
+        "title": "703.4n — The turn-based actions are as follows:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:313.6",
+        "title": "313.6 — Vanguards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:211.1",
+        "title": "211.1 — Hand Modifier",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:starting-hand-size",
+        "title": "Starting Hand Size",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:discard",
+        "title": "Discard",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:701.9a",
+        "title": "701.9a — Discard",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q54",
+    "category": "rules-prose",
+    "query": "active nonactive player choices order",
+    "split": "evaluation",
+    "relevance": {
+      "cr:101.4": 3,
+      "glossary:active-player-nonactive-player-order": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:active-player-nonactive-player-order",
+        "title": "Active Player, Nonactive Player Order",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:101.4",
+        "title": "101.4 — The Magic Golden Rules",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:101.4d",
+        "title": "101.4d — The Magic Golden Rules",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:805.6",
+        "title": "805.6 — Shared Team Turns Option",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:apnap-order",
+        "title": "APNAP Order",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:101.4e",
+        "title": "101.4e — The Magic Golden Rules",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:121.2d",
+        "title": "121.2d — Drawing a Card",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:732.3",
+        "title": "732.3 — Taking Shortcuts",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:805.6a",
+        "title": "805.6a — Shared Team Turns Option",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:732.2b",
+        "title": "732.2b — Taking Shortcuts",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q55",
+    "category": "rules-prose",
+    "query": "how to mulligan",
+    "split": "development",
+    "relevance": {
+      "cr:103.5": 3,
+      "glossary:mulligan": 1,
+      "glossary:london-mulligan": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:london-mulligan",
+        "title": "London Mulligan",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:mulligan",
+        "title": "Mulligan",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:103.5b",
+        "title": "103.5b — Starting the Game",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:103.5",
+        "title": "103.5 — Starting the Game",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:902.5a",
+        "title": "902.5a — Vanguard",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:103.5d",
+        "title": "103.5d — Starting the Game",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:800.6",
+        "title": "800.6 — General",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:805.3a",
+        "title": "805.3a — Shared Team Turns Option",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:903.12g",
+        "title": "903.12g — Brawl Option",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:103.5c",
+        "title": "103.5c — Starting the Game",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q56",
+    "category": "rules-prose",
+    "query": "trample deathtouch",
+    "split": "evaluation",
+    "relevance": {
+      "cr:702.19b": 3,
+      "cr:702.2c": 3,
+      "glossary:trample": 1,
+      "glossary:deathtouch": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:122.1b",
+        "title": "122.1b — Counters",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2",
+        "title": "702.2 — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2a",
+        "title": "702.2a — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.19",
+        "title": "702.19 — Trample",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2d",
+        "title": "702.2d — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.2f",
+        "title": "702.2f — Deathtouch",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:deathtouch",
+        "title": "Deathtouch",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:trample",
+        "title": "Trample",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.19g",
+        "title": "702.19g — Trample",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:trample-over-planeswalkers",
+        "title": "Trample Over Planeswalkers",
+        "kind": "glossary"
+      }
+    ]
+  },
+  {
+    "id": "q57",
+    "category": "rules-prose",
+    "query": "sacrifice indestructible",
+    "split": "evaluation",
+    "relevance": {
+      "cr:701.21a": 3,
+      "glossary:sacrifice": 1,
+      "glossary:indestructible": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:702.12",
+        "title": "702.12 — Indestructible",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.12a",
+        "title": "702.12a — Indestructible",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.12c",
+        "title": "702.12c — Indestructible",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:indestructible",
+        "title": "Indestructible",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.12b",
+        "title": "702.12b — Indestructible",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.21",
+        "title": "701.21 — Sacrifice",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:sacrifice",
+        "title": "Sacrifice",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:701.21a",
+        "title": "701.21a — Sacrifice",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:701.61a",
+        "title": "701.61a — To forage means “Exile three cards from your graveyard or sacrifice a Food.”",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.48b",
+        "title": "702.48b — Offering",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q58",
+    "category": "rules-prose",
+    "query": "combat damage assignment order",
+    "split": "development",
+    "relevance": {
+      "cr:510.1c": 3,
+      "cr:510.1d": 3,
+      "glossary:damage-assignment-order-obsolete": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:damage-assignment-order-obsolete",
+        "title": "Damage Assignment Order (Obsolete)",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:510.1e",
+        "title": "510.1e — Combat Damage Step",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:802.5",
+        "title": "802.5 — Attack Multiple Players Option",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:506.1",
+        "title": "506.1 — Combat Phase",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:703.4k",
+        "title": "703.4k — The turn-based actions are as follows:",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:510",
+        "title": "Combat Damage Step",
+        "kind": "section"
+      },
+      {
+        "id": "glossary:combat-damage",
+        "title": "Combat Damage",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:assign-combat-damage",
+        "title": "Assign Combat Damage",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:combat-damage-step",
+        "title": "Combat Damage Step",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:510.1a",
+        "title": "510.1a — Combat Damage Step",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q59",
+    "category": "rules-prose",
+    "query": "continuous effects layers",
+    "split": "evaluation",
+    "relevance": {
+      "cr:613.1": 3,
+      "cr:613": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:613.1",
+        "title": "613.1 — Interaction of Continuous Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:613.3",
+        "title": "613.3 — Interaction of Continuous Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:611",
+        "title": "Continuous Effects",
+        "kind": "section"
+      },
+      {
+        "id": "cr:613",
+        "title": "Interaction of Continuous Effects",
+        "kind": "section"
+      },
+      {
+        "id": "cr:611.2",
+        "title": "611.2 — Continuous Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:611.3",
+        "title": "611.3 — Continuous Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:613.1b",
+        "title": "613.1b — Interaction of Continuous Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:613.1e",
+        "title": "613.1e — Interaction of Continuous Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:613.1g",
+        "title": "613.1g — Interaction of Continuous Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:613.1a",
+        "title": "613.1a — Interaction of Continuous Effects",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q60",
+    "category": "rules-prose",
+    "query": "dies creature graveyard",
+    "split": "evaluation",
+    "relevance": {
+      "cr:700.4": 3,
+      "glossary:dies": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "glossary:dies",
+        "title": "Dies",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:712.21",
+        "title": "712.21 — Double-Faced Cards",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:700.4",
+        "title": "700.4 — The term dies means “is put into a graveyard from the battlefield.”",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:603.10a",
+        "title": "603.10a — Handling Triggered Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:scavenge",
+        "title": "Scavenge",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:persist",
+        "title": "Persist",
+        "kind": "glossary"
+      },
+      {
+        "id": "glossary:undying",
+        "title": "Undying",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.55a",
+        "title": "702.55a — Haunt",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:unearth",
+        "title": "Unearth",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.59a",
+        "title": "702.59a — Recover",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q61",
+    "category": "rules-prose",
+    "query": "replacement effects choose order",
+    "split": "development",
+    "relevance": {
+      "cr:616.1": 3,
+      "cr:616": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:616.1g",
+        "title": "616.1g — Interaction of Replacement and/or Prevention Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:614.17b",
+        "title": "614.17b — Replacement Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:614.13a",
+        "title": "614.13a — Replacement Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:614.12c",
+        "title": "614.12c — Replacement Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:616.2",
+        "title": "616.2 — Interaction of Replacement and/or Prevention Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:616.1",
+        "title": "616.1 — Interaction of Replacement and/or Prevention Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:614.12",
+        "title": "614.12 — Replacement Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:614.13b",
+        "title": "614.13b — Replacement Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:614.13c",
+        "title": "614.13c — Replacement Effects",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.47b",
+        "title": "702.47b — Splice",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q62",
+    "category": "rules-prose",
+    "query": "protection target damage enchant block",
+    "split": "evaluation",
+    "relevance": {
+      "cr:702.16b": 3,
+      "cr:702.16c": 3,
+      "cr:702.16e": 3,
+      "cr:702.16f": 3,
+      "glossary:protection": 1
+    },
+    "note": "3 = direct destination; 1 = useful context, not a complete answer.",
+    "results": [
+      {
+        "id": "cr:702.19b",
+        "title": "702.19b — Trample",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.47c",
+        "title": "702.47c — Splice",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.5d",
+        "title": "702.5d — Enchant",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.5a",
+        "title": "702.5a — Enchant",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:enchant",
+        "title": "Enchant",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:608.2b",
+        "title": "608.2b — Resolving Spells and Abilities",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.5c",
+        "title": "702.5c — Enchant",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.16e",
+        "title": "702.16e — Protection",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:303.4a",
+        "title": "303.4a — Enchantments",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.16j",
+        "title": "702.16j — Protection",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q63",
+    "category": "colloquial",
+    "query": "fizzle",
+    "split": "evaluation",
+    "relevance": {
+      "glossary:illegal-target": 3
+    },
+    "note": "Known difficult language; retrieval only, not a generated ruling or complete multi-rule answer.",
+    "results": []
+  },
+  {
+    "id": "q64",
+    "category": "colloquial",
+    "query": "shroud vs hexproof",
+    "split": "development",
+    "relevance": {
+      "glossary:hexproof": 3
+    },
+    "note": "Known difficult language; retrieval only, not a generated ruling or complete multi-rule answer.",
+    "results": [
+      {
+        "id": "cr:702.18",
+        "title": "702.18 — Shroud",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11",
+        "title": "702.11 — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11f",
+        "title": "702.11f — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:shroud",
+        "title": "Shroud",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:702.11a",
+        "title": "702.11a — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.18a",
+        "title": "702.18a — Shroud",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.18b",
+        "title": "702.18b — Shroud",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11d",
+        "title": "702.11d — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.11g",
+        "title": "702.11g — Hexproof",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:hexproof",
+        "title": "Hexproof",
+        "kind": "glossary"
+      }
+    ]
+  },
+  {
+    "id": "q65",
+    "category": "colloquial",
+    "query": "when does damage wear off",
+    "split": "evaluation",
+    "relevance": {
+      "cr:514.2": 3
+    },
+    "note": "Known difficult language; retrieval only, not a generated ruling or complete multi-rule answer.",
+    "results": [
+      {
+        "id": "cr:120",
+        "title": "Damage",
+        "kind": "section"
+      },
+      {
+        "id": "glossary:damage",
+        "title": "Damage",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:510",
+        "title": "Combat Damage Step",
+        "kind": "section"
+      },
+      {
+        "id": "cr:120.2",
+        "title": "120.2 — Damage",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:source-of-damage",
+        "title": "Source of Damage",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:120.1",
+        "title": "120.1 — Damage",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:excess-damage",
+        "title": "Excess Damage",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:120.4",
+        "title": "120.4 — Damage",
+        "kind": "rule"
+      },
+      {
+        "id": "glossary:combat-damage",
+        "title": "Combat Damage",
+        "kind": "glossary"
+      },
+      {
+        "id": "cr:120.2a",
+        "title": "120.2a — Damage",
+        "kind": "rule"
+      }
+    ]
+  },
+  {
+    "id": "q66",
+    "category": "colloquial",
+    "query": "can I respond to paying costs",
+    "split": "evaluation",
+    "relevance": {
+      "cr:601.2h": 3
+    },
+    "note": "Known difficult language; retrieval only, not a generated ruling or complete multi-rule answer.",
+    "results": [
+      {
+        "id": "cr:118.3c",
+        "title": "118.3c — Costs",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:118.2",
+        "title": "118.2 — Costs",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:118.3b",
+        "title": "118.3b — Costs",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:118.7",
+        "title": "118.7 — Costs",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:118.9",
+        "title": "118.9 — Costs",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:118.5",
+        "title": "118.5 — Costs",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:118.13b",
+        "title": "118.13b — Costs",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:118.3a",
+        "title": "118.3a — Costs",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:702.187b",
+        "title": "702.187b — Mayhem",
+        "kind": "rule"
+      },
+      {
+        "id": "cr:118.6a",
+        "title": "118.6a — Costs",
+        "kind": "rule"
+      }
+    ]
+  }
+]

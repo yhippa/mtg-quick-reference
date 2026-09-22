@@ -1,0 +1,270 @@
+{
+  "startedAt": "2026-09-21T02:57:30.073Z",
+  "note": "Real timings on the reported device; no CPU throttle. Local fetch is not representative of cellular latency. Fresh JS frame/worker per engine; OS cache/JIT outside the realm is uncontrolled.",
+  "runs": [
+    {
+      "mode": "linear",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hardwareConcurrency": 8,
+      "deviceMemoryGB": null,
+      "environment": "main-thread-frame",
+      "load": {
+        "fetchTextMs": 623.7000000476837,
+        "jsonParseMs": 29.299999952316284,
+        "indexBuildMs": 362.2000000476837,
+        "readyMs": 1015.2000000476837,
+        "transportTextBytes": 5601665
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 10.100000023841858,
+        "p95": 18.799999952316284,
+        "max": 32.200000047683716,
+        "over16_7ms": 4,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 11.600000023841858,
+        "p95": 15.899999976158142,
+        "max": 17.399999976158142,
+        "over16_7ms": 2,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 16.299999952316284,
+        "p95": 20.300000071525574,
+        "max": 48.5,
+        "over16_7ms": 17,
+        "over50ms": 0
+      },
+      "heapBytes": 37300000
+    },
+    {
+      "mode": "unified",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hardwareConcurrency": 8,
+      "deviceMemoryGB": null,
+      "environment": "main-thread-frame",
+      "load": {
+        "fetchTextMs": 452.5,
+        "jsonParseMs": 30.100000023841858,
+        "indexBuildMs": 312.1999999284744,
+        "readyMs": 794.7999999523163,
+        "transportTextBytes": 5601665
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 0.6999999284744263,
+        "p95": 7.5,
+        "max": 14.299999952316284,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 0.5999999046325684,
+        "p95": 6.600000023841858,
+        "max": 9.5,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 16.199999928474426,
+        "p95": 17,
+        "max": 17.200000047683716,
+        "over16_7ms": 8,
+        "over50ms": 0
+      },
+      "heapBytes": 37300000
+    },
+    {
+      "mode": "unified-routed",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hardwareConcurrency": 8,
+      "deviceMemoryGB": null,
+      "environment": "main-thread-frame",
+      "load": {
+        "fetchTextMs": 464.39999997615814,
+        "jsonParseMs": 17.300000071525574,
+        "indexBuildMs": 507,
+        "readyMs": 988.7000000476837,
+        "transportTextBytes": 5601665
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 10.5,
+        "p95": 18.5,
+        "max": 34.39999997615814,
+        "over16_7ms": 5,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 10.800000071525574,
+        "p95": 15.100000023841858,
+        "max": 19,
+        "over16_7ms": 3,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 16.299999952316284,
+        "p95": 19.09999990463257,
+        "max": 49.200000047683716,
+        "over16_7ms": 17,
+        "over50ms": 0
+      },
+      "heapBytes": 37300000
+    },
+    {
+      "mode": "split",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hardwareConcurrency": 8,
+      "deviceMemoryGB": null,
+      "environment": "main-thread-frame",
+      "load": {
+        "fetchTextMs": 437.5,
+        "jsonParseMs": 18.5,
+        "indexBuildMs": 336.7000000476837,
+        "readyMs": 792.7000000476837,
+        "transportTextBytes": 5601665
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 9.200000047683716,
+        "p95": 16.800000071525574,
+        "max": 20.799999952316284,
+        "over16_7ms": 4,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 12,
+        "p95": 15.200000047683716,
+        "max": 16.5,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 16.300000071525574,
+        "p95": 17.600000023841858,
+        "max": 28.600000023841858,
+        "over16_7ms": 17,
+        "over50ms": 0
+      },
+      "heapBytes": 37300000
+    },
+    {
+      "mode": "split-prebuilt",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hardwareConcurrency": 8,
+      "deviceMemoryGB": null,
+      "environment": "main-thread-frame",
+      "load": {
+        "fetchTextMs": 403.60000002384186,
+        "jsonParseMs": 36.39999997615814,
+        "indexBuildMs": 203.30000007152557,
+        "readyMs": 643.3000000715256,
+        "transportTextBytes": 6229741
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 7.5,
+        "p95": 17.700000047683716,
+        "max": 36.89999997615814,
+        "over16_7ms": 4,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 8.5,
+        "p95": 12.599999904632568,
+        "max": 15.899999976158142,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 16.300000071525574,
+        "p95": 18,
+        "max": 41,
+        "over16_7ms": 17,
+        "over50ms": 0
+      },
+      "heapBytes": 37300000
+    },
+    {
+      "mode": "split-prebuilt",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "hardwareConcurrency": 8,
+      "deviceMemoryGB": null,
+      "environment": "dedicated-worker",
+      "load": {
+        "fetchTextMs": 439.5,
+        "jsonParseMs": 169.70000004768372,
+        "indexBuildMs": 452.5,
+        "readyMs": 1061.7000000476837,
+        "transportTextBytes": 6229741
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 10.5,
+        "p95": 30.899999976158142,
+        "max": 108.79999995231628,
+        "over16_7ms": 7,
+        "over50ms": 1
+      },
+      "warm": {
+        "n": 198,
+        "p50": 10.700000047683716,
+        "p95": 18.200000047683716,
+        "max": 27.399999976158142,
+        "over16_7ms": 22,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 16.5,
+        "p95": 33.39999997615814,
+        "max": 121.79999995231628,
+        "over16_7ms": 29,
+        "over50ms": 1
+      },
+      "heapBytes": null,
+      "totalWallMs": 5318.700000047684
+    },
+    {
+      "mode": "split-prebuilt",
+      "environment": "worker-roundtrip",
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Mobile Safari/537.36",
+      "load": {
+        "fetchTextMs": 465.2000000476837,
+        "jsonParseMs": 120.79999995231628,
+        "indexBuildMs": 355.5,
+        "readyMs": 941.5
+      },
+      "startupRoundTripMs": 1006.8999999761581,
+      "firstPass": {
+        "n": 66,
+        "p50": 7.5,
+        "p95": 16,
+        "max": 46.300000071525574,
+        "over16_7ms": 3,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 8.300000071525574,
+        "p95": 11.100000023841858,
+        "max": 14.800000071525574,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "note": "Includes message dispatch and cloned top-10 id/title/kind results; no result rendering."
+    }
+  ]
+}

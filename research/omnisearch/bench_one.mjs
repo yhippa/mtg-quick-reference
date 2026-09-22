@@ -1,0 +1,25 @@
+import {readFileSync} from 'node:fs';
+import {createEngine} from './engine.mjs';
+import os from 'node:os';
+const root=new URL('./',import.meta.url);
+const read=p=>readFileSync(new URL(p,root),'utf8');
+const mode=process.argv[2]??'split';
+const actual=mode.replace('-prebuilt','');
+global.gc?.();const initial=process.memoryUsage();
+const start=performance.now();
+const rules=JSON.parse(read('data/lean-rules.json'));
+const cards=JSON.parse(read('data/cards.json'));
+const loaded=performance.now();
+let stored;
+if(mode.endsWith('-prebuilt'))stored=JSON.parse(read(`data/${actual==='split'?'rules':'unified'}-index.json`));
+const hydrated=performance.now();
+const engine=createEngine(actual,rules,cards,stored);
+const built=performance.now();
+global.gc?.();const memory=process.memoryUsage();
+const cases=JSON.parse(read('evaluation.json')).cases;
+const first=[];
+const ranked=cases.map(c=>{const t=performance.now();const hits=engine.search(c.query);first.push(performance.now()-t);return {...c,results:hits.map(d=>({id:d.id,title:d.title,kind:d.kind}))};});
+const timings=[];
+for(let round=0;round<Number(process.env.BENCH_ROUNDS??10);round++) for(const c of cases){const t=performance.now();engine.search(c.query);timings.push(performance.now()-t);}
+const percentiles=xs=>{xs.sort((a,b)=>a-b);return{p50:xs[Math.floor(xs.length*.5)],p95:xs[Math.floor(xs.length*.95)],max:xs.at(-1),n:xs.length};};
+console.log(JSON.stringify({mode,environment:{jitless:process.execArgv.includes('--jitless'),rounds:Number(process.env.BENCH_ROUNDS??10),node:process.version,platform:os.platform(),arch:os.arch(),cpu:os.cpus()[0]?.model},timing:{readParseMs:loaded-start,indexReadParseMs:hydrated-loaded,buildMs:built-hydrated,readyMs:built-start,firstPass:percentiles(first),warm:percentiles(timings)},memory:{heapDeltaBytes:memory.heapUsed-initial.heapUsed,rssDeltaBytes:memory.rss-initial.rss,heapUsedBytes:memory.heapUsed},ranked}));

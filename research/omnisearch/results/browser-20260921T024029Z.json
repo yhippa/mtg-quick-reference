@@ -1,0 +1,270 @@
+{
+  "startedAt": "2026-09-21T02:40:16.647Z",
+  "note": "Real timings on the reported device; no CPU throttle. Local fetch is not representative of cellular latency. Fresh JS frame/worker per engine; OS cache/JIT outside the realm is uncontrolled.",
+  "runs": [
+    {
+      "mode": "linear",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "hardwareConcurrency": 10,
+      "deviceMemoryGB": 32,
+      "environment": "main-thread-frame",
+      "load": {
+        "fetchTextMs": 18.399999976158142,
+        "jsonParseMs": 15.399999976158142,
+        "indexBuildMs": 139.70000004768372,
+        "readyMs": 173.5,
+        "transportTextBytes": 5601665
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 3,
+        "p95": 4.100000023841858,
+        "max": 15.100000023841858,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 3.099999964237213,
+        "p95": 4,
+        "max": 4.199999988079071,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 8.200000047683716,
+        "p95": 9.199999988079071,
+        "max": 15.300000011920929,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "heapBytes": 42366921
+    },
+    {
+      "mode": "unified",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "hardwareConcurrency": 10,
+      "deviceMemoryGB": 32,
+      "environment": "main-thread-frame",
+      "load": {
+        "fetchTextMs": 12.299999952316284,
+        "jsonParseMs": 10.600000023841858,
+        "indexBuildMs": 150.69999998807907,
+        "readyMs": 173.5999999642372,
+        "transportTextBytes": 5601665
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 0.19999998807907104,
+        "p95": 0.9000000357627869,
+        "max": 1.7000000476837158,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 0.19999998807907104,
+        "p95": 1.399999976158142,
+        "max": 2.400000035762787,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 8.199999988079071,
+        "p95": 8.900000035762787,
+        "max": 10.200000047683716,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "heapBytes": 56287645
+    },
+    {
+      "mode": "unified-routed",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "hardwareConcurrency": 10,
+      "deviceMemoryGB": 32,
+      "environment": "main-thread-frame",
+      "load": {
+        "fetchTextMs": 13.899999976158142,
+        "jsonParseMs": 10.5,
+        "indexBuildMs": 217.30000001192093,
+        "readyMs": 241.69999998807907,
+        "transportTextBytes": 5601665
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 2.800000011920929,
+        "p95": 3.599999964237213,
+        "max": 9.899999976158142,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 2.800000011920929,
+        "p95": 3.800000011920929,
+        "max": 4.199999988079071,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 8.300000011920929,
+        "p95": 8.400000035762787,
+        "max": 10.099999964237213,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "heapBytes": 106730520
+    },
+    {
+      "mode": "split",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "hardwareConcurrency": 10,
+      "deviceMemoryGB": 32,
+      "environment": "main-thread-frame",
+      "load": {
+        "fetchTextMs": 16.69999998807907,
+        "jsonParseMs": 10.800000011920929,
+        "indexBuildMs": 132.10000002384186,
+        "readyMs": 159.60000002384186,
+        "transportTextBytes": 5601665
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 3,
+        "p95": 4.100000023841858,
+        "max": 10.100000023841858,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 2.900000035762787,
+        "p95": 3.899999976158142,
+        "max": 4.199999988079071,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 8.299999952316284,
+        "p95": 9.199999988079071,
+        "max": 10.899999976158142,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "heapBytes": 42923734
+    },
+    {
+      "mode": "split-prebuilt",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "hardwareConcurrency": 10,
+      "deviceMemoryGB": 32,
+      "environment": "main-thread-frame",
+      "load": {
+        "fetchTextMs": 15.800000011920929,
+        "jsonParseMs": 12.799999952316284,
+        "indexBuildMs": 76.80000001192093,
+        "readyMs": 105.39999997615814,
+        "transportTextBytes": 6229741
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 3,
+        "p95": 3.899999976158142,
+        "max": 10,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 2.900000035762787,
+        "p95": 3.899999976158142,
+        "max": 4.200000047683716,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 8.300000011920929,
+        "p95": 9.199999988079071,
+        "max": 10.300000011920929,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "heapBytes": 60738392
+    },
+    {
+      "mode": "split-prebuilt",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "hardwareConcurrency": 10,
+      "deviceMemoryGB": 32,
+      "environment": "dedicated-worker",
+      "load": {
+        "fetchTextMs": 13.899999976158142,
+        "jsonParseMs": 16.400000035762787,
+        "indexBuildMs": 82.19999998807907,
+        "readyMs": 112.5,
+        "transportTextBytes": 6229741
+      },
+      "firstPass": {
+        "n": 66,
+        "p50": 3,
+        "p95": 3.800000011920929,
+        "max": 13.5,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 3,
+        "p95": 3.900000035762787,
+        "max": 4.300000011920929,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "queryToNextFrame": {
+        "n": 66,
+        "p50": 8.300000011920929,
+        "p95": 9.100000023841858,
+        "max": 15.700000047683716,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "heapBytes": null,
+      "totalWallMs": 2126.100000023842
+    },
+    {
+      "mode": "split-prebuilt",
+      "environment": "worker-roundtrip",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+      "load": {
+        "fetchTextMs": 12.899999976158142,
+        "jsonParseMs": 16.100000023841858,
+        "indexBuildMs": 80.39999997615814,
+        "readyMs": 109.39999997615814
+      },
+      "startupRoundTripMs": 118.39999997615814,
+      "firstPass": {
+        "n": 66,
+        "p50": 2.699999988079071,
+        "p95": 4.199999988079071,
+        "max": 10,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "warm": {
+        "n": 198,
+        "p50": 2.699999988079071,
+        "p95": 3.599999964237213,
+        "max": 4.699999988079071,
+        "over16_7ms": 0,
+        "over50ms": 0
+      },
+      "note": "Includes message dispatch and cloned top-10 id/title/kind results; no result rendering."
+    }
+  ]
+}

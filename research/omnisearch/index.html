@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Omnisearch research benchmark</title>
+<style>body{font:16px system-ui;max-width:850px;margin:24px auto;padding:0 16px}button{font:inherit;min-height:44px;padding:8px 18px;margin:6px 6px 6px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f4f5;padding:16px;font-size:12px}iframe{width:100%;height:50px;border:0}td,th{padding:8px;text-align:left;border-bottom:1px solid #ddd}table{border-collapse:collapse;font-size:13px}</style>
+<h1>Omnisearch research benchmark</h1><p>Isolated experiment. This does not modify the MTG app. Keep this tab visible while measuring. No generated rules answers.</p><p>Run on the target Android phone for actual phone timings. A narrow desktop viewport is not a phone benchmark. The latest published source is future-effective September 25, 2026.</p>
+<button id="run">Run benchmarks</button><button id="download" disabled>Download results</button><p id="status" role="status">Ready. Each engine runs in a fresh frame; the final run uses a worker.</p><div id="frame"></div><div id="table"></div><pre id="report"></pre>
+<script type="module">
+let report;
+const status=document.querySelector('#status');
+function frameRun(mode){return new Promise((resolve,reject)=>{
+ const frame=document.createElement('iframe');frame.src=`./bench-frame.html?mode=${mode}`;
+ const listener=e=>{if(e.origin!==location.origin||e.source!==frame.contentWindow)return;window.removeEventListener('message',listener);frame.remove();e.data.error?reject(Error(e.data.error)):resolve(e.data.result);};
+ window.addEventListener('message',listener);document.querySelector('#frame').append(frame);
+});}
+function workerRun(){return new Promise((resolve,reject)=>{const worker=new Worker('./bench-worker.mjs',{type:'module'});const start=performance.now();worker.onmessage=e=>{worker.terminate();e.data.error?reject(Error(e.data.error)):resolve({...e.data.result,totalWallMs:performance.now()-start});};worker.onerror=e=>{worker.terminate();reject(Error(e.message));};worker.postMessage('split-prebuilt');});}
+async function interactiveRun(){
+ const worker=new Worker('./interactive-worker.mjs',{type:'module'});
+ const request=data=>new Promise((resolve,reject)=>{worker.onmessage=e=>e.data.error?reject(Error(e.data.error)):resolve(e.data);worker.onerror=e=>reject(Error(e.message));worker.postMessage(data);});
+ try{
+ const started=performance.now();const ready=await request({type:'init'});const startupRoundTripMs=performance.now()-started;
+ const evaluation=await (await fetch('./evaluation.json')).json();const first=[],warm=[];
+ for(let round=0;round<4;round++)for(const c of evaluation.cases){await new Promise(r=>setTimeout(r,0));const t=performance.now();await request({type:'query',query:c.query});(round?warm:first).push(performance.now()-t);}
+ const pct=a=>{a.sort((a,b)=>a-b);return{n:a.length,p50:a[Math.floor(a.length*.5)],p95:a[Math.floor(a.length*.95)],max:a.at(-1),over16_7ms:a.filter(v=>v>16.7).length,over50ms:a.filter(v=>v>50).length};};
+ return{mode:'split-prebuilt',environment:'worker-roundtrip',userAgent:navigator.userAgent,load:ready.load,startupRoundTripMs,firstPass:pct(first),warm:pct(warm),note:'Includes message dispatch and cloned top-10 id/title/kind results; no result rendering.'};
+ }finally{worker.terminate();}
+}
+document.querySelector('#run').onclick=async()=>{
+ document.querySelector('#run').disabled=true;report={startedAt:new Date().toISOString(),note:'Real timings on the reported device; no CPU throttle. Local fetch is not representative of cellular latency. Fresh JS frame/worker per engine; OS cache/JIT outside the realm is uncontrolled.',runs:[]};
+ try{
+ for(const mode of ['linear','unified','unified-routed','split','split-prebuilt']){status.textContent=`Measuring ${mode}…`;report.runs.push(await frameRun(mode));}
+ status.textContent='Measuring worker isolation…';report.runs.push(await workerRun());
+ status.textContent='Measuring worker message latency…';report.runs.push(await interactiveRun());
+ status.textContent='Complete. Results can be downloaded.';
+ document.querySelector('#table').innerHTML='<table><tr><th>Engine</th><th>Parse</th><th>Build</th><th>Query p95</th><th>Queries >50ms</th></tr>'+report.runs.map(r=>`<tr><td>${r.mode} (${r.environment})</td><td>${r.load.jsonParseMs.toFixed(1)}ms</td><td>${r.load.indexBuildMs.toFixed(1)}ms</td><td>${r.warm.p95.toFixed(1)}ms</td><td>${r.warm.over50ms}</td></tr>`).join('')+'</table>';
+ document.querySelector('#report').textContent=JSON.stringify(report,null,2);document.querySelector('#download').disabled=false;
+ // Only the optional research server accepts this endpoint. Static hosting still supports Download.
+ try{await fetch('./save-results',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(report)});}catch{}
+ }catch(error){status.textContent=String(error);}finally{document.querySelector('#run').disabled=false;}
+};
+document.querySelector('#download').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(report,null,2)],{type:'application/json'}));a.download='omnisearch-benchmark.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
+</script></html>
