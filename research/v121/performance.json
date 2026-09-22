@@ -1,0 +1,271 @@
+{
+  "note": "Node on this Mac, 300 warm iterations. HTML generation excludes browser layout; structuredClone approximates serialization, not worker scheduling. No physical-phone timing claim.",
+  "families": [
+    {
+      "id": "cr:702.22",
+      "members": 12,
+      "responseJsonBytes": 6993,
+      "lookupMs": {
+        "p50": 0.0029590000000041528,
+        "p95": 0.009375000000005684
+      },
+      "structuredCloneMs": {
+        "p50": 0.02791700000000219,
+        "p95": 0.04200000000000159
+      },
+      "renderHtmlMs": {
+        "p50": 0.04049999999999443,
+        "p95": 0.09870800000000202
+      }
+    },
+    {
+      "id": "cr:702.22a",
+      "members": 12,
+      "responseJsonBytes": 7055,
+      "lookupMs": {
+        "p50": 0.0028339999999928978,
+        "p95": 0.004084000000005972
+      },
+      "structuredCloneMs": {
+        "p50": 0.027915999999990504,
+        "p95": 0.03404199999999946
+      },
+      "renderHtmlMs": {
+        "p50": 0.03858299999998849,
+        "p95": 0.053792000000001394
+      }
+    },
+    {
+      "id": "cr:601",
+      "members": 8,
+      "responseJsonBytes": 8273,
+      "lookupMs": {
+        "p50": 0.003291999999987638,
+        "p95": 0.006584000000003698
+      },
+      "structuredCloneMs": {
+        "p50": 0.034874999999999545,
+        "p95": 0.04349999999999454
+      },
+      "renderHtmlMs": {
+        "p50": 0.04999999999999716,
+        "p95": 0.08320799999998485
+      }
+    },
+    {
+      "id": "cr:601.2",
+      "members": 9,
+      "responseJsonBytes": 12548,
+      "lookupMs": {
+        "p50": 0.003250000000008413,
+        "p95": 0.00462500000000432
+      },
+      "structuredCloneMs": {
+        "p50": 0.03125,
+        "p95": 0.038624999999996135
+      },
+      "renderHtmlMs": {
+        "p50": 0.06962500000000205,
+        "p95": 0.10870900000000461
+      }
+    }
+  ],
+  "production": {
+    "measuredAt": "2026-09-22T18:44:56.594Z",
+    "environment": {
+      "node": "v24.16.0",
+      "platform": "darwin",
+      "arch": "arm64"
+    },
+    "note": "Node timings; hydration in-process, browser production runs it in a worker. Queries exclude rendering.",
+    "startup": {
+      "cardParseMs": 94.69583399999999,
+      "cardIndexMs": 69.54945800000002,
+      "rulesHydrateMs": 20.833208000000013
+    },
+    "warm": {
+      "cards": {
+        "n": 660,
+        "p50": 2.740957999999864,
+        "p95": 3.5341249999999036,
+        "max": 35.09558300000003
+      },
+      "rules": {
+        "n": 660,
+        "p50": 0.05529100000001108,
+        "p95": 0.36541699999997945,
+        "max": 0.6322920000000067
+      }
+    },
+    "ranking": {
+      "queries": 66,
+      "changedTop10Queries": [],
+      "hit5": 0.8333333333333334
+    },
+    "sizes": {
+      "data/cards.json": {
+        "bytes": 29228731,
+        "gzipBytes": 6754305,
+        "sha256": "585af746735f9bf559386050103a1234dde334538755339e2c7cb9df9fb028d8"
+      },
+      "data/rules.json": {
+        "bytes": 1819470,
+        "gzipBytes": 356051,
+        "sha256": "f675417086eb0e7a9b38fd13fa0430997fe7a27f3d52058d2604df4db32525ad"
+      },
+      "data/rules-index.json": {
+        "bytes": 628250,
+        "gzipBytes": 210818,
+        "sha256": "4e92d27d243862613d794966ff917aafabe1d9c5a6e1582d156fa4614cb2e042"
+      },
+      "data/rules-release.json": {
+        "bytes": 837,
+        "gzipBytes": 523,
+        "sha256": "08893623c6b44cd5f04dec32200a41c1e818cbe72b15f75a8f3ebd0793387ee3"
+      },
+      "sw.js": {
+        "bytes": 3733,
+        "gzipBytes": 1998,
+        "sha256": "640de6c861c0f45cf206f2a13c61732546e3c74929709223af47cd1c23153fbb"
+      },
+      "assets/index-B-KRugUl.js": {
+        "bytes": 19717,
+        "gzipBytes": 7616,
+        "sha256": "11bdc210d233fcf0be0dedd3ce968b336017a16fe59d8ceb81eafce15d2031fd"
+      },
+      "assets/index-C1f-Y-hi.css": {
+        "bytes": 10008,
+        "gzipBytes": 2773,
+        "sha256": "a83df1f0ae23ceeacf5677a451283feaecb888e9ff67419b126889746c77cf63"
+      },
+      "assets/rules.worker-BIwE2q5E.js": {
+        "bytes": 4161,
+        "gzipBytes": 1956,
+        "sha256": "584ebcec8672d346375f0bb4f052b81421b41516dc5da3cabe360306d7ee8eba"
+      }
+    },
+    "source": {
+      "publisher": "Wizards of the Coast",
+      "language": "en",
+      "landingPage": "https://magic.wizards.com/en/rules",
+      "url": "https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt",
+      "retrievedAt": "2026-09-20T16:17:03.713523+00:00",
+      "effectiveDate": "2026-09-25",
+      "asOfDate": "2026-09-22",
+      "effectiveStatus": "future",
+      "sha256": "8d860e451f20f38865b725b42d82feb714c725373dd8f3b32b8652b3eeb070ca",
+      "originalBytes": 977752,
+      "parserVersion": "1.0.1"
+    },
+    "mode": "preview"
+  },
+  "comparison": {
+    "startupBefore": {
+      "cardParseMs": 92.611375,
+      "cardIndexMs": 67.12800000000001,
+      "rulesHydrateMs": 18.621207999999996
+    },
+    "startupAfter": {
+      "cardParseMs": 94.69583399999999,
+      "cardIndexMs": 69.54945800000002,
+      "rulesHydrateMs": 20.833208000000013
+    },
+    "warmBefore": {
+      "cards": {
+        "n": 660,
+        "p50": 2.6734579999999823,
+        "p95": 3.37341600000002,
+        "max": 8.319166999999993
+      },
+      "rules": {
+        "n": 660,
+        "p50": 0.04825000000005275,
+        "p95": 0.36474999999995816,
+        "max": 0.6019580000001952
+      }
+    },
+    "warmAfter": {
+      "cards": {
+        "n": 660,
+        "p50": 2.740957999999864,
+        "p95": 3.5341249999999036,
+        "max": 35.09558300000003
+      },
+      "rules": {
+        "n": 660,
+        "p50": 0.05529100000001108,
+        "p95": 0.36541699999997945,
+        "max": 0.6322920000000067
+      }
+    },
+    "unchangedData": [
+      {
+        "path": "data/cards.json",
+        "identical": true,
+        "bytes": 29228731
+      },
+      {
+        "path": "data/rules.json",
+        "identical": true,
+        "bytes": 1819470
+      },
+      {
+        "path": "data/rules-index.json",
+        "identical": true,
+        "bytes": 628250
+      }
+    ],
+    "assetsBefore": [
+      [
+        "assets/index-DDH9vCKd.css",
+        {
+          "bytes": 9151,
+          "gzipBytes": 2608,
+          "sha256": "f4342678c4be967bf1fd4bc60e94edfa7877e7e6c3d73d22b0c61a2e327ffee6"
+        }
+      ],
+      [
+        "assets/index-PgVHDJg4.js",
+        {
+          "bytes": 18580,
+          "gzipBytes": 7228,
+          "sha256": "9b75b6bff8708d3fc59de372e739321ceb9e576bdd2ca951274901b0438a289c"
+        }
+      ],
+      [
+        "assets/rules.worker-DX8dqiSx.js",
+        {
+          "bytes": 3721,
+          "gzipBytes": 1775,
+          "sha256": "de4fed306814aa236e806b817dc0831e097445f389f96f7d9b51c16e329bf5ef"
+        }
+      ]
+    ],
+    "assetsAfter": [
+      [
+        "assets/index-B-KRugUl.js",
+        {
+          "bytes": 19717,
+          "gzipBytes": 7616,
+          "sha256": "11bdc210d233fcf0be0dedd3ce968b336017a16fe59d8ceb81eafce15d2031fd"
+        }
+      ],
+      [
+        "assets/index-C1f-Y-hi.css",
+        {
+          "bytes": 10008,
+          "gzipBytes": 2773,
+          "sha256": "a83df1f0ae23ceeacf5677a451283feaecb888e9ff67419b126889746c77cf63"
+        }
+      ],
+      [
+        "assets/rules.worker-BIwE2q5E.js",
+        {
+          "bytes": 4161,
+          "gzipBytes": 1956,
+          "sha256": "584ebcec8672d346375f0bb4f052b81421b41516dc5da3cabe360306d7ee8eba"
+        }
+      ]
+    ]
+  }
+}

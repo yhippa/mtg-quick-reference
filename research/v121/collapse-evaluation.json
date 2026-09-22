@@ -1,0 +1,495 @@
+{
+  "policy": "For exact family-heading concept queries only, remove direct children when their parent is already present in the 20 results. Never collapse a numbered or phrase query.",
+  "changes": [
+    {
+      "query": "Deathtouch",
+      "before": [
+        "glossary:deathtouch",
+        "cr:702.2",
+        "cr:702.2a",
+        "cr:702.2d",
+        "cr:702.2f",
+        "cr:702.2c",
+        "cr:702.2e",
+        "cr:702.2b",
+        "cr:704.5h",
+        "cr:701.8b"
+      ],
+      "after": [
+        "glossary:deathtouch",
+        "cr:702.2",
+        "cr:704.5h",
+        "cr:701.8b",
+        "cr:122.1b",
+        "cr:120.4a"
+      ],
+      "dcg5Before": 7,
+      "dcg5After": 7
+    },
+    {
+      "query": "Ward",
+      "before": [
+        "glossary:ward",
+        "card:Ward%20Sliver",
+        "card:Ward%20of%20Bones",
+        "card:Ward%20of%20Lights",
+        "card:Ward%20of%20Piety",
+        "cr:702.21",
+        "cr:702.21a",
+        "cr:702.21b",
+        "glossary:disguise",
+        "glossary:cloak"
+      ],
+      "after": [
+        "glossary:ward",
+        "card:Ward%20Sliver",
+        "card:Ward%20of%20Bones",
+        "card:Ward%20of%20Lights",
+        "card:Ward%20of%20Piety",
+        "cr:702.21",
+        "glossary:disguise",
+        "glossary:cloak",
+        "cr:111.10m",
+        "cr:701.58a"
+      ],
+      "dcg5Before": 7,
+      "dcg5After": 7
+    },
+    {
+      "query": "First Strike",
+      "before": [
+        "glossary:first-strike",
+        "cr:702.7",
+        "cr:702.7d",
+        "cr:702.7a",
+        "cr:702.7b",
+        "cr:702.7c",
+        "cr:702.4d",
+        "cr:702.4b",
+        "cr:702.4c",
+        "cr:510.4"
+      ],
+      "after": [
+        "glossary:first-strike",
+        "cr:702.7",
+        "cr:702.4d",
+        "cr:702.4b",
+        "cr:702.4c",
+        "cr:510.4",
+        "cr:122.1b",
+        "cr:506.1",
+        "cr:702.1c",
+        "cr:702.4"
+      ],
+      "dcg5Before": 7,
+      "dcg5After": 7
+    },
+    {
+      "query": "Menace",
+      "before": [
+        "glossary:menace",
+        "card:Corpsejack%20Menace",
+        "card:Bestial%20Menace",
+        "cr:702.111",
+        "cr:702.111a",
+        "cr:702.111c",
+        "cr:702.111b",
+        "cr:701.60c",
+        "cr:509.1c",
+        "cr:122.1b"
+      ],
+      "after": [
+        "glossary:menace",
+        "card:Corpsejack%20Menace",
+        "card:Bestial%20Menace",
+        "cr:702.111",
+        "cr:701.60c",
+        "cr:509.1c",
+        "cr:122.1b"
+      ],
+      "dcg5Before": 7,
+      "dcg5After": 7
+    },
+    {
+      "query": "Affinity",
+      "before": [
+        "glossary:affinity",
+        "card:Natural%20Affinity",
+        "cr:702.41",
+        "cr:702.41a",
+        "cr:702.41b"
+      ],
+      "after": [
+        "glossary:affinity",
+        "card:Natural%20Affinity",
+        "cr:702.41"
+      ],
+      "dcg5Before": 7,
+      "dcg5After": 7
+    },
+    {
+      "query": "Indestructible",
+      "before": [
+        "glossary:indestructible",
+        "card:Indestructible%20Aura",
+        "cr:702.12",
+        "cr:702.12a",
+        "cr:702.12c",
+        "cr:702.12b",
+        "cr:111.10w",
+        "glossary:vibranium-token",
+        "cr:122.1b",
+        "cr:700.14"
+      ],
+      "after": [
+        "glossary:indestructible",
+        "card:Indestructible%20Aura",
+        "cr:702.12",
+        "cr:111.10w",
+        "glossary:vibranium-token",
+        "cr:122.1b",
+        "cr:700.14"
+      ],
+      "dcg5Before": 7.5,
+      "dcg5After": 7.5
+    },
+    {
+      "query": "Hexproof",
+      "before": [
+        "glossary:hexproof",
+        "cr:702.11f",
+        "cr:702.11",
+        "cr:702.11d",
+        "cr:702.11a",
+        "cr:702.11g",
+        "cr:702.11e",
+        "cr:702.11c",
+        "cr:702.11h",
+        "cr:702.11b"
+      ],
+      "after": [
+        "glossary:hexproof",
+        "cr:702.11",
+        "cr:122.1b"
+      ],
+      "dcg5Before": 7,
+      "dcg5After": 7
+    },
+    {
+      "query": "Proliferate",
+      "before": [
+        "glossary:proliferate",
+        "cr:701.34",
+        "cr:701.34a",
+        "cr:701.34b"
+      ],
+      "after": [
+        "glossary:proliferate",
+        "cr:701.34"
+      ],
+      "dcg5Before": 7,
+      "dcg5After": 7
+    },
+    {
+      "query": "fear",
+      "before": [
+        "card:Fear",
+        "glossary:fear",
+        "card:Fear%20of%20Missing%20Out",
+        "card:Fear%20of%20Sleep%20Paralysis",
+        "card:Fear%20of%20Impostors",
+        "cr:702.36",
+        "cr:702.36a",
+        "cr:702.36c",
+        "cr:702.36b",
+        "cr:702.1c"
+      ],
+      "after": [
+        "card:Fear",
+        "glossary:fear",
+        "card:Fear%20of%20Missing%20Out",
+        "card:Fear%20of%20Sleep%20Paralysis",
+        "card:Fear%20of%20Impostors",
+        "cr:702.36",
+        "cr:702.1c",
+        "card:Fear%20of%20Burning%20Alive",
+        "card:Fear%2C%20Fire%2C%20Foes!",
+        "card:Fear%20of%20Lost%20Teeth"
+      ],
+      "dcg5Before": 11.416508275000202,
+      "dcg5After": 11.416508275000202
+    },
+    {
+      "query": "flash",
+      "before": [
+        "card:Flash",
+        "glossary:flash",
+        "card:Flash%20Photography",
+        "card:Flash%20Thompson%2C%20Spider-Fan",
+        "card:Flash%20Counter",
+        "cr:702.8",
+        "cr:702.8b",
+        "cr:702.8a",
+        "cr:601.6a",
+        "cr:601.3d"
+      ],
+      "after": [
+        "card:Flash",
+        "glossary:flash",
+        "card:Flash%20Photography",
+        "card:Flash%20Thompson%2C%20Spider-Fan",
+        "card:Flash%20Counter",
+        "cr:702.8",
+        "cr:601.6a",
+        "cr:601.3d",
+        "cr:601.3c",
+        "cr:601.3b"
+      ],
+      "dcg5Before": 11.416508275000202,
+      "dcg5After": 11.416508275000202
+    },
+    {
+      "query": "stack",
+      "before": [
+        "cr:405",
+        "glossary:stack",
+        "card:Stack%20of%20Paperwork",
+        "card:Squirrel%20Stack",
+        "card:Ori%2C%20Plate%20Stacker",
+        "card:Haystack",
+        "cr:405.6",
+        "cr:405.2",
+        "cr:405.6d",
+        "cr:405.5"
+      ],
+      "after": [
+        "cr:405",
+        "glossary:stack",
+        "card:Stack%20of%20Paperwork",
+        "card:Squirrel%20Stack",
+        "card:Ori%2C%20Plate%20Stacker",
+        "card:Haystack",
+        "cr:405.6d",
+        "cr:405.6a",
+        "cr:405.6f",
+        "cr:405.6b"
+      ],
+      "dcg5Before": 4.4165082750002025,
+      "dcg5After": 4.4165082750002025
+    },
+    {
+      "query": "mill",
+      "before": [
+        "glossary:mill",
+        "card:Tread%20Mill",
+        "card:Millikin",
+        "card:Millicent%2C%20Restless%20Revenant",
+        "card:Millstone",
+        "cr:701.17",
+        "cr:701.17a",
+        "cr:701.17c",
+        "cr:701.17b",
+        "cr:701.17d"
+      ],
+      "after": [
+        "glossary:mill",
+        "card:Tread%20Mill",
+        "card:Millikin",
+        "card:Millicent%2C%20Restless%20Revenant",
+        "card:Millstone",
+        "cr:701.17",
+        "cr:702.52b",
+        "glossary:rad-counter",
+        "cr:702.52a",
+        "cr:614.13c"
+      ],
+      "dcg5Before": 7,
+      "dcg5After": 7
+    },
+    {
+      "query": "protection",
+      "before": [
+        "glossary:protection",
+        "card:Protection%20Magic",
+        "card:Protection%20Racket",
+        "card:Protection%20of%20the%20Hekma",
+        "card:Teferi's%20Protection",
+        "cr:702.16g",
+        "cr:702.16",
+        "cr:702.16h",
+        "cr:702.16i",
+        "cr:702.16f"
+      ],
+      "after": [
+        "glossary:protection",
+        "card:Protection%20Magic",
+        "card:Protection%20Racket",
+        "card:Protection%20of%20the%20Hekma",
+        "card:Teferi's%20Protection",
+        "cr:702.16"
+      ],
+      "dcg5Before": 7,
+      "dcg5After": 7
+    }
+  ],
+  "examples": [
+    {
+      "query": "banding",
+      "before": [
+        "card:Banding%20Sliver",
+        "cr:702.22",
+        "cr:702.22a",
+        "cr:702.22b",
+        "glossary:banding-bands-with-other",
+        "cr:702.22m",
+        "cr:702.22g",
+        "cr:702.22f",
+        "cr:702.22e",
+        "cr:702.22d"
+      ],
+      "after": [
+        "card:Banding%20Sliver",
+        "cr:702.22",
+        "glossary:banding-bands-with-other",
+        "cr:802.3b",
+        "cr:508.1e"
+      ]
+    },
+    {
+      "query": "702.22a",
+      "before": [
+        "cr:702.22a",
+        "cr:701.22a",
+        "cr:701.22d",
+        "cr:702.2",
+        "cr:702.3",
+        "cr:702.5",
+        "cr:702.6",
+        "cr:702.8",
+        "cr:702.9",
+        "cr:702.10"
+      ],
+      "after": [
+        "cr:702.22a",
+        "cr:701.22a",
+        "cr:701.22d",
+        "cr:702.2",
+        "cr:702.3",
+        "cr:702.5",
+        "cr:702.6",
+        "cr:702.8",
+        "cr:702.9",
+        "cr:702.10"
+      ]
+    },
+    {
+      "query": "attacking creatures to share abilities",
+      "before": [
+        "cr:702.22g",
+        "cr:702.19b",
+        "cr:702.19c",
+        "cr:702.78a",
+        "cr:723.5",
+        "cr:700.1",
+        "cr:508.2a",
+        "cr:702.13b",
+        "cr:509.1c",
+        "cr:508.7c"
+      ],
+      "after": [
+        "cr:702.22g",
+        "cr:702.19b",
+        "cr:702.19c",
+        "cr:702.78a",
+        "cr:723.5",
+        "cr:700.1",
+        "cr:508.2a",
+        "cr:702.13b",
+        "cr:509.1c",
+        "cr:508.7c"
+      ]
+    },
+    {
+      "query": "flash",
+      "before": [
+        "card:Flash",
+        "glossary:flash",
+        "card:Flash%20Photography",
+        "card:Flash%20Thompson%2C%20Spider-Fan",
+        "card:Flash%20Counter",
+        "cr:702.8",
+        "cr:702.8b",
+        "cr:702.8a",
+        "cr:601.6a",
+        "cr:601.3d"
+      ],
+      "after": [
+        "card:Flash",
+        "glossary:flash",
+        "card:Flash%20Photography",
+        "card:Flash%20Thompson%2C%20Spider-Fan",
+        "card:Flash%20Counter",
+        "cr:702.8",
+        "cr:601.6a",
+        "cr:601.3d",
+        "cr:601.3c",
+        "cr:601.3b"
+      ]
+    },
+    {
+      "query": "ward",
+      "before": [
+        "glossary:ward",
+        "card:Ward%20Sliver",
+        "card:Ward%20of%20Bones",
+        "card:Ward%20of%20Lights",
+        "card:Ward%20of%20Piety",
+        "cr:702.21",
+        "cr:702.21a",
+        "cr:702.21b",
+        "glossary:disguise",
+        "glossary:cloak"
+      ],
+      "after": [
+        "glossary:ward",
+        "card:Ward%20Sliver",
+        "card:Ward%20of%20Bones",
+        "card:Ward%20of%20Lights",
+        "card:Ward%20of%20Piety",
+        "cr:702.21",
+        "glossary:disguise",
+        "glossary:cloak",
+        "cr:111.10m",
+        "cr:701.58a"
+      ]
+    },
+    {
+      "query": "trample",
+      "before": [
+        "glossary:trample",
+        "card:Trampled%20Lotus",
+        "card:Case%20of%20the%20Trampled%20Garden",
+        "card:Rhino%2C%20Terrible%20Trampler",
+        "cr:702.19",
+        "cr:702.19g",
+        "glossary:trample-over-planeswalkers",
+        "cr:702.19a",
+        "cr:702.19d",
+        "cr:702.19f"
+      ],
+      "after": [
+        "glossary:trample",
+        "card:Trampled%20Lotus",
+        "card:Case%20of%20the%20Trampled%20Garden",
+        "card:Rhino%2C%20Terrible%20Trampler",
+        "cr:702.19",
+        "glossary:trample-over-planeswalkers",
+        "cr:111.10k",
+        "cr:122.1b",
+        "cr:702.1c",
+        "cr:111.4"
+      ]
+    }
+  ],
+  "decision": "Not shipped. The 66-query frozen set shows no DCG@5 regression, but freed positions expose broader distinct matches (for example 802.3b and 508.1e for banding). These are source-related; the granular judgments do not establish whether they are better destinations than child-focused family views. Heading equality alone cannot resolve that ambiguity. Keep validated retrieval unchanged for this reading-focused release."
+}

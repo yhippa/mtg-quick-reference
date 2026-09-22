@@ -55,6 +55,7 @@ test('verified atomic snapshots survive interrupted/mixed updates and cold offli
   assert.equal(runtime.search('ward').exact[0].id,'glossary:ward');assert.equal(runtime.search('702.19').direct[0].id,'cr:702.19');
   const glossary=runtime.detail('glossary:trample')!;assert.ok(renderRule(glossary,release).includes('glossary'));
   const ref=glossary.document.references[0];assert.ok(runtime.detail(ref));assert.ok(renderRule(runtime.detail(ref)!,release).includes('rule-title'));
+  const banding=runtime.detail('cr:702.22a')!;assert.equal(banding.document.id,'cr:702.22a');assert.equal(banding.family!.members.length,12);assert.ok(renderRule(banding,release).includes('focused-rule'));
   online=true;const next=boot(nextScript);await dispatch(next,'install');assert.ok(stores.has(oldKey));assert.equal(activated,false);
   next.message({data:'ACTIVATE'});assert.equal(activated,true);await dispatch(next,'activate');assert.ok(!stores.has(oldKey));
  }finally{rmSync(temp,{recursive:true,force:true});}

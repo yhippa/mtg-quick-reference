@@ -17,4 +17,9 @@ export interface RulesRelease {
   corpus: { url: string; sha256: string }; index: { url: string; sha256: string };
   cards: { sha256: string; updated: string }; documents: number;
 }
-export interface RuleDetail { document: RuleDocument; parent: RuleHit | null; children: RuleHit[]; references: RuleHit[] }
+export interface RuleMember { document: RuleDocument; children: RuleHit[]; references: RuleHit[] }
+export interface RuleDetail extends RuleMember {
+  parent: RuleHit | null;
+  // Reading presentation only. document remains the exact requested citation.
+  family?: { root: RuleDocument; members: RuleMember[] };
+}

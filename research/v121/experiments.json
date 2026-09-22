@@ -1,0 +1,2939 @@
+{
+  "evaluationSha256": "a3d468a5a45f4b34f3d3fc24e2c819f2d31a9c599be24c3b792eda6e1193e115",
+  "inputs": {
+    "engine.mjs": "ac03d9aea4feaf9ed1986e0324eec1c6f34a0419b7a22cb7240f12d35668c055",
+    "data/lean-rules.json": "e52d58030161d9ae5ddcbd6b9c76e2257809534940d40a765301543af7adfe46",
+    "data/cards.json": "d76661f3b3c744c208d59f99ddd2f4f245954a125d6124f02b355761b69ca10b",
+    "data/rules-index.json": "b93787e1670b3e4a56fe186f6c160c863c0dbaa2396aa7b21502dd954b95ec69",
+    "data/unified-index.json": "defa74ed45036bd7c8c9ea01cf7273d15b278d0fa5819911dccb0d8dbe722e27",
+    "data/card-search.mjs": "91542c11e532ab83f37d0d78ed8a89bce141dd9b4635e1b617ef692d6d8153c2"
+  },
+  "runs": {
+    "linear": [
+      {
+        "mode": "linear",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 28.472709000000002,
+          "indexReadParseMs": 0.00841599999999687,
+          "buildMs": 112.028625,
+          "readyMs": 140.50975,
+          "firstPass": {
+            "p50": 2.8441250000000196,
+            "p95": 6.282749999999993,
+            "max": 10.050582999999989,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.7578340000000026,
+            "p95": 3.539874999999938,
+            "max": 34.327083000000016,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 30902472,
+          "rssDeltaBytes": 106119168,
+          "heapUsedBytes": 34937440
+        }
+      },
+      {
+        "mode": "linear",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 30.222334000000004,
+          "indexReadParseMs": 0.008124999999999716,
+          "buildMs": 114.503916,
+          "readyMs": 144.734375,
+          "firstPass": {
+            "p50": 3.0720420000000104,
+            "p95": 6.993792000000013,
+            "max": 10.378957999999983,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.85020899999995,
+            "p95": 3.6514159999999265,
+            "max": 35.38720900000004,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 30902712,
+          "rssDeltaBytes": 110215168,
+          "heapUsedBytes": 34937712
+        }
+      },
+      {
+        "mode": "linear",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 29.686,
+          "indexReadParseMs": 0.007334000000000174,
+          "buildMs": 115.50858299999999,
+          "readyMs": 145.20191699999998,
+          "firstPass": {
+            "p50": 2.853999999999985,
+            "p95": 6.269082999999995,
+            "max": 11.022250000000014,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.7930840000001353,
+            "p95": 3.5418339999998807,
+            "max": 32.95420899999999,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 30902712,
+          "rssDeltaBytes": 110395392,
+          "heapUsedBytes": 34937680
+        }
+      }
+    ],
+    "unified": [
+      {
+        "mode": "unified",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 28.678084000000002,
+          "indexReadParseMs": 0.010332999999995707,
+          "buildMs": 158.491333,
+          "readyMs": 187.17975,
+          "firstPass": {
+            "p50": 0.06687500000001023,
+            "p95": 0.49458400000000324,
+            "max": 1.2521669999999858,
+            "n": 66
+          },
+          "warm": {
+            "p50": 0.03237500000000182,
+            "p95": 0.4430420000000481,
+            "max": 0.8303750000000036,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 22193400,
+          "rssDeltaBytes": 80887808,
+          "heapUsedBytes": 26228352
+        }
+      },
+      {
+        "mode": "unified",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 29.158291000000002,
+          "indexReadParseMs": 0.006959000000001936,
+          "buildMs": 150.765083,
+          "readyMs": 179.930333,
+          "firstPass": {
+            "p50": 0.06270800000001486,
+            "p95": 0.45408300000002555,
+            "max": 1.247917000000001,
+            "n": 66
+          },
+          "warm": {
+            "p50": 0.03283300000001077,
+            "p95": 0.44033300000000963,
+            "max": 0.825665999999984,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 22193352,
+          "rssDeltaBytes": 82739200,
+          "heapUsedBytes": 26228352
+        }
+      },
+      {
+        "mode": "unified",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 28.830750000000002,
+          "indexReadParseMs": 0.005124999999999602,
+          "buildMs": 148.334875,
+          "readyMs": 177.17075,
+          "firstPass": {
+            "p50": 0.06637499999999363,
+            "p95": 0.45691700000000424,
+            "max": 1.2121669999999938,
+            "n": 66
+          },
+          "warm": {
+            "p50": 0.0337910000000079,
+            "p95": 0.445459000000028,
+            "max": 0.8468750000000114,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 22193352,
+          "rssDeltaBytes": 83099648,
+          "heapUsedBytes": 26228352
+        }
+      }
+    ],
+    "unified-routed": [
+      {
+        "mode": "unified-routed",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 29.729291,
+          "indexReadParseMs": 0.007334000000000174,
+          "buildMs": 214.53487500000003,
+          "readyMs": 244.27150000000003,
+          "firstPass": {
+            "p50": 2.489582999999982,
+            "p95": 5.022792000000038,
+            "max": 9.772375000000011,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.4851670000000468,
+            "p95": 3.258542000000034,
+            "max": 34.55433400000004,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 33921552,
+          "rssDeltaBytes": 132890624,
+          "heapUsedBytes": 37956528
+        }
+      },
+      {
+        "mode": "unified-routed",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 30.650208000000003,
+          "indexReadParseMs": 0.008624999999994998,
+          "buildMs": 217.814417,
+          "readyMs": 248.47325,
+          "firstPass": {
+            "p50": 2.4812919999999963,
+            "p95": 5.081124999999986,
+            "max": 9.587874999999997,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.448916000000054,
+            "p95": 3.1847089999998843,
+            "max": 34.109375,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 33921552,
+          "rssDeltaBytes": 132186112,
+          "heapUsedBytes": 37956528
+        }
+      },
+      {
+        "mode": "unified-routed",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 28.635542000000004,
+          "indexReadParseMs": 0.006915999999996814,
+          "buildMs": 209.51,
+          "readyMs": 238.152458,
+          "firstPass": {
+            "p50": 2.425542000000007,
+            "p95": 4.815375000000017,
+            "max": 9.538624999999968,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.4531670000001213,
+            "p95": 3.1785829999998896,
+            "max": 34.095708,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 33921552,
+          "rssDeltaBytes": 129777664,
+          "heapUsedBytes": 37956560
+        }
+      }
+    ],
+    "split": [
+      {
+        "mode": "split",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 30.149749999999997,
+          "indexReadParseMs": 0.009374999999998579,
+          "buildMs": 122.51804100000001,
+          "readyMs": 152.677166,
+          "firstPass": {
+            "p50": 2.398875000000004,
+            "p95": 4.875,
+            "max": 9.301708999999988,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.415916999999979,
+            "p95": 3.211667000000034,
+            "max": 33.81591700000001,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 27136856,
+          "rssDeltaBytes": 119488512,
+          "heapUsedBytes": 31171856
+        }
+      },
+      {
+        "mode": "split",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 28.583624999999998,
+          "indexReadParseMs": 0.008125000000006821,
+          "buildMs": 120.41637500000002,
+          "readyMs": 149.008125,
+          "firstPass": {
+            "p50": 2.4096250000000055,
+            "p95": 5.404167000000001,
+            "max": 9.600083999999981,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.4082499999999527,
+            "p95": 3.182042000000024,
+            "max": 33.33729199999999,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 27136128,
+          "rssDeltaBytes": 117227520,
+          "heapUsedBytes": 31171096
+        }
+      },
+      {
+        "mode": "split",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 31.078042,
+          "indexReadParseMs": 0.007041999999998438,
+          "buildMs": 124.30924999999999,
+          "readyMs": 155.394334,
+          "firstPass": {
+            "p50": 2.427417000000048,
+            "p95": 5.070292000000023,
+            "max": 9.170417000000015,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.466709000000037,
+            "p95": 3.205500000000029,
+            "max": 35.042958,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 27136944,
+          "rssDeltaBytes": 119226368,
+          "heapUsedBytes": 31171944
+        }
+      }
+    ],
+    "split-prebuilt": [
+      {
+        "mode": "split-prebuilt",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 29.383499999999998,
+          "indexReadParseMs": 3.156375000000004,
+          "buildMs": 65.960584,
+          "readyMs": 98.500459,
+          "firstPass": {
+            "p50": 2.458167000000003,
+            "p95": 5.5033750000000055,
+            "max": 9.239833000000004,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.5030000000001564,
+            "p95": 3.2583750000001146,
+            "max": 33.614958,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 26440448,
+          "rssDeltaBytes": 88866816,
+          "heapUsedBytes": 30475448
+        }
+      },
+      {
+        "mode": "split-prebuilt",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 29.125458000000002,
+          "indexReadParseMs": 3.0565420000000003,
+          "buildMs": 65.565583,
+          "readyMs": 97.74758299999999,
+          "firstPass": {
+            "p50": 2.4915829999999914,
+            "p95": 5.607875000000007,
+            "max": 9.503667000000007,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.4959579999999733,
+            "p95": 3.2831249999999272,
+            "max": 33.635500000000036,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 26440160,
+          "rssDeltaBytes": 88866816,
+          "heapUsedBytes": 30475192
+        }
+      },
+      {
+        "mode": "split-prebuilt",
+        "environment": {
+          "jitless": false,
+          "rounds": 10,
+          "node": "v24.16.0",
+          "platform": "darwin",
+          "arch": "arm64",
+          "cpu": "Apple M1 Pro"
+        },
+        "timing": {
+          "readParseMs": 32.643375000000006,
+          "indexReadParseMs": 3.3853749999999962,
+          "buildMs": 74.19095800000001,
+          "readyMs": 110.21970800000001,
+          "firstPass": {
+            "p50": 2.640291999999988,
+            "p95": 5.4793750000000045,
+            "max": 9.652749999999997,
+            "n": 66
+          },
+          "warm": {
+            "p50": 2.5667909999999665,
+            "p95": 3.315499999999929,
+            "max": 38.21741599999996,
+            "n": 660
+          }
+        },
+        "memory": {
+          "heapDeltaBytes": 26441152,
+          "rssDeltaBytes": 87212032,
+          "heapUsedBytes": 30476184
+        }
+      }
+    ]
+  },
+  "metrics": {
+    "linear": {
+      "all": {
+        "n": 66,
+        "hit1": 0.6060606060606061,
+        "hit5": 0.7575757575757576,
+        "mrr10": 0.6641414141414143,
+        "ndcg5": 0.6815904100016943,
+        "primaryRecall5": 0.7575757575757576
+      },
+      "development": {
+        "n": 22,
+        "hit1": 0.5909090909090909,
+        "hit5": 0.7272727272727273,
+        "mrr10": 0.6401515151515151,
+        "ndcg5": 0.6669510480372979,
+        "primaryRecall5": 0.7272727272727273
+      },
+      "evaluation": {
+        "n": 44,
+        "hit1": 0.6136363636363636,
+        "hit5": 0.7727272727272727,
+        "mrr10": 0.6761363636363635,
+        "ndcg5": 0.6889100909838922,
+        "primaryRecall5": 0.7727272727272727
+      },
+      "categories": {
+        "card-exact": {
+          "n": 8,
+          "hit1": 1,
+          "hit5": 1,
+          "mrr10": 1,
+          "ndcg5": 1,
+          "primaryRecall5": 1
+        },
+        "card-prefix": {
+          "n": 6,
+          "hit1": 0.6666666666666666,
+          "hit5": 1,
+          "mrr10": 0.763888888888889,
+          "ndcg5": 0.8217794263455654,
+          "primaryRecall5": 1
+        },
+        "rule-id": {
+          "n": 8,
+          "hit1": 1,
+          "hit5": 1,
+          "mrr10": 1,
+          "ndcg5": 1,
+          "primaryRecall5": 1
+        },
+        "glossary": {
+          "n": 12,
+          "hit1": 0.9166666666666666,
+          "hit5": 1,
+          "mrr10": 0.9583333333333334,
+          "ndcg5": 0.9126939402651546,
+          "primaryRecall5": 1
+        },
+        "ambiguous": {
+          "n": 8,
+          "hit1": 0.875,
+          "hit5": 1,
+          "mrr10": 0.9375,
+          "ndcg5": 0.9538662191964322,
+          "primaryRecall5": 1
+        },
+        "rules-prose": {
+          "n": 20,
+          "hit1": 0.1,
+          "hit5": 0.4,
+          "mrr10": 0.2125,
+          "ndcg5": 0.2735516732642557,
+          "primaryRecall5": 0.4
+        },
+        "colloquial": {
+          "n": 4,
+          "hit1": 0,
+          "hit5": 0,
+          "mrr10": 0,
+          "ndcg5": 0,
+          "primaryRecall5": 0
+        }
+      },
+      "misses": [
+        {
+          "id": "q43",
+          "query": "who gets priority after a spell resolves",
+          "expected": {
+            "cr:117.3b": 3,
+            "cr:117": 1,
+            "glossary:priority": 1
+          },
+          "top5": []
+        },
+        {
+          "id": "q46",
+          "query": "commander costs two more",
+          "expected": {
+            "cr:903.8": 3,
+            "glossary:commander-tax": 1
+          },
+          "top5": []
+        },
+        {
+          "id": "q48",
+          "query": "creature zero toughness indestructible",
+          "expected": {
+            "cr:704.5f": 3,
+            "glossary:indestructible": 1
+          },
+          "top5": []
+        },
+        {
+          "id": "q49",
+          "query": "mana ability uses stack",
+          "expected": {
+            "cr:605.3b": 3,
+            "cr:605": 1
+          },
+          "top5": [
+            {
+              "id": "cr:707.10",
+              "title": "707.10 — Copying Objects",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q50",
+          "query": "tokens leave battlefield",
+          "expected": {
+            "cr:111.7": 3,
+            "cr:111.8": 3,
+            "cr:111": 1
+          },
+          "top5": [
+            {
+              "id": "cr:702.26d",
+              "title": "702.26d — Phasing",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:800.4a",
+              "title": "800.4a — General",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q51",
+          "query": "copy enters battlefield",
+          "expected": {
+            "cr:707.5": 3,
+            "cr:707": 1
+          },
+          "top5": [
+            {
+              "id": "cr:111.4",
+              "title": "111.4 — Tokens",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:202.3b",
+              "title": "202.3b — Mana Cost and Color",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:607.5a",
+              "title": "607.5a — Linked Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.12",
+              "title": "614.12 — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:616.1c",
+              "title": "616.1c — Interaction of Replacement and/or Prevention Effects",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q56",
+          "query": "trample deathtouch",
+          "expected": {
+            "cr:702.19b": 3,
+            "cr:702.2c": 3,
+            "glossary:trample": 1,
+            "glossary:deathtouch": 1
+          },
+          "top5": [
+            {
+              "id": "cr:122.1b",
+              "title": "122.1b — Counters",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q57",
+          "query": "sacrifice indestructible",
+          "expected": {
+            "cr:701.21a": 3,
+            "glossary:sacrifice": 1,
+            "glossary:indestructible": 1
+          },
+          "top5": []
+        },
+        {
+          "id": "q58",
+          "query": "combat damage assignment order",
+          "expected": {
+            "cr:510.1c": 3,
+            "cr:510.1d": 3,
+            "glossary:damage-assignment-order-obsolete": 1
+          },
+          "top5": [
+            {
+              "id": "glossary:damage-assignment-order-obsolete",
+              "title": "Damage Assignment Order (Obsolete)",
+              "kind": "glossary"
+            }
+          ]
+        },
+        {
+          "id": "q60",
+          "query": "dies creature graveyard",
+          "expected": {
+            "cr:700.4": 3,
+            "glossary:dies": 1
+          },
+          "top5": [
+            {
+              "id": "glossary:dies",
+              "title": "Dies",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:603.10a",
+              "title": "603.10a — Handling Triggered Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:712.21",
+              "title": "712.21 — Double-Faced Cards",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q61",
+          "query": "replacement effects choose order",
+          "expected": {
+            "cr:616.1": 3,
+            "cr:616": 1
+          },
+          "top5": [
+            {
+              "id": "cr:616.1g",
+              "title": "616.1g — Interaction of Replacement and/or Prevention Effects",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q62",
+          "query": "protection target damage enchant block",
+          "expected": {
+            "cr:702.16b": 3,
+            "cr:702.16c": 3,
+            "cr:702.16e": 3,
+            "cr:702.16f": 3,
+            "glossary:protection": 1
+          },
+          "top5": []
+        },
+        {
+          "id": "q63",
+          "query": "fizzle",
+          "expected": {
+            "glossary:illegal-target": 3
+          },
+          "top5": []
+        },
+        {
+          "id": "q64",
+          "query": "shroud vs hexproof",
+          "expected": {
+            "glossary:hexproof": 3
+          },
+          "top5": []
+        },
+        {
+          "id": "q65",
+          "query": "when does damage wear off",
+          "expected": {
+            "cr:514.2": 3
+          },
+          "top5": []
+        },
+        {
+          "id": "q66",
+          "query": "can I respond to paying costs",
+          "expected": {
+            "cr:601.2h": 3
+          },
+          "top5": []
+        }
+      ]
+    },
+    "unified": {
+      "all": {
+        "n": 66,
+        "hit1": 0.3333333333333333,
+        "hit5": 0.6666666666666666,
+        "mrr10": 0.45759379509379494,
+        "ndcg5": 0.482320226055415,
+        "primaryRecall5": 0.6439393939393939
+      },
+      "development": {
+        "n": 22,
+        "hit1": 0.36363636363636365,
+        "hit5": 0.7272727272727273,
+        "mrr10": 0.49967532467532455,
+        "ndcg5": 0.5432770369049299,
+        "primaryRecall5": 0.7272727272727273
+      },
+      "evaluation": {
+        "n": 44,
+        "hit1": 0.3181818181818182,
+        "hit5": 0.6363636363636364,
+        "mrr10": 0.4365530303030301,
+        "ndcg5": 0.45184182063065775,
+        "primaryRecall5": 0.6022727272727273
+      },
+      "categories": {
+        "card-exact": {
+          "n": 8,
+          "hit1": 0.875,
+          "hit5": 1,
+          "mrr10": 0.9375,
+          "ndcg5": 0.9538662191964322,
+          "primaryRecall5": 1
+        },
+        "card-prefix": {
+          "n": 6,
+          "hit1": 0.3333333333333333,
+          "hit5": 0.5,
+          "mrr10": 0.38888888888888884,
+          "ndcg5": 0.4166666666666667,
+          "primaryRecall5": 0.5
+        },
+        "rule-id": {
+          "n": 8,
+          "hit1": 0.5,
+          "hit5": 0.625,
+          "mrr10": 0.5833333333333333,
+          "ndcg5": 0.5788662191964322,
+          "primaryRecall5": 0.625
+        },
+        "glossary": {
+          "n": 12,
+          "hit1": 0.25,
+          "hit5": 0.75,
+          "mrr10": 0.4388888888888889,
+          "ndcg5": 0.4763165473883518,
+          "primaryRecall5": 0.75
+        },
+        "ambiguous": {
+          "n": 8,
+          "hit1": 0.375,
+          "hit5": 0.625,
+          "mrr10": 0.46577380952380953,
+          "ndcg5": 0.3946213679505387,
+          "primaryRecall5": 0.5
+        },
+        "rules-prose": {
+          "n": 20,
+          "hit1": 0.15,
+          "hit5": 0.7,
+          "mrr10": 0.3354166666666667,
+          "ndcg5": 0.4099252950124977,
+          "primaryRecall5": 0.675
+        },
+        "colloquial": {
+          "n": 4,
+          "hit1": 0,
+          "hit5": 0,
+          "mrr10": 0,
+          "ndcg5": 0,
+          "primaryRecall5": 0
+        }
+      },
+      "misses": [
+        {
+          "id": "q10",
+          "query": "bolt",
+          "expected": {
+            "card:Lightning%20Bolt": 3
+          },
+          "top5": [
+            {
+              "id": "card:Beacon%20Bolt",
+              "title": "Beacon Bolt",
+              "kind": "card"
+            },
+            {
+              "id": "card:Blastfire%20Bolt",
+              "title": "Blastfire Bolt",
+              "kind": "card"
+            },
+            {
+              "id": "card:Bolt%20Bend",
+              "title": "Bolt Bend",
+              "kind": "card"
+            },
+            {
+              "id": "card:Bolt%20Hound",
+              "title": "Bolt Hound",
+              "kind": "card"
+            },
+            {
+              "id": "card:Bolt%20of%20Keranos",
+              "title": "Bolt of Keranos",
+              "kind": "card"
+            }
+          ]
+        },
+        {
+          "id": "q11",
+          "query": "sheold",
+          "expected": {
+            "card:Sheoldred%2C%20the%20Apocalypse": 3
+          },
+          "top5": []
+        },
+        {
+          "id": "q12",
+          "query": "necro",
+          "expected": {
+            "card:Necropotence": 3
+          },
+          "top5": [
+            {
+              "id": "card:Necro-Impotence",
+              "title": "Necro-Impotence",
+              "kind": "card"
+            },
+            {
+              "id": "card:Ludevic%2C%20Necro-Alchemist",
+              "title": "Ludevic, Necro-Alchemist",
+              "kind": "card"
+            }
+          ]
+        },
+        {
+          "id": "q17",
+          "query": "rule 702.19b",
+          "expected": {
+            "cr:702.19b": 3
+          },
+          "top5": [
+            {
+              "id": "cr:702.19c",
+              "title": "702.19c — Trample",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.17b",
+              "title": "702.17b — Reach",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.124c",
+              "title": "702.124c — Partner",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.5b",
+              "title": "702.5b — For more information about Auras, see rule 303, “Enchantments.”",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.6b",
+              "title": "702.6b — For more information about Equipment, see rule 301, “Artifacts.”",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q19",
+          "query": "605",
+          "expected": {
+            "cr:605": 3
+          },
+          "top5": [
+            {
+              "id": "cr:605.5",
+              "title": "605.5 — Mana Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:605.3c",
+              "title": "605.3c — Mana Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:605.3",
+              "title": "605.3 — Mana Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:605.4",
+              "title": "605.4 — Mana Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:605.3b",
+              "title": "605.3b — Mana Abilities",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q20",
+          "query": "rule 608.2b",
+          "expected": {
+            "cr:608.2b": 3
+          },
+          "top5": [
+            {
+              "id": "cr:608.2",
+              "title": "608.2 — Resolving Spells and Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:608.3b",
+              "title": "608.3b — Resolving Spells and Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:illegal-target",
+              "title": "Illegal Target",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:608.3",
+              "title": "608.3 — Resolving Spells and Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:608.1",
+              "title": "608.1 — Resolving Spells and Abilities",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q24",
+          "query": "Ward",
+          "expected": {
+            "glossary:ward": 3,
+            "cr:702": 1
+          },
+          "top5": [
+            {
+              "id": "card:Artifact%20Ward",
+              "title": "Artifact Ward",
+              "kind": "card"
+            },
+            {
+              "id": "card:Black%20Ward",
+              "title": "Black Ward",
+              "kind": "card"
+            },
+            {
+              "id": "card:Blue%20Ward",
+              "title": "Blue Ward",
+              "kind": "card"
+            },
+            {
+              "id": "card:Curator's%20Ward",
+              "title": "Curator's Ward",
+              "kind": "card"
+            },
+            {
+              "id": "card:Death%20Ward",
+              "title": "Death Ward",
+              "kind": "card"
+            }
+          ]
+        },
+        {
+          "id": "q26",
+          "query": "Menace",
+          "expected": {
+            "glossary:menace": 3,
+            "cr:702": 1
+          },
+          "top5": [
+            {
+              "id": "card:Bestial%20Menace",
+              "title": "Bestial Menace",
+              "kind": "card"
+            },
+            {
+              "id": "card:Corpsejack%20Menace",
+              "title": "Corpsejack Menace",
+              "kind": "card"
+            },
+            {
+              "id": "cr:702.111",
+              "title": "702.111 — Menace",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.111a",
+              "title": "702.111a — Menace",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.111c",
+              "title": "702.111c — Menace",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q29",
+          "query": "Hexproof",
+          "expected": {
+            "glossary:hexproof": 3,
+            "cr:702": 1
+          },
+          "top5": [
+            {
+              "id": "cr:702.11",
+              "title": "702.11 — Hexproof",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.11f",
+              "title": "702.11f — Hexproof",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.11a",
+              "title": "702.11a — Hexproof",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.11d",
+              "title": "702.11d — Hexproof",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.11g",
+              "title": "702.11g — Hexproof",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q38",
+          "query": "counter",
+          "expected": {
+            "glossary:counter": 3
+          },
+          "top5": [
+            {
+              "id": "card:Flash%20Counter",
+              "title": "Flash Counter",
+              "kind": "card"
+            },
+            {
+              "id": "card:Spell%20Counter",
+              "title": "Spell Counter",
+              "kind": "card"
+            },
+            {
+              "id": "cr:701.6",
+              "title": "701.6 — Counter",
+              "kind": "rule"
+            },
+            {
+              "id": "card:Gimli%2C%20Counter%20of%20Kills",
+              "title": "Gimli, Counter of Kills",
+              "kind": "card"
+            },
+            {
+              "id": "card:Legolas%2C%20Counter%20of%20Kills",
+              "title": "Legolas, Counter of Kills",
+              "kind": "card"
+            }
+          ]
+        },
+        {
+          "id": "q40",
+          "query": "copy",
+          "expected": {
+            "glossary:copy": 3
+          },
+          "top5": [
+            {
+              "id": "card:Copy%20Artifact",
+              "title": "Copy Artifact",
+              "kind": "card"
+            },
+            {
+              "id": "card:Copy%20Catchers",
+              "title": "Copy Catchers",
+              "kind": "card"
+            },
+            {
+              "id": "card:Copy%20Enchantment",
+              "title": "Copy Enchantment",
+              "kind": "card"
+            },
+            {
+              "id": "card:Copy%20Land",
+              "title": "Copy Land",
+              "kind": "card"
+            },
+            {
+              "id": "card:Pirated%20Copy",
+              "title": "Pirated Copy",
+              "kind": "card"
+            }
+          ]
+        },
+        {
+          "id": "q42",
+          "query": "protection",
+          "expected": {
+            "glossary:protection": 3
+          },
+          "top5": [
+            {
+              "id": "card:Lethal%20Protection",
+              "title": "Lethal Protection",
+              "kind": "card"
+            },
+            {
+              "id": "card:Perch%20Protection",
+              "title": "Perch Protection",
+              "kind": "card"
+            },
+            {
+              "id": "card:Protection%20Magic",
+              "title": "Protection Magic",
+              "kind": "card"
+            },
+            {
+              "id": "card:Protection%20Racket",
+              "title": "Protection Racket",
+              "kind": "card"
+            },
+            {
+              "id": "card:Protection%20of%20the%20Hekma",
+              "title": "Protection of the Hekma",
+              "kind": "card"
+            }
+          ]
+        },
+        {
+          "id": "q48",
+          "query": "creature zero toughness indestructible",
+          "expected": {
+            "cr:704.5f": 3,
+            "glossary:indestructible": 1
+          },
+          "top5": [
+            {
+              "id": "cr:107.1b",
+              "title": "107.1b — Numbers and Symbols",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:toughness",
+              "title": "Toughness",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:208.2",
+              "title": "208.2 — Power/Toughness",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:208.5",
+              "title": "208.5 — Power/Toughness",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:123.8",
+              "title": "123.8 — Stickers",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q56",
+          "query": "trample deathtouch",
+          "expected": {
+            "cr:702.19b": 3,
+            "cr:702.2c": 3,
+            "glossary:trample": 1,
+            "glossary:deathtouch": 1
+          },
+          "top5": [
+            {
+              "id": "cr:122.1b",
+              "title": "122.1b — Counters",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2",
+              "title": "702.2 — Deathtouch",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2a",
+              "title": "702.2a — Deathtouch",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.19",
+              "title": "702.19 — Trample",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2d",
+              "title": "702.2d — Deathtouch",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q57",
+          "query": "sacrifice indestructible",
+          "expected": {
+            "cr:701.21a": 3,
+            "glossary:sacrifice": 1,
+            "glossary:indestructible": 1
+          },
+          "top5": [
+            {
+              "id": "card:Indestructible%20Aura",
+              "title": "Indestructible Aura",
+              "kind": "card"
+            },
+            {
+              "id": "cr:702.12",
+              "title": "702.12 — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.12a",
+              "title": "702.12a — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.12c",
+              "title": "702.12c — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:indestructible",
+              "title": "Indestructible",
+              "kind": "glossary"
+            }
+          ]
+        },
+        {
+          "id": "q58",
+          "query": "combat damage assignment order",
+          "expected": {
+            "cr:510.1c": 3,
+            "cr:510.1d": 3,
+            "glossary:damage-assignment-order-obsolete": 1
+          },
+          "top5": [
+            {
+              "id": "glossary:damage-assignment-order-obsolete",
+              "title": "Damage Assignment Order (Obsolete)",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:510.1e",
+              "title": "510.1e — Combat Damage Step",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:802.5",
+              "title": "802.5 — Attack Multiple Players Option",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:506.1",
+              "title": "506.1 — Combat Phase",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:703.4k",
+              "title": "703.4k — The turn-based actions are as follows:",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q61",
+          "query": "replacement effects choose order",
+          "expected": {
+            "cr:616.1": 3,
+            "cr:616": 1
+          },
+          "top5": [
+            {
+              "id": "cr:616.1g",
+              "title": "616.1g — Interaction of Replacement and/or Prevention Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.17b",
+              "title": "614.17b — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.13a",
+              "title": "614.13a — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.12c",
+              "title": "614.12c — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:616.2",
+              "title": "616.2 — Interaction of Replacement and/or Prevention Effects",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q62",
+          "query": "protection target damage enchant block",
+          "expected": {
+            "cr:702.16b": 3,
+            "cr:702.16c": 3,
+            "cr:702.16e": 3,
+            "cr:702.16f": 3,
+            "glossary:protection": 1
+          },
+          "top5": [
+            {
+              "id": "cr:702.19b",
+              "title": "702.19b — Trample",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.47c",
+              "title": "702.47c — Splice",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.5d",
+              "title": "702.5d — Enchant",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.5a",
+              "title": "702.5a — Enchant",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:enchant",
+              "title": "Enchant",
+              "kind": "glossary"
+            }
+          ]
+        },
+        {
+          "id": "q63",
+          "query": "fizzle",
+          "expected": {
+            "glossary:illegal-target": 3
+          },
+          "top5": []
+        },
+        {
+          "id": "q64",
+          "query": "shroud vs hexproof",
+          "expected": {
+            "glossary:hexproof": 3
+          },
+          "top5": [
+            {
+              "id": "card:Smoke%20Shroud",
+              "title": "Smoke Shroud",
+              "kind": "card"
+            },
+            {
+              "id": "card:Specter's%20Shroud",
+              "title": "Specter's Shroud",
+              "kind": "card"
+            },
+            {
+              "id": "cr:702.18",
+              "title": "702.18 — Shroud",
+              "kind": "rule"
+            },
+            {
+              "id": "card:Athreos%2C%20Shroud-Veiled",
+              "title": "Athreos, Shroud-Veiled",
+              "kind": "card"
+            },
+            {
+              "id": "card:Liesa%2C%20Shroud%20of%20Dusk",
+              "title": "Liesa, Shroud of Dusk",
+              "kind": "card"
+            }
+          ]
+        },
+        {
+          "id": "q65",
+          "query": "when does damage wear off",
+          "expected": {
+            "cr:514.2": 3
+          },
+          "top5": [
+            {
+              "id": "card:Wear%20%2F%2F%20Tear",
+              "title": "Wear // Tear",
+              "kind": "card"
+            },
+            {
+              "id": "card:Wear%20Away",
+              "title": "Wear Away",
+              "kind": "card"
+            },
+            {
+              "id": "card:Wear%20Down",
+              "title": "Wear Down",
+              "kind": "card"
+            },
+            {
+              "id": "card:Bounce%20Off",
+              "title": "Bounce Off",
+              "kind": "card"
+            },
+            {
+              "id": "card:Brush%20Off",
+              "title": "Brush Off",
+              "kind": "card"
+            }
+          ]
+        },
+        {
+          "id": "q66",
+          "query": "can I respond to paying costs",
+          "expected": {
+            "cr:601.2h": 3
+          },
+          "top5": [
+            {
+              "id": "cr:118.3c",
+              "title": "118.3c — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.2",
+              "title": "118.2 — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.3b",
+              "title": "118.3b — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.7",
+              "title": "118.7 — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.9",
+              "title": "118.9 — Costs",
+              "kind": "rule"
+            }
+          ]
+        }
+      ]
+    },
+    "unified-routed": {
+      "all": {
+        "n": 66,
+        "hit1": 0.6212121212121212,
+        "hit5": 0.8484848484848485,
+        "mrr10": 0.7055555555555558,
+        "ndcg5": 0.7242408087358967,
+        "primaryRecall5": 0.8409090909090909
+      },
+      "development": {
+        "n": 22,
+        "hit1": 0.6363636363636364,
+        "hit5": 0.8636363636363636,
+        "mrr10": 0.7143939393939394,
+        "ndcg5": 0.7374585233901141,
+        "primaryRecall5": 0.8636363636363636
+      },
+      "evaluation": {
+        "n": 44,
+        "hit1": 0.6136363636363636,
+        "hit5": 0.8409090909090909,
+        "mrr10": 0.7011363636363636,
+        "ndcg5": 0.7176319514087873,
+        "primaryRecall5": 0.8295454545454546
+      },
+      "categories": {
+        "card-exact": {
+          "n": 8,
+          "hit1": 1,
+          "hit5": 1,
+          "mrr10": 1,
+          "ndcg5": 1,
+          "primaryRecall5": 1
+        },
+        "card-prefix": {
+          "n": 6,
+          "hit1": 0.6666666666666666,
+          "hit5": 1,
+          "mrr10": 0.763888888888889,
+          "ndcg5": 0.8217794263455654,
+          "primaryRecall5": 1
+        },
+        "rule-id": {
+          "n": 8,
+          "hit1": 1,
+          "hit5": 1,
+          "mrr10": 1,
+          "ndcg5": 1,
+          "primaryRecall5": 1
+        },
+        "glossary": {
+          "n": 12,
+          "hit1": 0.9166666666666666,
+          "hit5": 1,
+          "mrr10": 0.9583333333333334,
+          "ndcg5": 0.9112641259240496,
+          "primaryRecall5": 1
+        },
+        "ambiguous": {
+          "n": 8,
+          "hit1": 0.875,
+          "hit5": 1,
+          "mrr10": 0.9375,
+          "ndcg5": 0.9538662191964322,
+          "primaryRecall5": 1
+        },
+        "rules-prose": {
+          "n": 20,
+          "hit1": 0.15,
+          "hit5": 0.7,
+          "mrr10": 0.3441666666666667,
+          "ndcg5": 0.41515587769178597,
+          "primaryRecall5": 0.675
+        },
+        "colloquial": {
+          "n": 4,
+          "hit1": 0,
+          "hit5": 0,
+          "mrr10": 0.025,
+          "ndcg5": 0,
+          "primaryRecall5": 0
+        }
+      },
+      "misses": [
+        {
+          "id": "q48",
+          "query": "creature zero toughness indestructible",
+          "expected": {
+            "cr:704.5f": 3,
+            "glossary:indestructible": 1
+          },
+          "top5": [
+            {
+              "id": "cr:107.1b",
+              "title": "107.1b — Numbers and Symbols",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:toughness",
+              "title": "Toughness",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:208.2",
+              "title": "208.2 — Power/Toughness",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:208.5",
+              "title": "208.5 — Power/Toughness",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:123.8",
+              "title": "123.8 — Stickers",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q56",
+          "query": "trample deathtouch",
+          "expected": {
+            "cr:702.19b": 3,
+            "cr:702.2c": 3,
+            "glossary:trample": 1,
+            "glossary:deathtouch": 1
+          },
+          "top5": [
+            {
+              "id": "cr:122.1b",
+              "title": "122.1b — Counters",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2",
+              "title": "702.2 — Deathtouch",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2a",
+              "title": "702.2a — Deathtouch",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.19",
+              "title": "702.19 — Trample",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2d",
+              "title": "702.2d — Deathtouch",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q57",
+          "query": "sacrifice indestructible",
+          "expected": {
+            "cr:701.21a": 3,
+            "glossary:sacrifice": 1,
+            "glossary:indestructible": 1
+          },
+          "top5": [
+            {
+              "id": "cr:702.12",
+              "title": "702.12 — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.12a",
+              "title": "702.12a — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.12c",
+              "title": "702.12c — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:indestructible",
+              "title": "Indestructible",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:702.12b",
+              "title": "702.12b — Indestructible",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q58",
+          "query": "combat damage assignment order",
+          "expected": {
+            "cr:510.1c": 3,
+            "cr:510.1d": 3,
+            "glossary:damage-assignment-order-obsolete": 1
+          },
+          "top5": [
+            {
+              "id": "glossary:damage-assignment-order-obsolete",
+              "title": "Damage Assignment Order (Obsolete)",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:510.1e",
+              "title": "510.1e — Combat Damage Step",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:802.5",
+              "title": "802.5 — Attack Multiple Players Option",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:506.1",
+              "title": "506.1 — Combat Phase",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:703.4k",
+              "title": "703.4k — The turn-based actions are as follows:",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q61",
+          "query": "replacement effects choose order",
+          "expected": {
+            "cr:616.1": 3,
+            "cr:616": 1
+          },
+          "top5": [
+            {
+              "id": "cr:616.1g",
+              "title": "616.1g — Interaction of Replacement and/or Prevention Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.17b",
+              "title": "614.17b — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.13a",
+              "title": "614.13a — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.12c",
+              "title": "614.12c — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:616.2",
+              "title": "616.2 — Interaction of Replacement and/or Prevention Effects",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q62",
+          "query": "protection target damage enchant block",
+          "expected": {
+            "cr:702.16b": 3,
+            "cr:702.16c": 3,
+            "cr:702.16e": 3,
+            "cr:702.16f": 3,
+            "glossary:protection": 1
+          },
+          "top5": [
+            {
+              "id": "cr:702.19b",
+              "title": "702.19b — Trample",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.47c",
+              "title": "702.47c — Splice",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.5d",
+              "title": "702.5d — Enchant",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.5a",
+              "title": "702.5a — Enchant",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:enchant",
+              "title": "Enchant",
+              "kind": "glossary"
+            }
+          ]
+        },
+        {
+          "id": "q63",
+          "query": "fizzle",
+          "expected": {
+            "glossary:illegal-target": 3
+          },
+          "top5": []
+        },
+        {
+          "id": "q64",
+          "query": "shroud vs hexproof",
+          "expected": {
+            "glossary:hexproof": 3
+          },
+          "top5": [
+            {
+              "id": "cr:702.18",
+              "title": "702.18 — Shroud",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.11",
+              "title": "702.11 — Hexproof",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.11f",
+              "title": "702.11f — Hexproof",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:shroud",
+              "title": "Shroud",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:702.11a",
+              "title": "702.11a — Hexproof",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q65",
+          "query": "when does damage wear off",
+          "expected": {
+            "cr:514.2": 3
+          },
+          "top5": [
+            {
+              "id": "cr:120",
+              "title": "Damage",
+              "kind": "section"
+            },
+            {
+              "id": "glossary:damage",
+              "title": "Damage",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:510",
+              "title": "Combat Damage Step",
+              "kind": "section"
+            },
+            {
+              "id": "cr:120.2",
+              "title": "120.2 — Damage",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:source-of-damage",
+              "title": "Source of Damage",
+              "kind": "glossary"
+            }
+          ]
+        },
+        {
+          "id": "q66",
+          "query": "can I respond to paying costs",
+          "expected": {
+            "cr:601.2h": 3
+          },
+          "top5": [
+            {
+              "id": "cr:118.3c",
+              "title": "118.3c — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.2",
+              "title": "118.2 — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.3b",
+              "title": "118.3b — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.7",
+              "title": "118.7 — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.9",
+              "title": "118.9 — Costs",
+              "kind": "rule"
+            }
+          ]
+        }
+      ]
+    },
+    "split": {
+      "all": {
+        "n": 66,
+        "hit1": 0.6212121212121212,
+        "hit5": 0.8333333333333334,
+        "mrr10": 0.6996572871572875,
+        "ndcg5": 0.7159937383619337,
+        "primaryRecall5": 0.8257575757575758
+      },
+      "development": {
+        "n": 22,
+        "hit1": 0.6363636363636364,
+        "hit5": 0.8181818181818182,
+        "mrr10": 0.7072510822510822,
+        "ndcg5": 0.7213281783928982,
+        "primaryRecall5": 0.8181818181818182
+      },
+      "evaluation": {
+        "n": 44,
+        "hit1": 0.6136363636363636,
+        "hit5": 0.8409090909090909,
+        "mrr10": 0.6958603896103894,
+        "ndcg5": 0.7133265183464509,
+        "primaryRecall5": 0.8295454545454546
+      },
+      "categories": {
+        "card-exact": {
+          "n": 8,
+          "hit1": 1,
+          "hit5": 1,
+          "mrr10": 1,
+          "ndcg5": 1,
+          "primaryRecall5": 1
+        },
+        "card-prefix": {
+          "n": 6,
+          "hit1": 0.6666666666666666,
+          "hit5": 1,
+          "mrr10": 0.763888888888889,
+          "ndcg5": 0.8217794263455654,
+          "primaryRecall5": 1
+        },
+        "rule-id": {
+          "n": 8,
+          "hit1": 1,
+          "hit5": 1,
+          "mrr10": 1,
+          "ndcg5": 1,
+          "primaryRecall5": 1
+        },
+        "glossary": {
+          "n": 12,
+          "hit1": 0.9166666666666666,
+          "hit5": 1,
+          "mrr10": 0.9583333333333334,
+          "ndcg5": 0.9112641259240496,
+          "primaryRecall5": 1
+        },
+        "ambiguous": {
+          "n": 8,
+          "hit1": 0.875,
+          "hit5": 1,
+          "mrr10": 0.9375,
+          "ndcg5": 0.9538662191964322,
+          "primaryRecall5": 1
+        },
+        "rules-prose": {
+          "n": 20,
+          "hit1": 0.15,
+          "hit5": 0.65,
+          "mrr10": 0.32970238095238097,
+          "ndcg5": 0.3879405454577084,
+          "primaryRecall5": 0.625
+        },
+        "colloquial": {
+          "n": 4,
+          "hit1": 0,
+          "hit5": 0,
+          "mrr10": 0,
+          "ndcg5": 0,
+          "primaryRecall5": 0
+        }
+      },
+      "misses": [
+        {
+          "id": "q48",
+          "query": "creature zero toughness indestructible",
+          "expected": {
+            "cr:704.5f": 3,
+            "glossary:indestructible": 1
+          },
+          "top5": [
+            {
+              "id": "cr:107.1b",
+              "title": "107.1b — Numbers and Symbols",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:toughness",
+              "title": "Toughness",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:208.2",
+              "title": "208.2 — Power/Toughness",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:208.5",
+              "title": "208.5 — Power/Toughness",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:123.8",
+              "title": "123.8 — Stickers",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q49",
+          "query": "mana ability uses stack",
+          "expected": {
+            "cr:605.3b": 3,
+            "cr:605": 1
+          },
+          "top5": [
+            {
+              "id": "cr:707.10",
+              "title": "707.10 — Copying Objects",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:mana-ability",
+              "title": "Mana Ability",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:405.6c",
+              "title": "405.6c — Stack",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:109.2b",
+              "title": "109.2b — Objects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:109.2c",
+              "title": "109.2c — Objects",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q56",
+          "query": "trample deathtouch",
+          "expected": {
+            "cr:702.19b": 3,
+            "cr:702.2c": 3,
+            "glossary:trample": 1,
+            "glossary:deathtouch": 1
+          },
+          "top5": [
+            {
+              "id": "cr:122.1b",
+              "title": "122.1b — Counters",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2",
+              "title": "702.2 — Deathtouch",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2a",
+              "title": "702.2a — Deathtouch",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2d",
+              "title": "702.2d — Deathtouch",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2f",
+              "title": "702.2f — Deathtouch",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q57",
+          "query": "sacrifice indestructible",
+          "expected": {
+            "cr:701.21a": 3,
+            "glossary:sacrifice": 1,
+            "glossary:indestructible": 1
+          },
+          "top5": [
+            {
+              "id": "cr:702.12",
+              "title": "702.12 — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.12a",
+              "title": "702.12a — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.12c",
+              "title": "702.12c — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:indestructible",
+              "title": "Indestructible",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:702.12b",
+              "title": "702.12b — Indestructible",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q58",
+          "query": "combat damage assignment order",
+          "expected": {
+            "cr:510.1c": 3,
+            "cr:510.1d": 3,
+            "glossary:damage-assignment-order-obsolete": 1
+          },
+          "top5": [
+            {
+              "id": "glossary:damage-assignment-order-obsolete",
+              "title": "Damage Assignment Order (Obsolete)",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:510.1e",
+              "title": "510.1e — Combat Damage Step",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:802.5",
+              "title": "802.5 — Attack Multiple Players Option",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:506.1",
+              "title": "506.1 — Combat Phase",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:703.4k",
+              "title": "703.4k — The turn-based actions are as follows:",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q61",
+          "query": "replacement effects choose order",
+          "expected": {
+            "cr:616.1": 3,
+            "cr:616": 1
+          },
+          "top5": [
+            {
+              "id": "cr:616.1g",
+              "title": "616.1g — Interaction of Replacement and/or Prevention Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.17b",
+              "title": "614.17b — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.13a",
+              "title": "614.13a — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:616.2",
+              "title": "616.2 — Interaction of Replacement and/or Prevention Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.12c",
+              "title": "614.12c — Replacement Effects",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q62",
+          "query": "protection target damage enchant block",
+          "expected": {
+            "cr:702.16b": 3,
+            "cr:702.16c": 3,
+            "cr:702.16e": 3,
+            "cr:702.16f": 3,
+            "glossary:protection": 1
+          },
+          "top5": [
+            {
+              "id": "cr:702.19b",
+              "title": "702.19b — Trample",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.47c",
+              "title": "702.47c — Splice",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:608.2b",
+              "title": "608.2b — Resolving Spells and Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.5d",
+              "title": "702.5d — Enchant",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.5a",
+              "title": "702.5a — Enchant",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q63",
+          "query": "fizzle",
+          "expected": {
+            "glossary:illegal-target": 3
+          },
+          "top5": []
+        },
+        {
+          "id": "q64",
+          "query": "shroud vs hexproof",
+          "expected": {
+            "glossary:hexproof": 3
+          },
+          "top5": [
+            {
+              "id": "cr:702.18",
+              "title": "702.18 — Shroud",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.18a",
+              "title": "702.18a — Shroud",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:shroud",
+              "title": "Shroud",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:702.18b",
+              "title": "702.18b — Shroud",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.11f",
+              "title": "702.11f — Hexproof",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q65",
+          "query": "when does damage wear off",
+          "expected": {
+            "cr:514.2": 3
+          },
+          "top5": [
+            {
+              "id": "glossary:encounter",
+              "title": "Encounter",
+              "kind": "glossary"
+            },
+            {
+              "id": "glossary:set-in-motion",
+              "title": "Set in Motion",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:312.5",
+              "title": "312.5 — Phenomena",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:archenemy",
+              "title": "Archenemy",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:701.51b",
+              "title": "701.51b — Open an Attraction",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q66",
+          "query": "can I respond to paying costs",
+          "expected": {
+            "cr:601.2h": 3
+          },
+          "top5": [
+            {
+              "id": "cr:118.3c",
+              "title": "118.3c — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.2",
+              "title": "118.2 — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.7",
+              "title": "118.7 — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.3b",
+              "title": "118.3b — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.9",
+              "title": "118.9 — Costs",
+              "kind": "rule"
+            }
+          ]
+        }
+      ]
+    },
+    "split-prebuilt": {
+      "all": {
+        "n": 66,
+        "hit1": 0.6212121212121212,
+        "hit5": 0.8333333333333334,
+        "mrr10": 0.6996572871572875,
+        "ndcg5": 0.7159937383619337,
+        "primaryRecall5": 0.8257575757575758
+      },
+      "development": {
+        "n": 22,
+        "hit1": 0.6363636363636364,
+        "hit5": 0.8181818181818182,
+        "mrr10": 0.7072510822510822,
+        "ndcg5": 0.7213281783928982,
+        "primaryRecall5": 0.8181818181818182
+      },
+      "evaluation": {
+        "n": 44,
+        "hit1": 0.6136363636363636,
+        "hit5": 0.8409090909090909,
+        "mrr10": 0.6958603896103894,
+        "ndcg5": 0.7133265183464509,
+        "primaryRecall5": 0.8295454545454546
+      },
+      "categories": {
+        "card-exact": {
+          "n": 8,
+          "hit1": 1,
+          "hit5": 1,
+          "mrr10": 1,
+          "ndcg5": 1,
+          "primaryRecall5": 1
+        },
+        "card-prefix": {
+          "n": 6,
+          "hit1": 0.6666666666666666,
+          "hit5": 1,
+          "mrr10": 0.763888888888889,
+          "ndcg5": 0.8217794263455654,
+          "primaryRecall5": 1
+        },
+        "rule-id": {
+          "n": 8,
+          "hit1": 1,
+          "hit5": 1,
+          "mrr10": 1,
+          "ndcg5": 1,
+          "primaryRecall5": 1
+        },
+        "glossary": {
+          "n": 12,
+          "hit1": 0.9166666666666666,
+          "hit5": 1,
+          "mrr10": 0.9583333333333334,
+          "ndcg5": 0.9112641259240496,
+          "primaryRecall5": 1
+        },
+        "ambiguous": {
+          "n": 8,
+          "hit1": 0.875,
+          "hit5": 1,
+          "mrr10": 0.9375,
+          "ndcg5": 0.9538662191964322,
+          "primaryRecall5": 1
+        },
+        "rules-prose": {
+          "n": 20,
+          "hit1": 0.15,
+          "hit5": 0.65,
+          "mrr10": 0.32970238095238097,
+          "ndcg5": 0.3879405454577084,
+          "primaryRecall5": 0.625
+        },
+        "colloquial": {
+          "n": 4,
+          "hit1": 0,
+          "hit5": 0,
+          "mrr10": 0,
+          "ndcg5": 0,
+          "primaryRecall5": 0
+        }
+      },
+      "misses": [
+        {
+          "id": "q48",
+          "query": "creature zero toughness indestructible",
+          "expected": {
+            "cr:704.5f": 3,
+            "glossary:indestructible": 1
+          },
+          "top5": [
+            {
+              "id": "cr:107.1b",
+              "title": "107.1b — Numbers and Symbols",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:toughness",
+              "title": "Toughness",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:208.2",
+              "title": "208.2 — Power/Toughness",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:208.5",
+              "title": "208.5 — Power/Toughness",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:123.8",
+              "title": "123.8 — Stickers",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q49",
+          "query": "mana ability uses stack",
+          "expected": {
+            "cr:605.3b": 3,
+            "cr:605": 1
+          },
+          "top5": [
+            {
+              "id": "cr:707.10",
+              "title": "707.10 — Copying Objects",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:mana-ability",
+              "title": "Mana Ability",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:405.6c",
+              "title": "405.6c — Stack",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:109.2b",
+              "title": "109.2b — Objects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:109.2c",
+              "title": "109.2c — Objects",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q56",
+          "query": "trample deathtouch",
+          "expected": {
+            "cr:702.19b": 3,
+            "cr:702.2c": 3,
+            "glossary:trample": 1,
+            "glossary:deathtouch": 1
+          },
+          "top5": [
+            {
+              "id": "cr:122.1b",
+              "title": "122.1b — Counters",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2",
+              "title": "702.2 — Deathtouch",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2a",
+              "title": "702.2a — Deathtouch",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2d",
+              "title": "702.2d — Deathtouch",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.2f",
+              "title": "702.2f — Deathtouch",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q57",
+          "query": "sacrifice indestructible",
+          "expected": {
+            "cr:701.21a": 3,
+            "glossary:sacrifice": 1,
+            "glossary:indestructible": 1
+          },
+          "top5": [
+            {
+              "id": "cr:702.12",
+              "title": "702.12 — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.12a",
+              "title": "702.12a — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.12c",
+              "title": "702.12c — Indestructible",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:indestructible",
+              "title": "Indestructible",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:702.12b",
+              "title": "702.12b — Indestructible",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q58",
+          "query": "combat damage assignment order",
+          "expected": {
+            "cr:510.1c": 3,
+            "cr:510.1d": 3,
+            "glossary:damage-assignment-order-obsolete": 1
+          },
+          "top5": [
+            {
+              "id": "glossary:damage-assignment-order-obsolete",
+              "title": "Damage Assignment Order (Obsolete)",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:510.1e",
+              "title": "510.1e — Combat Damage Step",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:802.5",
+              "title": "802.5 — Attack Multiple Players Option",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:506.1",
+              "title": "506.1 — Combat Phase",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:703.4k",
+              "title": "703.4k — The turn-based actions are as follows:",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q61",
+          "query": "replacement effects choose order",
+          "expected": {
+            "cr:616.1": 3,
+            "cr:616": 1
+          },
+          "top5": [
+            {
+              "id": "cr:616.1g",
+              "title": "616.1g — Interaction of Replacement and/or Prevention Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.17b",
+              "title": "614.17b — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.13a",
+              "title": "614.13a — Replacement Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:616.2",
+              "title": "616.2 — Interaction of Replacement and/or Prevention Effects",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:614.12c",
+              "title": "614.12c — Replacement Effects",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q62",
+          "query": "protection target damage enchant block",
+          "expected": {
+            "cr:702.16b": 3,
+            "cr:702.16c": 3,
+            "cr:702.16e": 3,
+            "cr:702.16f": 3,
+            "glossary:protection": 1
+          },
+          "top5": [
+            {
+              "id": "cr:702.19b",
+              "title": "702.19b — Trample",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.47c",
+              "title": "702.47c — Splice",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:608.2b",
+              "title": "608.2b — Resolving Spells and Abilities",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.5d",
+              "title": "702.5d — Enchant",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.5a",
+              "title": "702.5a — Enchant",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q63",
+          "query": "fizzle",
+          "expected": {
+            "glossary:illegal-target": 3
+          },
+          "top5": []
+        },
+        {
+          "id": "q64",
+          "query": "shroud vs hexproof",
+          "expected": {
+            "glossary:hexproof": 3
+          },
+          "top5": [
+            {
+              "id": "cr:702.18",
+              "title": "702.18 — Shroud",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.18a",
+              "title": "702.18a — Shroud",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:shroud",
+              "title": "Shroud",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:702.18b",
+              "title": "702.18b — Shroud",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:702.11f",
+              "title": "702.11f — Hexproof",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q65",
+          "query": "when does damage wear off",
+          "expected": {
+            "cr:514.2": 3
+          },
+          "top5": [
+            {
+              "id": "glossary:encounter",
+              "title": "Encounter",
+              "kind": "glossary"
+            },
+            {
+              "id": "glossary:set-in-motion",
+              "title": "Set in Motion",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:312.5",
+              "title": "312.5 — Phenomena",
+              "kind": "rule"
+            },
+            {
+              "id": "glossary:archenemy",
+              "title": "Archenemy",
+              "kind": "glossary"
+            },
+            {
+              "id": "cr:701.51b",
+              "title": "701.51b — Open an Attraction",
+              "kind": "rule"
+            }
+          ]
+        },
+        {
+          "id": "q66",
+          "query": "can I respond to paying costs",
+          "expected": {
+            "cr:601.2h": 3
+          },
+          "top5": [
+            {
+              "id": "cr:118.3c",
+              "title": "118.3c — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.2",
+              "title": "118.2 — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.7",
+              "title": "118.7 — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.3b",
+              "title": "118.3b — Costs",
+              "kind": "rule"
+            },
+            {
+              "id": "cr:118.9",
+              "title": "118.9 — Costs",
+              "kind": "rule"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

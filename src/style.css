@@ -30,3 +30,14 @@
 .result.secondary-result strong{font-weight:400}
 .result.secondary-result .result-kind{color:var(--muted)}
 .result.secondary-result:hover,.result.secondary-result:focus-visible{background:var(--soft)}
+
+/* One continuous reading surface; rule numbers keep granular citations visible. */
+.rule-family .family-member{padding:16px 0;border-top:1px solid var(--line);scroll-margin-top:16px;outline:none}
+.rule-family .family-member:first-child{border-top:0;padding-top:0}
+.rule-family .family-member:last-child{padding-bottom:0}
+.rule-family .family-member h2{font:650 13px/1.5 Inter,ui-sans-serif,system-ui,sans-serif;letter-spacing:0;margin:0 0 8px;color:var(--accent)}
+.rule-family .family-member h2 a{display:inline-block;min-height:44px;padding:12px 0;text-underline-offset:3px}
+.rule-family .family-member p{margin:0 0 12px}.rule-family .family-member p:last-child{margin-bottom:0}
+.rule-family .focused-rule{background:var(--soft);box-shadow:inset 3px 0 var(--accent);padding-left:12px;padding-right:12px}
+.rule-family .member-links{font-family:Inter,ui-sans-serif,system-ui,sans-serif;margin-top:12px}
+.rule-family .family-intro{margin-bottom:16px}

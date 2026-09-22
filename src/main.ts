@@ -1,7 +1,7 @@
 import './style.css';
 import { RulesClient } from './rules-client.ts';
 import { mergeResults, readRoute, referenceUrl, secondaryRuleResults } from './omnisearch.ts';
-import { renderRule, ruleResultLabel, rulesStatusLabel } from './rules-detail.ts';
+import { renderRule, ruleAnchorId, ruleResultLabel, rulesStatusLabel } from './rules-detail.ts';
 import { renderCard } from './detail.ts';
 import { readRecent, remember, saveRecent } from './recent.ts';
 import { escapeHtml as esc, renderSymbols as mana } from './symbols.ts';
@@ -161,7 +161,12 @@ async function load() {
         rules=new RulesClient(new Worker(new URL('./rules.worker.ts',import.meta.url),{type:'module'}),rulesChanged,detail=>{
           const current=readRoute(location.hash);
           if(current.kind!=='rule'||!rules?.release)return;
-          if(detail&&current.id===detail.document.id){el('detail').innerHTML=renderRule(detail,rules.release);el('rule-title').focus();window.scrollTo(0,0);}
+          if(detail&&current.id===detail.document.id){
+            el('detail').innerHTML=renderRule(detail,rules.release);
+            const focused=document.getElementById(ruleAnchorId(current.id));
+            (focused??el('rule-title')).focus({preventScroll:true});
+            if(focused)focused.scrollIntoView({block:'start'});else window.scrollTo(0,0);
+          }
           else if(!detail)el('detail').innerHTML='<h1>Reference not found</h1><p>Start a new search in this snapshot.</p>';
         },new URL('./',location.href).href);
         rules.search(input.value);
