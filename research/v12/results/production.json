@@ -1,0 +1,89 @@
+{
+  "measuredAt": "2026-09-22T18:15:47.290Z",
+  "environment": {
+    "node": "v24.16.0",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "note": "Node timings; hydration in-process, browser production runs it in a worker. Queries exclude rendering.",
+  "startup": {
+    "cardParseMs": 92.611375,
+    "cardIndexMs": 67.12800000000001,
+    "rulesHydrateMs": 18.621207999999996
+  },
+  "warm": {
+    "cards": {
+      "n": 660,
+      "p50": 2.6734579999999823,
+      "p95": 3.37341600000002,
+      "max": 8.319166999999993
+    },
+    "rules": {
+      "n": 660,
+      "p50": 0.04825000000005275,
+      "p95": 0.36474999999995816,
+      "max": 0.6019580000001952
+    }
+  },
+  "ranking": {
+    "queries": 66,
+    "changedTop10Queries": [],
+    "hit5": 0.8333333333333334
+  },
+  "sizes": {
+    "data/cards.json": {
+      "bytes": 29228731,
+      "gzipBytes": 6754305,
+      "sha256": "585af746735f9bf559386050103a1234dde334538755339e2c7cb9df9fb028d8"
+    },
+    "data/rules.json": {
+      "bytes": 1819470,
+      "gzipBytes": 356051,
+      "sha256": "f675417086eb0e7a9b38fd13fa0430997fe7a27f3d52058d2604df4db32525ad"
+    },
+    "data/rules-index.json": {
+      "bytes": 628250,
+      "gzipBytes": 210818,
+      "sha256": "4e92d27d243862613d794966ff917aafabe1d9c5a6e1582d156fa4614cb2e042"
+    },
+    "data/rules-release.json": {
+      "bytes": 837,
+      "gzipBytes": 523,
+      "sha256": "08893623c6b44cd5f04dec32200a41c1e818cbe72b15f75a8f3ebd0793387ee3"
+    },
+    "sw.js": {
+      "bytes": 3733,
+      "gzipBytes": 2000,
+      "sha256": "9a132387ddae64f50f15fd24a667cea01943e41d7a6193c3d4eb0d839cb6721f"
+    },
+    "assets/index-DDH9vCKd.css": {
+      "bytes": 9151,
+      "gzipBytes": 2608,
+      "sha256": "f4342678c4be967bf1fd4bc60e94edfa7877e7e6c3d73d22b0c61a2e327ffee6"
+    },
+    "assets/index-PgVHDJg4.js": {
+      "bytes": 18580,
+      "gzipBytes": 7228,
+      "sha256": "9b75b6bff8708d3fc59de372e739321ceb9e576bdd2ca951274901b0438a289c"
+    },
+    "assets/rules.worker-DX8dqiSx.js": {
+      "bytes": 3721,
+      "gzipBytes": 1775,
+      "sha256": "de4fed306814aa236e806b817dc0831e097445f389f96f7d9b51c16e329bf5ef"
+    }
+  },
+  "source": {
+    "publisher": "Wizards of the Coast",
+    "language": "en",
+    "landingPage": "https://magic.wizards.com/en/rules",
+    "url": "https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt",
+    "retrievedAt": "2026-09-20T16:17:03.713523+00:00",
+    "effectiveDate": "2026-09-25",
+    "asOfDate": "2026-09-22",
+    "effectiveStatus": "future",
+    "sha256": "8d860e451f20f38865b725b42d82feb714c725373dd8f3b32b8652b3eeb070ca",
+    "originalBytes": 977752,
+    "parserVersion": "1.0.1"
+  },
+  "mode": "preview"
+}

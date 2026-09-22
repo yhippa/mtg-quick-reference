@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "section": 156,
+    "rule": 3165,
+    "glossary": 741
+  },
+  "documents": 4062,
+  "accountedNonblankLines": 5123,
+  "expectedNonblankLines": 5123,
+  "unresolvedReferences": [],
+  "roundTripBodiesVerified": 4062,
+  "excludedRanges": {
+    "preambleAndTOC": [
+      1,
+      181
+    ],
+    "credits": [
+      9375,
+      9410
+    ]
+  }
+}

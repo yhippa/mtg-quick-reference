@@ -1,0 +1,24 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {gzipSync,brotliCompressSync} from 'node:zlib';
+import {createHash} from 'node:crypto';
+import ts from 'typescript';
+const root=new URL('./',import.meta.url);
+const read=p=>readFileSync(new URL(p,root));
+const write=(p,s)=>writeFileSync(new URL(p,root),typeof s==='string'?s:JSON.stringify(s));
+const raw=read('../../src/search.ts');
+write('data/card-search.mjs',ts.transpileModule(raw.toString(),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
+write('data/rules-search.mjs',ts.transpileModule(read('../../src/rules-search.ts').toString(),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText.replace('./search.ts','./card-search.mjs'));
+const all=JSON.parse(read('../../public/data/cards.json'));
+const cards=all.cards.map(c=>({id:'card:'+encodeURIComponent(c.name),kind:'card',title:c.name,aliases:[...new Set(c.faces.map(f=>f.name))],rank:c.rank??999999}));
+write('data/cards.json',cards);
+const {buildBM25}=await import('./engine.mjs');
+const rules=JSON.parse(read('data/corpus.json')).documents;
+const rulesIndex=buildBM25(rules),unifiedIndex=buildBM25([...cards,...rules]);
+write('data/rules-index.json',rulesIndex);
+write('data/unified-index.json',unifiedIndex);
+// A lean transport form keeps the full canonical schema out of the initial query bundle.
+write('data/lean-rules.json',rules.map(({id,kind,key,title,text})=>({id,kind,key,title,text})));
+const paths=['source/comprehensive-rules.txt','data/corpus.json','data/lean-rules.json','data/cards.json','data/rules-index.json','data/unified-index.json','data/card-search.mjs'];
+const sizes=Object.fromEntries(paths.map(p=>{const b=read(p);return[p,{bytes:b.length,gzipBytes:gzipSync(b).length,brotliBytes:brotliCompressSync(b).length,sha256:createHash('sha256').update(b).digest('hex')}];}));
+write('results/sizes.json',{sizes,cards:cards.length,rules:rules.length,cardSnapshot:all.updated,productionCardSearchSha256:createHash('sha256').update(raw).digest('hex'),rulesVocabulary:Object.keys(rulesIndex.postings).length,unifiedVocabulary:Object.keys(unifiedIndex.postings).length,rulesPostings:Object.values(rulesIndex.postings).reduce((n,p)=>n+p.length/2,0),unifiedPostings:Object.values(unifiedIndex.postings).reduce((n,p)=>n+p.length/2,0)});
+console.log(JSON.stringify(sizes,null,2));

@@ -1,6 +1,10 @@
 # MTG Quick Reference
 
-A mobile-first, offline Magic: The Gathering card reference. Type a name, tap a result, and read Oracle text and dated card-specific rulings. No accounts, prices, collection tools, runtime APIs, or server database.
+A mobile-first, offline Magic: The Gathering reference. One search box finds cards, Comprehensive Rules, and glossary entries. Tap a result for authoritative text and source links. No accounts, prices, collection tools, runtime APIs, or server database.
+
+**V1.2:** the selected September 25 rules are an explicitly labeled preview. See
+[the V1.2 report and Android checklist](docs/V1.2.md) for effective-date policy,
+architecture, measurements, ranking results, offline evidence and update instructions.
 
 ## Run locally
 
@@ -57,7 +61,7 @@ Back navigation preserves the query; card links use hash routes so static hostin
 
 ## Offline and updates
 
-`build-sw.mjs` hashes the entire production output (including data) to name a versioned cache and generates `sw.js`. Installation caches the complete app and dataset; if any request fails, that new cache is discarded and the previous active worker remains available. The app shows **Available offline** after an active worker is ready. The first visit must finish saving before an offline launch can work.
+`build-sw.mjs` hashes the entire production output (including data) to name a versioned cache and generates `sw.js`. Installation caches and SHA-verifies the complete app, cards, rules corpus/index and release metadata; if any request fails or content belongs to a different deploy, that new cache is discarded and the previous active worker remains available. The app shows **Available offline** after an active worker is ready. The first visit must finish saving before an offline launch can work.
 
 Controlled visits serve a consistent cached snapshot, including the dataset. The browser checks `sw.js` on registration on subsequent launches. A fully installed update waits and shows **Update ready · Reload**. Activating it swaps to the new snapshot and reloads the app. Failed or interrupted installs do not replace the previous version. Cache names are scoped by site path so another app's caches are not removed. There is no separate live-data update that can mismatch the app schema.
 
@@ -65,11 +69,11 @@ The first load parses the dataset and builds the name index before searching; th
 
 ## Automatic refresh
 
-`.github/workflows/pages.yml` runs on pushes to `main`, manual dispatch and Mondays at 07:23 UTC. Every run downloads fresh bulk data, runs tests, builds the static app, reports benchmark output and deploys with the official Pages actions. Refreshes deploy directly; they do not commit generated data back to the repository. Run `npm run data` locally when you want to update the checked-in development snapshot.
+`.github/workflows/pages.yml` runs on pushes to `main`, manual dispatch and Mondays at 07:23 UTC. Every run downloads fresh bulk card data, builds the explicitly selected rules snapshot, runs production/research tests, builds the static app, reports benchmark output and deploys with the official Pages actions. Rules acquisition/selection is a separate reviewed step; future snapshots are never activated automatically. Refreshes deploy directly; they do not commit generated data back to the repository. Run `npm run data` locally when you want to update the checked-in development snapshot.
 
 A failed refresh/build prevents deployment, leaving the last successful Pages deployment available. Scheduled workflows run from the default branch (set it to `main`); GitHub may delay schedules or disable them in inactive public repositories. Inspect Actions for failures or re-enable schedules there.
 
-## Measurements
+## Historical V1 measurements
 
 Snapshot date: **2026-09-19**. Measured locally with Node.js 24; these are desktop measurements, not a claim about phone performance.
 

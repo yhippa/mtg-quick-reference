@@ -28,3 +28,8 @@ SOFTWARE.
 Mana symbol font by Andrew Gioia: https://mana.andrewgioia.com/
 Font: SIL OFL 1.1; CSS: MIT. See fonts/mana/LICENSE.txt and OFL-1.1.txt.
 Mana and card symbol artwork copyright Wizards of the Coast.
+
+Comprehensive Rules and glossary: Wizards of the Coast.
+Source: https://magic.wizards.com/en/rules
+Rules text remains Wizards of the Coast intellectual property.
+Exact snapshot provenance is included in data/rules-release.json.

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MTG authoritative rules snapshot (research proposal)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "source", "documents"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "source": {
+      "type": "object",
+      "required": ["publisher", "language", "landingPage", "url", "retrievedAt", "effectiveDate", "asOfDate", "effectiveStatus", "sha256", "originalBytes", "parserVersion"],
+      "properties": {
+        "publisher": {"const": "Wizards of the Coast"},
+        "language": {"const": "en"},
+        "landingPage": {"type":"string","format":"uri"},
+        "url": {"type":"string","format":"uri"},
+        "retrievedAt": {"type":"string","format":"date-time"},
+        "effectiveDate": {"type":"string","format":"date"},
+        "asOfDate": {"type":"string","format":"date"},
+        "effectiveStatus": {"enum":["future","effective"]},
+        "sha256": {"type":"string","pattern":"^[0-9a-f]{64}$"},
+        "originalBytes": {"type":"integer","minimum":1},
+        "parserVersion": {"type":"string"}
+      },
+      "additionalProperties": false
+    },
+    "documents": {"type":"array","items":{"$ref":"#/$defs/document"},"minItems":1}
+  },
+  "$defs": {
+    "document": {
+      "type":"object","additionalProperties":false,
+      "required":["id","kind","key","title","text","parentId","sectionId","order","sourceLines","references","unresolvedReferences"],
+      "properties": {
+        "id":{"type":"string","pattern":"^(cr:[0-9]+(?:\\.[0-9]+)?[a-z]?|glossary:[a-z0-9-]+)$"},
+        "kind":{"enum":["section","rule","glossary"]},
+        "key":{"type":"string","minLength":1},
+        "title":{"type":"string","minLength":1},
+        "text":{"type":"string","minLength":1},
+        "parentId":{"type":["string","null"]},
+        "sectionId":{"type":["string","null"]},
+        "order":{"type":"integer","minimum":0},
+        "sourceLines":{"type":"array","prefixItems":[{"type":"integer","minimum":1},{"type":"integer","minimum":1}],"minItems":2,"maxItems":2},
+        "references":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+        "unresolvedReferences":{"type":"array","items":{"type":"string"},"uniqueItems":true}
+      }
+    }
+  }
+}

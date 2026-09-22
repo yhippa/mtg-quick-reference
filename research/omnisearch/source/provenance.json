@@ -1,0 +1,13 @@
+{
+  "publisher": "Wizards of the Coast",
+  "language": "en",
+  "landingPage": "https://magic.wizards.com/en/rules",
+  "url": "https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.txt",
+  "retrievedAt": "2026-09-20T16:17:03.713523+00:00",
+  "effectiveDate": "2026-09-25",
+  "asOfDate": "2026-09-20",
+  "effectiveStatus": "future",
+  "sha256": "8d860e451f20f38865b725b42d82feb714c725373dd8f3b32b8652b3eeb070ca",
+  "originalBytes": 977752,
+  "parserVersion": "1.0.1"
+}

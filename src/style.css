@@ -14,3 +14,19 @@
 #detail h1{margin-bottom:18px}.face{padding:18px;margin-bottom:14px}.face-meta{padding-bottom:12px}.oracle p{margin:12px 0}.oracle p:last-child{margin-bottom:0}.stats:not(:empty){margin-top:12px}.rulings{margin-top:22px}.rulings-title{padding-bottom:8px}.rulings-title h2{margin:8px 0}.ruling{padding:16px 0}.face h2{margin:6px 0 12px}
 .recent-results .result{min-height:64px;padding-top:12px;padding-bottom:12px}
 @media(max-width:600px){main:has(#detail-view:not([hidden])){padding-top:16px}.detail-nav{margin-bottom:12px}#detail h1{margin-bottom:14px}.face{padding:16px}.oracle{line-height:1.55}.rulings{margin-top:18px}}
+
+/* V1.2 adds references within the existing visual hierarchy. */
+.rules-status{font-size:11px;color:var(--muted);line-height:1.5;margin:12px 2px}
+.result-kind{display:block;font-size:9px;font-weight:700;letter-spacing:1px;color:var(--accent);margin-bottom:6px}
+.rule-result{align-items:center;min-height:72px}.result-copy{min-width:0;overflow-wrap:anywhere}
+.rules-notice{padding:12px 14px;background:var(--soft);border-radius:7px;font-size:13px;line-height:1.6}
+.rule-body{font-family:Georgia,serif;font-size:18px;line-height:1.65;overflow-wrap:anywhere}.rule-body p{white-space:pre-wrap;margin:12px 0}.rule-body a{color:var(--accent);text-underline-offset:3px}
+.rule-links{margin:20px 0}.rule-links h2{font-size:16px}.reference-link{display:block;min-height:44px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.5;text-underline-offset:3px}
+.rule-source{font-size:12px;line-height:1.7;color:var(--muted);margin-top:24px}.rule-source summary{cursor:pointer;min-height:44px;padding:12px 0}.snapshot-id{overflow-wrap:anywhere}
+@media(max-width:600px){input{font-size:16px}.rule-body{font-size:18px}}
+
+/* After an exact card match, prose-only matches stay accessible without equal emphasis. */
+.result.secondary-result{background:transparent}
+.result.secondary-result strong{font-weight:400}
+.result.secondary-result .result-kind{color:var(--muted)}
+.result.secondary-result:hover,.result.secondary-result:focus-visible{background:var(--soft)}

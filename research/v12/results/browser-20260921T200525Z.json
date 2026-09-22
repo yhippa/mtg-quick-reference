@@ -1,0 +1,34 @@
+{
+  "measuredAt": "2026-09-21T20:05:25.791Z",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+  "hardwareConcurrency": 10,
+  "note": "Actual production worker/corpus/index and unchanged card index; local server, warm cache not controlled. Query timings exclude rendering. No CPU throttling.",
+  "startup": {
+    "cardsFetchParseMs": 157.70000004768372,
+    "cardIndexMs": 79.69999998807907,
+    "cardReadyMs": 237.4000000357628,
+    "rulesStartedAfterCardsMs": 8.899999976158142,
+    "rulesInitInternalMs": 30.600000023841858,
+    "rulesRoundtripInitMs": 35.5
+  },
+  "warm": {
+    "cards": {
+      "n": 198,
+      "p50": 2.799999952316284,
+      "p95": 3.5,
+      "max": 3.900000035762787
+    },
+    "rulesWorker": {
+      "n": 198,
+      "p50": 0.09999996423721313,
+      "p95": 0.3999999761581421,
+      "max": 0.5
+    },
+    "rulesRoundtrip": {
+      "n": 198,
+      "p50": 0.19999998807907104,
+      "p95": 0.5,
+      "max": 0.6000000238418579
+    }
+  }
+}

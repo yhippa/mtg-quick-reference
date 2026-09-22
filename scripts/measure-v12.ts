@@ -1,0 +1,24 @@
+import {readFileSync,writeFileSync,readdirSync} from 'node:fs';
+import {gzipSync} from 'node:zlib';
+import {createHash} from 'node:crypto';
+import {makeIndex,search} from '../src/search.ts';
+import {hydrateRules} from '../src/rules-runtime.ts';
+import {mergeResults} from '../src/omnisearch.ts';
+const read=(p:string)=>readFileSync(p);
+const hash=(b:Buffer)=>createHash('sha256').update(b).digest('hex');
+const start=performance.now(),cards=JSON.parse(read('public/data/cards.json').toString()).cards;
+const parsed=performance.now(),names=makeIndex(cards),cardReady=performance.now();
+const release=JSON.parse(read('public/data/rules-release.json').toString());
+const rulesStart=performance.now(),rules=await hydrateRules(release,new Uint8Array(read('public/data/rules.json')).buffer,new Uint8Array(read('public/data/rules-index.json')).buffer),rulesReady=performance.now();
+const cases=JSON.parse(read('research/omnisearch/evaluation.json').toString()).cases;
+const cardTimes:number[]=[],ruleTimes:number[]=[];
+const ranked=cases.map((c:any)=>({...c,ids:mergeResults(c.query,search(names,c.query),names,rules.search(c.query)).slice(0,10).map(h=>h.kind==='card'?'card:'+encodeURIComponent(cards[h.cardId].name):h.id)}));
+for(let n=0;n<10;n++)for(const c of cases){let t=performance.now();search(names,c.query);cardTimes.push(performance.now()-t);t=performance.now();rules.search(c.query);ruleTimes.push(performance.now()-t);}
+const pct=(a:number[])=>{a.sort((a,b)=>a-b);return {n:a.length,p50:a[Math.floor(a.length*.5)],p95:a[Math.floor(a.length*.95)],max:a.at(-1)};};
+const baseline=JSON.parse(read('research/omnisearch/results/ranking-split-prebuilt.json').toString());
+const changes=ranked.filter((c:any,i:number)=>JSON.stringify(c.ids)!==JSON.stringify(baseline[i].results.map((r:any)=>r.id))).map((c:any)=>c.query);
+const paths=['data/cards.json','data/rules.json','data/rules-index.json','data/rules-release.json','sw.js',...readdirSync('dist/assets').map(p=>'assets/'+p)];
+const sizes=Object.fromEntries(paths.map(p=>{const b=read('dist/'+p);return [p,{bytes:b.length,gzipBytes:gzipSync(b).length,sha256:hash(b)}];}));
+const report={measuredAt:new Date().toISOString(),environment:{node:process.version,platform:process.platform,arch:process.arch},note:'Node timings; hydration in-process, browser production runs it in a worker. Queries exclude rendering.',startup:{cardParseMs:parsed-start,cardIndexMs:cardReady-parsed,rulesHydrateMs:rulesReady-rulesStart},warm:{cards:pct(cardTimes),rules:pct(ruleTimes)},ranking:{queries:cases.length,changedTop10Queries:changes,hit5:ranked.filter((c:any)=>c.ids.slice(0,5).some((id:string)=>c.relevance[id]===3)).length/cases.length},sizes,source:release.source,mode:release.mode};
+writeFileSync('research/v12/results/production.json',JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify(report,null,2));
