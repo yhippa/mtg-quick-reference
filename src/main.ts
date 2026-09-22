@@ -15,7 +15,7 @@ app.innerHTML = `
 <div class="results-heading"><span id="result-status" role="status">Loading card reference…</span><button id="clear-recent" hidden>Clear recent</button><span class="key-hint">/ TO SEARCH</span></div><div id="results"></div>
 <p id="rules-status" class="rules-status" role="status">Rules loading…</p><div id="empty"><p>Find card text, rulings, rules, and glossary terms.</p><div class="suggestions"><button data-query="bolt">bolt <span>↗</span></button><button data-query="sheold">sheold <span>↗</span></button><button data-query="Sol Ring">Sol Ring <span>↗</span></button></div></div></section>
 <section id="detail-view" hidden><nav class="detail-nav" aria-label="Reference navigation"><button id="back" class="back">← Back</button><button id="new-search" class="new-search">New search</button></nav><article id="detail"></article></section></main>
-<footer><div><span id="offline" role="status">Preparing reference</span><button id="update" hidden>Update ready · Reload</button></div><div id="data-date">Card data loading</div><p>Card data by <a href="https://mtgjson.com/">MTGJSON</a> · Magic: The Gathering © Wizards of the Coast</p></footer>`;
+<footer><div><span id="offline" role="status">Preparing reference</span></div><div id="data-date">Card data loading</div><p>Card data by <a href="https://mtgjson.com/">MTGJSON</a> · Magic: The Gathering © Wizards of the Coast</p></footer>`;
 const el = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const input = el<HTMLInputElement>('query');
 let dataset: Dataset;
@@ -191,20 +191,15 @@ async function setupOffline() {
   try {
     connectionStatus();
     const registration = await navigator.serviceWorker.register('./sw.js');
-    const check = () => { el('update').hidden = !(registration.waiting && navigator.serviceWorker.controller); };
     const watchInstall = () => {
       const worker = registration.installing;
       worker?.addEventListener('statechange', () => {
-        check();
         if (worker.state === 'redundant' && !registration.active) el('offline').textContent = 'Offline save failed · Reload to retry';
       });
     };
     watchInstall();
-    check();
     registration.addEventListener('updatefound', watchInstall);
-    el('update').onclick = () => registration.waiting?.postMessage('ACTIVATE');
-    let reloading = false;
-    navigator.serviceWorker.addEventListener('controllerchange', () => { if (!reloading) { reloading = true; location.reload(); } });
+    // Verified replacements wait until all old clients close; never interrupt a lookup.
     await navigator.serviceWorker.ready;
     cached = true; connectionStatus();
   } catch { el('offline').textContent = 'Offline save failed · Reload to retry'; }

@@ -57,6 +57,19 @@ test('verified atomic snapshots survive interrupted/mixed updates and cold offli
   const ref=glossary.document.references[0];assert.ok(runtime.detail(ref));assert.ok(renderRule(runtime.detail(ref)!,release).includes('rule-title'));
   const banding=runtime.detail('cr:702.22a')!;assert.equal(banding.document.id,'cr:702.22a');assert.equal(banding.family!.members.length,12);assert.ok(renderRule(banding,release).includes('focused-rule'));
   online=true;const next=boot(nextScript);await dispatch(next,'install');assert.ok(stores.has(oldKey));assert.equal(activated,false);
-  next.message({data:'ACTIVATE'});assert.equal(activated,true);await dispatch(next,'activate');assert.ok(!stores.has(oldKey));
+  // Installation alone cannot take over or remove A. Simulate a second A client.
+  assert.equal(next.message,undefined);assert.equal(activated,false);
+  assert.equal(await (await get('','navigate')).text(),'<main>Reference</main>');
+  assert.ok(stores.has(oldKey));assert.equal(stores.size,2);
+  // Browser emits activate only after the last old client goes away (no skipWaiting).
+  stores.set('unrelated-app',new Map());
+  await dispatch(next,'activate');assert.ok(!stores.has(oldKey));assert.ok(stores.has('unrelated-app'));
+  online=false;
+  const getNext=async(path:string,mode='same-origin'):Promise<Response>=>dispatch(next,'fetch',{request:{url:scope+path,method:'GET',mode}});
+  assert.equal(await (await getNext('','navigate')).text(),'<main>Updated</main>');
+  const nextRelease=await (await getNext('data/rules-release.json')).json();
+  const nextRules=await hydrateRules(nextRelease,await (await getNext('data/rules.json')).arrayBuffer(),await (await getNext('data/rules-index.json')).arrayBuffer());
+  assert.equal(nextRules.detail('cr:702.22a')!.family!.members.length,12);
+  assert.equal(nextRules.search('702.22a').direct[0].id,'cr:702.22a');
  }finally{rmSync(temp,{recursive:true,force:true});}
 });

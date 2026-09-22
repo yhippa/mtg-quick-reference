@@ -1,0 +1,39 @@
+{
+  "before": {
+    "index-C1f-Y-hi.css": {
+      "bytes": 10008,
+      "gzipBytes": 2764
+    },
+    "index-B-KRugUl.js": {
+      "bytes": 19717,
+      "gzipBytes": 7569
+    },
+    "rules.worker-BIwE2q5E.js": {
+      "bytes": 4161,
+      "gzipBytes": 1962
+    }
+  },
+  "after": {
+    "index-9PWrG-Ge.css": {
+      "bytes": 9901,
+      "gzipBytes": 2743
+    },
+    "index-yW1pphRV.js": {
+      "bytes": 19412,
+      "gzipBytes": 7466
+    },
+    "rules.worker-BIwE2q5E.js": {
+      "bytes": 4161,
+      "gzipBytes": 1962
+    }
+  },
+  "workerBefore": 3733,
+  "workerAfter": 3717,
+  "dataIdentical": {
+    "rules-index.json": true,
+    "cards.json": true,
+    "rules.json": true,
+    "rules-release.json": true,
+    "stats.json": true
+  }
+}
